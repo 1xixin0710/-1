@@ -9,6 +9,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+from catalog_variants import enrich_catalog
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
@@ -453,6 +455,7 @@ def main() -> None:
     if len(catalog) < 40:
         raise RuntimeError(f"Only built {len(catalog)} products; expected at least 40")
 
+    catalog = enrich_catalog(catalog)
     catalog_path.write_text(
         json.dumps(catalog, ensure_ascii=False, indent=2),
         encoding="utf-8",

@@ -111,6 +111,49 @@ function productById(id) {
   return getProducts().find((product) => product.id === id);
 }
 
+function variantGroups(product) {
+  return Array.isArray(product?.variantGroups) ? product.variantGroups : [];
+}
+
+function normalizeVariantSelections(product, selections = {}) {
+  return Object.fromEntries(
+    variantGroups(product).map((group) => {
+      const selected = group.options.find(
+        (option) => option.id === selections[group.id],
+      );
+      const fallback = group.options.find(
+        (option) => option.id === product.defaultVariant?.[group.id],
+      );
+      return [group.id, (selected || fallback || group.options[0]).id];
+    }),
+  );
+}
+
+function variantOption(product, groupId, optionId) {
+  return variantGroups(product)
+    .find((group) => group.id === groupId)
+    ?.options.find((option) => option.id === optionId);
+}
+
+function variantPrice(product, selections = {}) {
+  const normalized = normalizeVariantSelections(product, selections);
+  const delta = variantGroups(product).reduce(
+    (sum, group) =>
+      sum +
+      Number(variantOption(product, group.id, normalized[group.id])?.priceDelta || 0),
+    0,
+  );
+  return Math.max(0, Number(product.price || 0) + delta);
+}
+
+function variantLabel(product, selections = {}) {
+  const normalized = normalizeVariantSelections(product, selections);
+  return variantGroups(product)
+    .map((group) => variantOption(product, group.id, normalized[group.id])?.label)
+    .filter(Boolean)
+    .join(" / ");
+}
+
 function sendJson(response, statusCode, payload) {
   response.writeHead(statusCode, {
     "Content-Type": "application/json; charset=utf-8",
@@ -290,11 +333,19 @@ async function handleApi(request, response, url) {
     const category = String(url.searchParams.get("category") || "");
     const products = getProducts().filter((product) => {
       const matchesCategory = !category || category === "all" || product.category === category;
+      const variantSearch = variantGroups(product)
+        .flatMap((group) => [
+          group.label,
+          ...group.options.map((option) => option.label),
+        ])
+        .join(" ");
       const haystack = [
         product.name,
+        product.displayName,
         product.brand,
         product.description,
         product.materials,
+        variantSearch,
       ]
         .join(" ")
         .toLowerCase();
@@ -330,13 +381,16 @@ async function handleApi(request, response, url) {
 
       const items = payload.items.map((item) => {
         const product = productById(item.productId);
+        const variant = normalizeVariantSelections(product, item.variant || {});
         return {
           productId: product.id,
-          name: product.name,
+          name: product.displayName || product.name,
           brand: product.brand,
           color: String(item.color || product.colors?.[0]?.name || "默认"),
+          variant,
+          variantLabel: variantLabel(product, variant),
           quantity: Number(item.quantity),
-          price: product.price,
+          price: variantPrice(product, variant),
           image: product.image,
         };
       });

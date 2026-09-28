@@ -55,6 +55,21 @@ def run_desktop(browser):
     page.wait_for_selector('[data-action="add-product"]')
     assert "iPhone 18 Pro" in page.locator(".product-info h1").inner_text()
     assert "参考价" in page.locator(".price-basis").inner_text()
+    assert page.locator("[data-color-option]").count() == 4
+    assert page.locator("[data-gallery-thumb]").count() == 3
+    initial_gallery_image = page.locator(".gallery-main img").get_attribute("src")
+    page.locator('[data-color-option="冰川蓝"]').click()
+    assert "冰川蓝" in page.locator("[data-selected-color-label]").inner_text()
+    glacier_gallery_image = page.locator(".gallery-main img").get_attribute("src")
+    assert glacier_gallery_image != initial_gallery_image
+    assert "iphone-18-pro-glacier" in glacier_gallery_image
+    page.locator('[data-gallery-thumb="1"]').click()
+    assert page.locator(".gallery-counter").inner_text().strip() == "2 / 3"
+    assert page.locator(".gallery-main img").get_attribute("src") != glacier_gallery_image
+    page.locator('[data-variant-option="memory-16gb"]').click()
+    page.locator('[data-variant-option="storage-512gb"]').click()
+    assert "16GB / 512GB" in page.locator(".selected-variant-summary").inner_text()
+    assert "¥11,899" in page.locator(".product-price-line").inner_text()
 
     product = api("/api/products/phone-anchor-2177308")["product"]
     previous_stock = product["stock"]
@@ -80,6 +95,9 @@ def run_desktop(browser):
 
     order_number = page.locator(".confirmation-meta strong").first.inner_text().strip()
     assert order_number.startswith("MR")
+    order_payload = api(f"/api/orders?orderNumber={order_number}")["orders"][0]
+    assert order_payload["items"][0]["variantLabel"] == "16GB / 512GB"
+    assert order_payload["items"][0]["price"] == 11899
     after_order = api("/api/products/phone-anchor-2177308")["product"]
     assert after_order["stock"] == previous_stock - 1
 

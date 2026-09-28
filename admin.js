@@ -307,7 +307,15 @@ function renderOrders() {
           </td>
           <td>
             <strong>${order.items.length} 种 / ${order.items.reduce((sum, item) => sum + item.quantity, 0)} 件</strong>
-            <span class="table-subline">${escapeHtml(order.items.map((item) => item.name).join("、"))}</span>
+            <span class="table-subline">${escapeHtml(
+              order.items
+                .map((item) =>
+                  item.variantLabel
+                    ? `${item.name}（${item.variantLabel}）`
+                    : item.name,
+                )
+                .join("、"),
+            )}</span>
           </td>
           <td><strong>${formatCurrency(order.total)}</strong></td>
           <td>

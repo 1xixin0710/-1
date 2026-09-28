@@ -178,6 +178,8 @@ const state = {
   priceUpdatedAt: "2026-09-28",
   activeProductId: null,
   selectedColors: {},
+  selectedVariants: {},
+  galleryIndex: 0,
   quantity: 1,
   cart: readStorage(STORAGE_KEYS.cart, []),
   orders: readStorage(STORAGE_KEYS.orders, []),
@@ -232,6 +234,118 @@ function productById(id) {
   return products.find((product) => product.id === id);
 }
 
+function variantGroups(product) {
+  return Array.isArray(product?.variantGroups) ? product.variantGroups : [];
+}
+
+function defaultVariantSelections(product) {
+  return Object.fromEntries(
+    variantGroups(product).map((group) => {
+      const preferred = group.options.find(
+        (option) => option.id === product.defaultVariant?.[group.id],
+      );
+      return [group.id, (preferred || group.options[0]).id];
+    }),
+  );
+}
+
+function normalizeVariantSelections(product, selections = {}) {
+  return Object.fromEntries(
+    variantGroups(product).map((group) => {
+      const selected = group.options.find(
+        (option) => option.id === selections[group.id],
+      );
+      const fallback = group.options.find(
+        (option) => option.id === product.defaultVariant?.[group.id],
+      );
+      return [group.id, (selected || fallback || group.options[0]).id];
+    }),
+  );
+}
+
+function selectedVariants(product) {
+  if (!product) return {};
+  const selections = normalizeVariantSelections(
+    product,
+    state.selectedVariants[product.id] || defaultVariantSelections(product),
+  );
+  state.selectedVariants[product.id] = selections;
+  return selections;
+}
+
+function variantOption(product, groupId, optionId) {
+  return variantGroups(product)
+    .find((group) => group.id === groupId)
+    ?.options.find((option) => option.id === optionId);
+}
+
+function variantPrice(product, selections = selectedVariants(product)) {
+  const normalized = normalizeVariantSelections(product, selections);
+  const delta = variantGroups(product).reduce(
+    (sum, group) => sum + Number(variantOption(product, group.id, normalized[group.id])?.priceDelta || 0),
+    0,
+  );
+  return Math.max(0, Number(product.price || 0) + delta);
+}
+
+function variantCompareAt(product, selections = selectedVariants(product)) {
+  if (!product.compareAt) return null;
+  const normalized = normalizeVariantSelections(product, selections);
+  const delta = variantGroups(product).reduce(
+    (sum, group) => sum + Number(variantOption(product, group.id, normalized[group.id])?.priceDelta || 0),
+    0,
+  );
+  return Math.max(0, Number(product.compareAt) + delta);
+}
+
+function variantSummary(product, selections = selectedVariants(product)) {
+  const normalized = normalizeVariantSelections(product, selections);
+  return variantGroups(product)
+    .map((group) => variantOption(product, group.id, normalized[group.id])?.label)
+    .filter(Boolean)
+    .join(" / ");
+}
+
+function variantSignature(product, selections = selectedVariants(product)) {
+  const normalized = normalizeVariantSelections(product, selections);
+  return variantGroups(product)
+    .map((group) => `${group.id}:${normalized[group.id]}`)
+    .join("|");
+}
+
+function variantPriceRange(product) {
+  let combinations = [0];
+  variantGroups(product).forEach((group) => {
+    combinations = combinations.flatMap((current) =>
+      group.options.map((option) => current + Number(option.priceDelta || 0)),
+    );
+  });
+  const minimum = Math.min(...combinations.map((delta) => product.price + delta));
+  const maximum = Math.max(...combinations.map((delta) => product.price + delta));
+  return { minimum, maximum };
+}
+
+function productDisplayName(product) {
+  return product?.displayName || product?.name || "";
+}
+
+function productSearchText(product) {
+  const variantLabels = variantGroups(product)
+    .flatMap((group) => [group.label, ...group.options.map((option) => option.label)])
+    .join(" ");
+  return [
+    product.name,
+    product.displayName,
+    product.brand,
+    product.description,
+    product.materials,
+    variantLabels,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
 function formatCurrency(value) {
   return new Intl.NumberFormat("zh-CN", {
     style: "currency",
@@ -283,7 +397,18 @@ function getCartDetails() {
   return state.cart
     .map((item, cartIndex) => {
       const product = productById(item.productId);
-      return product ? { ...item, cartIndex, product } : null;
+      if (!product) return null;
+      const variant = normalizeVariantSelections(product, item.variant || {});
+      return {
+        ...item,
+        cartIndex,
+        product,
+        variant,
+        variantKey: variantSignature(product, variant),
+        variantLabel: variantSummary(product, variant),
+        variantPrice: variantPrice(product, variant),
+        variantCompareAt: variantCompareAt(product, variant),
+      };
     })
     .filter(Boolean);
 }
@@ -294,7 +419,7 @@ function cartCount() {
 
 function getTotals() {
   const subtotal = getCartDetails().reduce(
-    (sum, item) => sum + item.product.price * item.quantity,
+    (sum, item) => sum + item.variantPrice * item.quantity,
     0,
   );
   const shipping = subtotal === 0 || subtotal >= 999 ? 0 : 49;
@@ -319,15 +444,23 @@ function updateCartCount() {
   dom.cartCount.setAttribute("aria-hidden", count === 0 ? "true" : "false");
 }
 
-function addToCart(productId, color, quantity = 1) {
+function addToCart(productId, color, quantity = 1, selections = undefined) {
   const product = productById(productId);
   if (!product || product.stock === 0) {
     showToast("暂时无法加入", "该商品当前没有可用库存。", true);
     return;
   }
 
+  const variant = normalizeVariantSelections(
+    product,
+    selections || selectedVariants(product),
+  );
+  const selectedVariantKey = variantSignature(product, variant);
   const existing = state.cart.find(
-    (item) => item.productId === productId && item.color === color,
+    (item) =>
+      item.productId === productId &&
+      item.color === color &&
+      variantSignature(product, item.variant || {}) === selectedVariantKey,
   );
   const currentQuantity = existing ? existing.quantity : 0;
   const nextQuantity = Math.min(product.stock, currentQuantity + quantity);
@@ -335,12 +468,15 @@ function addToCart(productId, color, quantity = 1) {
   if (existing) {
     existing.quantity = nextQuantity;
   } else {
-    state.cart.push({ productId, color, quantity: nextQuantity });
+    state.cart.push({ productId, color, variant, quantity: nextQuantity });
   }
 
   persistCart();
   openCart();
-  showToast("已加入购物袋", `${product.name} / ${color}`);
+  showToast(
+    "已加入购物袋",
+    `${productDisplayName(product)} / ${variantSummary(product, variant)} / ${color}`,
+  );
 }
 
 function setCartQuantity(cartIndex, quantity) {
@@ -387,17 +523,14 @@ function getFilteredProducts() {
       state.category === "all" || product.category === state.category;
     const matchesBrand =
       state.selectedBrand === "all" || product.brand === state.selectedBrand;
-    const matchesPrice = matchesPriceBand(product.price, state.priceBand);
+    const matchesPrice = matchesPriceBand(
+      variantPriceRange(product).minimum,
+      state.priceBand,
+    );
     const matchesStock = !state.inStockOnly || product.stock > 0;
-    const haystack = [
-      product.name,
-      product.series,
-      product.brand,
-      product.description,
-      product.materials,
-    ]
-      .join(" ")
-      .toLocaleLowerCase("zh-CN");
+    const haystack = `${product.series} ${productSearchText(product)}`.toLocaleLowerCase(
+      "zh-CN",
+    );
     return (
       matchesCategory &&
       matchesBrand &&
@@ -408,8 +541,12 @@ function getFilteredProducts() {
   });
 
   return filtered.sort((a, b) => {
-    if (state.sort === "price-asc") return a.price - b.price;
-    if (state.sort === "price-desc") return b.price - a.price;
+    if (state.sort === "price-asc") {
+      return variantPriceRange(a).minimum - variantPriceRange(b).minimum;
+    }
+    if (state.sort === "price-desc") {
+      return variantPriceRange(b).maximum - variantPriceRange(a).maximum;
+    }
     if (state.sort === "newest") return products.indexOf(b) - products.indexOf(a);
     return (
       Number(b.featured) - Number(a.featured) ||
@@ -473,18 +610,21 @@ function renderCatalog(forceSkeleton = false) {
 
   dom.catalogGrid.innerHTML = visible
     .map(
-      (product) => `
+      (product) => {
+        const priceRange = variantPriceRange(product);
+        const hasVariantRange = priceRange.maximum > priceRange.minimum;
+        return `
         <article class="product-card${product.featured ? " is-featured" : ""}">
           <div
             class="product-card-media"
             role="button"
             tabindex="0"
             data-product-open="${product.id}"
-            aria-label="查看 ${escapeHtml(product.name)}"
+            aria-label="查看 ${escapeHtml(productDisplayName(product))}"
           >
             <img
               src="${product.image}"
-              alt="${escapeHtml(product.name)}"
+              alt="${escapeHtml(productDisplayName(product))}"
               width="1200"
               height="1500"
               loading="lazy"
@@ -494,7 +634,7 @@ function renderCatalog(forceSkeleton = false) {
               class="quick-add"
               type="button"
               data-add-quick="${product.id}"
-              aria-label="把 ${escapeHtml(product.name)} 加入购物袋"
+              aria-label="把 ${escapeHtml(productDisplayName(product))} 加入购物袋"
               ${product.stock === 0 ? "disabled" : ""}
             >
               <i data-lucide="${product.stock === 0 ? "package-x" : "plus"}" aria-hidden="true"></i>
@@ -503,19 +643,26 @@ function renderCatalog(forceSkeleton = false) {
           <div class="product-card-content">
             <div>
               <p class="product-card-series">${escapeHtml(product.series)}</p>
-              <h3>${escapeHtml(product.name)}</h3>
+              <h3>${escapeHtml(productDisplayName(product))}</h3>
               <p class="product-card-description">${escapeHtml(product.description)}</p>
+              ${
+                variantGroups(product).length
+                  ? `<p class="product-card-variant-note">可选 ${variantGroups(product)
+                      .map((group) => group.label)
+                      .join(" / ")}</p>`
+                  : ""
+              }
               <span class="product-stock${product.stock <= 5 ? " is-low" : ""}">
                 ${product.stock === 0 ? "暂时缺货" : product.stock <= 5 ? `仅剩 ${product.stock} 件` : `现货 ${product.stock} 件`}
               </span>
             </div>
             <div class="product-card-price">
-              ${product.compareAt ? `<del>${formatCurrency(product.compareAt)}</del>` : ""}
-              <span>${formatCurrency(product.price)}</span>
+              <span>${formatCurrency(priceRange.minimum)}${hasVariantRange ? " 起" : ""}</span>
             </div>
           </div>
         </article>
-      `,
+      `;
+      },
     )
     .join("");
 
@@ -551,6 +698,37 @@ function selectedColor(product) {
   return state.selectedColors[product.id] || product.colors[0].name;
 }
 
+function productColor(product, colorName = selectedColor(product)) {
+  return product.colors.find((color) => color.name === colorName) || product.colors[0];
+}
+
+function colorGallery(product, colorName = selectedColor(product)) {
+  const color = productColor(product, colorName);
+  if (Array.isArray(color.gallery) && color.gallery.length) {
+    return color.gallery;
+  }
+  return [
+    {
+      src: color.image || product.image,
+      position: "50% 50%",
+      scale: 1,
+      fit: "cover",
+      filter: color.filter || "none",
+    },
+  ];
+}
+
+function galleryImageStyle(item) {
+  return [
+    `object-position:${escapeHtml(item.position || "50% 50%")}`,
+    `object-fit:${escapeHtml(item.fit || "cover")}`,
+    `transform:scale(${Number(item.scale || 1)})`,
+    item.filter ? `filter:${escapeHtml(item.filter)}` : "",
+  ]
+    .filter(Boolean)
+    .join(";");
+}
+
 function renderProduct(productId, preserveQuantity = false) {
   const product = productById(productId);
   if (!product) {
@@ -558,9 +736,21 @@ function renderProduct(productId, preserveQuantity = false) {
     return;
   }
 
+  if (state.activeProductId !== product.id) {
+    state.galleryIndex = 0;
+  }
   state.activeProductId = product.id;
   if (!preserveQuantity) state.quantity = 1;
+  const selections = selectedVariants(product);
+  const currentPrice = variantPrice(product, selections);
+  const currentCompareAt = variantCompareAt(product, selections);
   const colorName = selectedColor(product);
+  const gallery = colorGallery(product, colorName);
+  const galleryIndex = Math.max(
+    0,
+    Math.min(Number(state.galleryIndex || 0), gallery.length - 1),
+  );
+  const activeGalleryItem = gallery[galleryIndex];
   const colorOptions = product.colors
     .map(
       (color) => `
@@ -573,6 +763,44 @@ function renderProduct(productId, preserveQuantity = false) {
           <span class="color-swatch" style="--swatch:${color.value}"></span>
           ${escapeHtml(color.name)}
         </button>
+      `,
+    )
+    .join("");
+  const variantOptions = variantGroups(product)
+    .map(
+      (group) => `
+        <section class="option-section" aria-labelledby="variant-${escapeHtml(group.id)}">
+          <div class="option-head">
+            <strong id="variant-${escapeHtml(group.id)}">${escapeHtml(group.label)}</strong>
+            <span>价格随配置实时更新</span>
+          </div>
+          <div class="variant-options">
+            ${group.options
+              .map((option) => {
+                const isActive = selections[group.id] === option.id;
+                const delta = Number(option.priceDelta || 0);
+                const deltaLabel =
+                  delta > 0
+                    ? ` +${formatCurrency(delta)}`
+                    : delta < 0
+                      ? ` -${formatCurrency(Math.abs(delta))}`
+                      : "";
+                return `
+                  <button
+                    class="variant-option${isActive ? " is-active" : ""}"
+                    type="button"
+                    data-variant-group="${escapeHtml(group.id)}"
+                    data-variant-option="${escapeHtml(option.id)}"
+                    aria-pressed="${isActive}"
+                  >
+                    <strong>${escapeHtml(option.label)}</strong>
+                    <span>${deltaLabel || "基础配置"}</span>
+                  </button>
+                `;
+              })
+              .join("")}
+          </div>
+        </section>
       `,
     )
     .join("");
@@ -589,23 +817,48 @@ function renderProduct(productId, preserveQuantity = false) {
     <div class="product-detail">
       <div class="product-gallery">
         <div class="gallery-thumbnails" aria-label="商品图片">
-          <button class="gallery-thumb is-active" type="button" data-gallery-thumb="0" aria-label="查看商品主图">
-            <img src="${product.image}" alt="" width="1200" height="1500" />
-          </button>
+          ${gallery
+            .map(
+              (item, index) => `
+                <button
+                  class="gallery-thumb${index === galleryIndex ? " is-active" : ""}"
+                  type="button"
+                  data-gallery-thumb="${index}"
+                  aria-label="查看第 ${index + 1} 张商品图片"
+                  aria-pressed="${index === galleryIndex}"
+                >
+                  <img
+                    src="${escapeHtml(item.src)}"
+                    alt=""
+                    width="1200"
+                    height="1500"
+                    style="${galleryImageStyle(item)}"
+                  />
+                </button>
+              `,
+            )
+            .join("")}
         </div>
         <div class="gallery-main">
           <img
-            src="${product.image}"
-            alt="${escapeHtml(product.name)}"
+            src="${escapeHtml(activeGalleryItem.src)}"
+            alt="${escapeHtml(`${productDisplayName(product)}，${colorName}，商品图 ${galleryIndex + 1}`)}"
             width="1200"
             height="1500"
+            style="${galleryImageStyle(activeGalleryItem)}"
           />
+          <span class="gallery-counter">${galleryIndex + 1} / ${gallery.length}</span>
         </div>
       </div>
 
       <div class="product-info">
         <p class="series">${escapeHtml(product.series)}</p>
-        <h1>${escapeHtml(product.name)}</h1>
+        <h1>${escapeHtml(productDisplayName(product))}</h1>
+        ${
+          variantGroups(product).length
+            ? `<p class="selected-variant-summary">已选：${escapeHtml(variantSummary(product, selections))}</p>`
+            : ""
+        }
         <div class="product-rating">
           <span class="rating-stars" aria-label="评分 ${Number(product.rating || 4.7).toFixed(1)} 分">
             ${Array.from({ length: 5 })
@@ -615,8 +868,8 @@ function renderProduct(productId, preserveQuantity = false) {
           <span>${Number(product.rating || 4.7).toFixed(1)} / ${Number(product.reviewCount || 0).toLocaleString("zh-CN")} 条榜单点评</span>
         </div>
         <div class="product-price-line">
-          <span class="price">${formatCurrency(product.price)}</span>
-          ${product.compareAt ? `<del>${formatCurrency(product.compareAt)}</del>` : ""}
+          <span class="price">${formatCurrency(currentPrice)}</span>
+          ${currentCompareAt ? `<del>${formatCurrency(currentCompareAt)}</del>` : ""}
         </div>
         <div class="price-basis">
           <i data-lucide="database" aria-hidden="true"></i>
@@ -628,6 +881,8 @@ function renderProduct(productId, preserveQuantity = false) {
           </span>
         </div>
         <p class="product-description">${escapeHtml(product.description)}</p>
+
+        ${variantOptions}
 
         <section class="option-section" aria-labelledby="color-title">
           <div class="option-head">
@@ -751,8 +1006,8 @@ function renderCart() {
               <div>
                 <div class="cart-item-head">
                   <div>
-                    <h3>${escapeHtml(item.product.name)}</h3>
-                    <p>${escapeHtml(item.color)}</p>
+                    <h3>${escapeHtml(productDisplayName(item.product))}</h3>
+                    <p>${escapeHtml(item.variantLabel)} / ${escapeHtml(item.color)}</p>
                   </div>
                   <button
                     class="remove-item"
@@ -786,7 +1041,7 @@ function renderCart() {
                     </button>
                   </div>
                   <strong class="cart-item-price">
-                    ${formatCurrency(item.product.price * item.quantity)}
+                    ${formatCurrency(item.variantPrice * item.quantity)}
                   </strong>
                 </div>
               </div>
@@ -1169,10 +1424,10 @@ function renderCheckout() {
                     <img src="${item.product.image}" alt="" width="1200" height="1500" />
                   </div>
                   <div>
-                    <h3>${escapeHtml(item.product.name)}</h3>
-                    <p>${escapeHtml(item.color)} / 数量 ${item.quantity}</p>
+                    <h3>${escapeHtml(productDisplayName(item.product))}</h3>
+                    <p>${escapeHtml(item.variantLabel)} / ${escapeHtml(item.color)} / 数量 ${item.quantity}</p>
                   </div>
-                  <strong>${formatCurrency(item.product.price * item.quantity)}</strong>
+                  <strong>${formatCurrency(item.variantPrice * item.quantity)}</strong>
                 </div>
               `,
             )
@@ -1296,11 +1551,13 @@ async function completeOrder(checkout) {
   const cartItems = getCartDetails();
   const items = cartItems.map((item) => ({
     productId: item.product.id,
-    name: item.product.name,
+    name: productDisplayName(item.product),
     brand: item.product.brand,
     color: item.color,
+    variant: item.variant,
+    variantLabel: item.variantLabel,
     quantity: item.quantity,
-    price: item.product.price,
+    price: item.variantPrice,
     image: item.product.image,
   }));
   const deliveryFee = checkout.deliveryMethod === "express" ? 39 : 0;
@@ -1338,6 +1595,7 @@ async function completeOrder(checkout) {
         items: cartItems.map((item) => ({
           productId: item.product.id,
           color: item.color,
+          variant: item.variant,
           quantity: item.quantity,
         })),
         deliveryMethod: checkout.deliveryMethod,
@@ -1445,7 +1703,7 @@ function renderConfirmation() {
                   </div>
                   <div>
                     <h3>${escapeHtml(item.name)}</h3>
-                    <p>${escapeHtml(item.color)} / 数量 ${item.quantity}</p>
+                    <p>${escapeHtml(item.variantLabel || item.color)} / 数量 ${item.quantity}</p>
                   </div>
                   <strong>${formatCurrency(item.price * item.quantity)}</strong>
                 </div>
@@ -1591,7 +1849,12 @@ document.addEventListener("click", (event) => {
     if (action === "add-product") {
       const product = productById(state.activeProductId);
       if (product) {
-        addToCart(product.id, selectedColor(product), state.quantity);
+        addToCart(
+          product.id,
+          selectedColor(product),
+          state.quantity,
+          selectedVariants(product),
+        );
       }
     }
     if (action === "open-orders") {
@@ -1615,7 +1878,9 @@ document.addEventListener("click", (event) => {
   if (quickAdd) {
     event.stopPropagation();
     const product = productById(quickAdd.dataset.addQuick);
-    if (product) addToCart(product.id, selectedColor(product), 1);
+    if (product) {
+      addToCart(product.id, selectedColor(product), 1, selectedVariants(product));
+    }
     return;
   }
 
@@ -1625,9 +1890,30 @@ document.addEventListener("click", (event) => {
     return;
   }
 
+  const galleryThumb = event.target.closest("[data-gallery-thumb]");
+  if (galleryThumb && state.activeProductId) {
+    state.galleryIndex = Number(galleryThumb.dataset.galleryThumb);
+    renderProduct(state.activeProductId, true);
+    return;
+  }
+
   const colorOption = event.target.closest("[data-color-option]");
   if (colorOption && state.activeProductId) {
     state.selectedColors[state.activeProductId] = colorOption.dataset.colorOption;
+    state.galleryIndex = 0;
+    renderProduct(state.activeProductId, true);
+    return;
+  }
+
+  const variantOptionButton = event.target.closest("[data-variant-option]");
+  if (variantOptionButton && state.activeProductId) {
+    const product = productById(state.activeProductId);
+    const selections = selectedVariants(product);
+    state.selectedVariants[state.activeProductId] = {
+      ...selections,
+      [variantOptionButton.dataset.variantGroup]:
+        variantOptionButton.dataset.variantOption,
+    };
     renderProduct(state.activeProductId, true);
     return;
   }

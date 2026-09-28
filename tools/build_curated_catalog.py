@@ -8,6 +8,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+from catalog_variants import enrich_catalog
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
@@ -600,6 +602,7 @@ def main():
         catalog.append(record)
         time.sleep(0.25)
 
+    catalog = enrich_catalog(catalog)
     (DATA_DIR / "catalog.json").write_text(
         json.dumps(catalog, ensure_ascii=False, indent=2),
         encoding="utf-8",

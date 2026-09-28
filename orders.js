@@ -147,7 +147,7 @@ function renderOrders(orders, sourceLabel = "当前演示服务端") {
                         <img src="${escapeHtml(item.image)}" alt="" width="1200" height="1500" />
                         <div>
                           <strong>${escapeHtml(item.name)}</strong>
-                          <span>${escapeHtml(item.color)} / 数量 ${item.quantity}</span>
+                          <span>${escapeHtml(item.variantLabel || item.color)} / 数量 ${item.quantity}</span>
                         </div>
                         <b>${formatCurrency(item.price * item.quantity)}</b>
                       </div>

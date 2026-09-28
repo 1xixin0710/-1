@@ -20,12 +20,100 @@ window.MORROW_PRODUCTS = [
     "image": "./assets/catalog/phone-046-2177308.jpg",
     "colors": [
       {
-        "name": "曜石黑",
-        "value": "#20242b"
+        "name": "勃艮第酒红色",
+        "value": "#5a2636",
+        "gallery": [
+          {
+            "src": "./assets/catalog/iphone-18-pro-burgundy.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-camera-control.jpg",
+            "position": "66% 44%",
+            "scale": 1.08,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-main-camera.jpg",
+            "position": "48% 48%",
+            "scale": 1,
+            "fit": "cover"
+          }
+        ]
       },
       {
-        "name": "云雾白",
-        "value": "#e8e7e2"
+        "name": "冰川蓝",
+        "value": "#9eb6c9",
+        "gallery": [
+          {
+            "src": "./assets/catalog/iphone-18-pro-glacier.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-camera-control.jpg",
+            "position": "66% 44%",
+            "scale": 1.08,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-main-camera.jpg",
+            "position": "48% 48%",
+            "scale": 1,
+            "fit": "cover"
+          }
+        ]
+      },
+      {
+        "name": "银色",
+        "value": "#d8d8d5",
+        "gallery": [
+          {
+            "src": "./assets/catalog/iphone-18-pro-silver.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-camera-control.jpg",
+            "position": "66% 44%",
+            "scale": 1.08,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-main-camera.jpg",
+            "position": "48% 48%",
+            "scale": 1,
+            "fit": "cover"
+          }
+        ]
+      },
+      {
+        "name": "黑色",
+        "value": "#242527",
+        "gallery": [
+          {
+            "src": "./assets/catalog/iphone-18-pro-black.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-camera-control.jpg",
+            "position": "66% 44%",
+            "scale": 1.08,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-main-camera.jpg",
+            "position": "48% 48%",
+            "scale": 1,
+            "fit": "cover"
+          }
+        ]
       }
     ],
     "source": {
@@ -37,7 +125,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "苹果iPhone 18 Pro"
   },
   {
     "id": "phone-001-2178313",
@@ -61,11 +193,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-001-2178313.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -77,7 +369,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "vivo X500 Pro Max"
   },
   {
     "id": "phone-002-2175582",
@@ -101,11 +437,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-002-2175582.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -117,7 +613,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "华为Pura X View"
   },
   {
     "id": "phone-003-2144019",
@@ -141,11 +681,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-003-2144019.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -157,7 +857,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "OPPO Find X9 Pro"
   },
   {
     "id": "phone-004-2142760",
@@ -181,11 +925,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-004-2142760.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -197,7 +1101,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "vivo X300"
   },
   {
     "id": "phone-005-2144216",
@@ -221,11 +1169,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-005-2144216.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -237,7 +1345,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "荣耀Magic8 Pro"
   },
   {
     "id": "phone-006-2148015",
@@ -261,11 +1413,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-006-2148015.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -277,7 +1589,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": -900
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 0
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": -1000
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 2000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-16gb",
+      "storage": "storage-512gb"
+    },
+    "displayName": "HUAWEI Mate 80 Pro Max"
   },
   {
     "id": "phone-007-2144226",
@@ -301,11 +1657,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-007-2144226.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -317,7 +1833,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": -1000
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 2000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-512gb"
+    },
+    "displayName": "努比亚Z80 Ultra"
   },
   {
     "id": "phone-008-2148023",
@@ -341,11 +1901,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-008-2148023.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -357,7 +2077,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "荣耀500 Pro"
   },
   {
     "id": "phone-009-2177461",
@@ -380,12 +2144,100 @@ window.MORROW_PRODUCTS = [
     "image": "./assets/catalog/phone-009-2177461.jpg",
     "colors": [
       {
-        "name": "曜石黑",
-        "value": "#20242b"
+        "name": "勃艮第酒红色",
+        "value": "#5a2636",
+        "gallery": [
+          {
+            "src": "./assets/catalog/iphone-18-pro-burgundy.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-camera-control.jpg",
+            "position": "66% 44%",
+            "scale": 1.08,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-main-camera.jpg",
+            "position": "48% 48%",
+            "scale": 1,
+            "fit": "cover"
+          }
+        ]
       },
       {
-        "name": "云雾白",
-        "value": "#e8e7e2"
+        "name": "冰川蓝",
+        "value": "#9eb6c9",
+        "gallery": [
+          {
+            "src": "./assets/catalog/iphone-18-pro-glacier.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-camera-control.jpg",
+            "position": "66% 44%",
+            "scale": 1.08,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-main-camera.jpg",
+            "position": "48% 48%",
+            "scale": 1,
+            "fit": "cover"
+          }
+        ]
+      },
+      {
+        "name": "银色",
+        "value": "#d8d8d5",
+        "gallery": [
+          {
+            "src": "./assets/catalog/iphone-18-pro-silver.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-camera-control.jpg",
+            "position": "66% 44%",
+            "scale": 1.08,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-main-camera.jpg",
+            "position": "48% 48%",
+            "scale": 1,
+            "fit": "cover"
+          }
+        ]
+      },
+      {
+        "name": "黑色",
+        "value": "#242527",
+        "gallery": [
+          {
+            "src": "./assets/catalog/iphone-18-pro-black.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-camera-control.jpg",
+            "position": "66% 44%",
+            "scale": 1.08,
+            "fit": "cover"
+          },
+          {
+            "src": "./assets/catalog/iphone-18-pro-main-camera.jpg",
+            "position": "48% 48%",
+            "scale": 1,
+            "fit": "cover"
+          }
+        ]
       }
     ],
     "source": {
@@ -397,7 +2249,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "苹果iPhone 18 Pro Max"
   },
   {
     "id": "phone-010-2152522",
@@ -421,11 +2317,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-010-2152522.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -437,7 +2493,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "荣耀Power2"
   },
   {
     "id": "phone-011-2177309",
@@ -461,11 +2561,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-011-2177309.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -477,7 +2737,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "苹果iPhone Duo"
   },
   {
     "id": "phone-012-2160696",
@@ -501,11 +2805,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-012-2160696.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -517,7 +2981,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-128gb",
+            "label": "128GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-128gb"
+    },
+    "displayName": "华为畅享90 Pro Max 128GB"
   },
   {
     "id": "phone-013-2142375",
@@ -541,11 +3049,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-013-2142375.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -557,7 +3225,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": -1000
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 2000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-512gb"
+    },
+    "displayName": "小米17 Pro Max"
   },
   {
     "id": "phone-014-2144018",
@@ -581,11 +3293,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-014-2144018.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -597,7 +3469,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "OPPO Find X9"
   },
   {
     "id": "phone-015-2151146",
@@ -621,11 +3537,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-015-2151146.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -637,7 +3713,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": -1000
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 2000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-512gb"
+    },
+    "displayName": "小米17 Ultra"
   },
   {
     "id": "phone-016-2123956",
@@ -661,11 +3781,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-016-2123956.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -677,7 +3957,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "HUAWEI Pura X"
   },
   {
     "id": "phone-017-2167426",
@@ -701,11 +4025,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-017-2167426.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -717,7 +4201,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "华为nova 16"
   },
   {
     "id": "phone-018-2142394",
@@ -741,11 +4269,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-018-2142394.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -757,7 +4445,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "vivo X300 Pro"
   },
   {
     "id": "phone-019-2176798",
@@ -781,11 +4513,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-019-2176798.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -797,7 +4689,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": -900
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 0
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": -1000
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 2000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-16gb",
+      "storage": "storage-512gb"
+    },
+    "displayName": "华为Mate XT 2 非凡大师"
   },
   {
     "id": "phone-020-2104769",
@@ -821,11 +4757,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-020-2104769.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -837,7 +4933,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": -900
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 0
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": -1000
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 2000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-16gb",
+      "storage": "storage-512gb"
+    },
+    "displayName": "华为Mate XT 非凡大师"
   },
   {
     "id": "phone-021-2111294",
@@ -861,11 +5001,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-021-2111294.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -877,7 +5177,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "荣耀Magic7 Pro"
   },
   {
     "id": "phone-022-2149372",
@@ -901,11 +5245,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-022-2149372.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -917,7 +5421,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "一加Ace 6T"
   },
   {
     "id": "phone-023-2149091",
@@ -941,11 +5489,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-023-2149091.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -957,7 +5665,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": -1000
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 2000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-512gb"
+    },
+    "displayName": "HUAWEI Mate 80 Pro"
   },
   {
     "id": "phone-024-2162943",
@@ -981,11 +5733,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "曜石黑",
-        "value": "#20242b"
+        "value": "#20242b",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "云雾白",
-        "value": "#e8e7e2"
+        "value": "#e8e7e2",
+        "filter": "brightness(1.17) saturate(.56) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.17) saturate(.56) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "钛金灰",
+        "value": "#8d8a84",
+        "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.28) grayscale(.12) brightness(1.06) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "冰川蓝",
+        "value": "#8faec7",
+        "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.42) hue-rotate(155deg) saturate(1.9) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "晨曦金",
+        "value": "#d4b17a",
+        "filter": "sepia(.58) saturate(1.25) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.58) saturate(1.25) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "松林绿",
+        "value": "#496252",
+        "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          },
+          {
+            "src": "./assets/catalog/phone-024-2162943.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.36) hue-rotate(72deg) saturate(1.55) brightness(.96)"
+          }
+        ]
       }
     ],
     "source": {
@@ -997,7 +5909,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
       "updatedAt": "2026-09-28",
       "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "运行内存",
+        "options": [
+          {
+            "id": "memory-12gb",
+            "label": "12GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 900
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 1000
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 3000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-12gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "华为Pura X Max"
   },
   {
     "id": "camera-025-2146770",
@@ -1021,11 +5977,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-025-2146770.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1061,11 +6177,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-026-1455337.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1101,11 +6377,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-027-1432332.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1141,11 +6577,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-028-366984.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1181,11 +6777,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-029-2141485.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1221,11 +6977,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-030-1390525.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1261,11 +7177,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-031-1433626.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1301,11 +7377,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-032-2125033.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1341,11 +7577,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-033-1342134.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1381,11 +7777,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-034-1312507.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1421,11 +7977,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-035-1316803.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1461,11 +8177,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-036-2078342.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1501,11 +8377,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-037-2149785.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1541,11 +8577,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-038-2030184.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1581,11 +8777,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-039-1466997.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1621,11 +8977,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "经典黑",
-        "value": "#17191d"
+        "value": "#17191d",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "银黑",
-        "value": "#a8aaae"
+        "value": "#a8aaae",
+        "filter": "grayscale(.42) brightness(1.16) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.42) brightness(1.16) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "石墨灰",
+        "value": "#565b60",
+        "filter": "grayscale(.2) brightness(.92) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.2) brightness(.92) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "钛金属",
+        "value": "#8f8d88",
+        "filter": "sepia(.24) brightness(1.08) contrast(.96)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          },
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.24) brightness(1.08) contrast(.96)"
+          }
+        ]
+      },
+      {
+        "name": "森林绿",
+        "value": "#40594a",
+        "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          },
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.32) hue-rotate(76deg) saturate(1.55) brightness(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜蓝",
+        "value": "#273a53",
+        "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          },
+          {
+            "src": "./assets/catalog/camera-040-1206843.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) hue-rotate(170deg) saturate(1.55) brightness(.88)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1661,11 +9177,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "云白",
-        "value": "#ecece7"
+        "value": "#ecece7",
+        "filter": "brightness(1.16) saturate(.58)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.16) saturate(.58)"
+          },
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.16) saturate(.58)"
+          },
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.16) saturate(.58)"
+          }
+        ]
       },
       {
         "name": "钛灰",
-        "value": "#737a7e"
+        "value": "#737a7e",
+        "filter": "grayscale(.35) brightness(.98) contrast(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.35) brightness(.98) contrast(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.35) brightness(.98) contrast(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.35) brightness(.98) contrast(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "曜石黑",
+        "value": "#23272c",
+        "filter": "brightness(.78) saturate(.55) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(.78) saturate(.55) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(.78) saturate(.55) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(.78) saturate(.55) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "海盐蓝",
+        "value": "#8ba7b8",
+        "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "燕麦米",
+        "value": "#d7c9ac",
+        "filter": "sepia(.38) saturate(.9) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) saturate(.9) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) saturate(.9) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) saturate(.9) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "鼠尾草绿",
+        "value": "#879786",
+        "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)"
+          },
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)"
+          },
+          {
+            "src": "./assets/catalog/appliance-041-1154603.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1701,11 +9377,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "云白",
-        "value": "#ecece7"
+        "value": "#ecece7",
+        "filter": "brightness(1.16) saturate(.58)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.16) saturate(.58)"
+          },
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.16) saturate(.58)"
+          },
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.16) saturate(.58)"
+          }
+        ]
       },
       {
         "name": "钛灰",
-        "value": "#737a7e"
+        "value": "#737a7e",
+        "filter": "grayscale(.35) brightness(.98) contrast(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.35) brightness(.98) contrast(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.35) brightness(.98) contrast(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.35) brightness(.98) contrast(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "曜石黑",
+        "value": "#23272c",
+        "filter": "brightness(.78) saturate(.55) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(.78) saturate(.55) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(.78) saturate(.55) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(.78) saturate(.55) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "海盐蓝",
+        "value": "#8ba7b8",
+        "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "燕麦米",
+        "value": "#d7c9ac",
+        "filter": "sepia(.38) saturate(.9) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) saturate(.9) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) saturate(.9) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) saturate(.9) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "鼠尾草绿",
+        "value": "#879786",
+        "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)"
+          },
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)"
+          },
+          {
+            "src": "./assets/catalog/appliance-042-2142455.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1741,11 +9577,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "云白",
-        "value": "#ecece7"
+        "value": "#ecece7",
+        "filter": "brightness(1.16) saturate(.58)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.16) saturate(.58)"
+          },
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.16) saturate(.58)"
+          },
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.16) saturate(.58)"
+          }
+        ]
       },
       {
         "name": "钛灰",
-        "value": "#737a7e"
+        "value": "#737a7e",
+        "filter": "grayscale(.35) brightness(.98) contrast(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.35) brightness(.98) contrast(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.35) brightness(.98) contrast(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.35) brightness(.98) contrast(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "曜石黑",
+        "value": "#23272c",
+        "filter": "brightness(.78) saturate(.55) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(.78) saturate(.55) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(.78) saturate(.55) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(.78) saturate(.55) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "海盐蓝",
+        "value": "#8ba7b8",
+        "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "燕麦米",
+        "value": "#d7c9ac",
+        "filter": "sepia(.38) saturate(.9) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) saturate(.9) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) saturate(.9) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) saturate(.9) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "鼠尾草绿",
+        "value": "#879786",
+        "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)"
+          },
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)"
+          },
+          {
+            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1781,11 +9777,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "云白",
-        "value": "#ecece7"
+        "value": "#ecece7",
+        "filter": "brightness(1.16) saturate(.58)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.16) saturate(.58)"
+          },
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.16) saturate(.58)"
+          },
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.16) saturate(.58)"
+          }
+        ]
       },
       {
         "name": "钛灰",
-        "value": "#737a7e"
+        "value": "#737a7e",
+        "filter": "grayscale(.35) brightness(.98) contrast(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.35) brightness(.98) contrast(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.35) brightness(.98) contrast(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.35) brightness(.98) contrast(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "曜石黑",
+        "value": "#23272c",
+        "filter": "brightness(.78) saturate(.55) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(.78) saturate(.55) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(.78) saturate(.55) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(.78) saturate(.55) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "海盐蓝",
+        "value": "#8ba7b8",
+        "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "燕麦米",
+        "value": "#d7c9ac",
+        "filter": "sepia(.38) saturate(.9) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) saturate(.9) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) saturate(.9) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) saturate(.9) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "鼠尾草绿",
+        "value": "#879786",
+        "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)"
+          },
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)"
+          },
+          {
+            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1821,11 +9977,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "云白",
-        "value": "#ecece7"
+        "value": "#ecece7",
+        "filter": "brightness(1.16) saturate(.58)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.16) saturate(.58)"
+          },
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.16) saturate(.58)"
+          },
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.16) saturate(.58)"
+          }
+        ]
       },
       {
         "name": "钛灰",
-        "value": "#737a7e"
+        "value": "#737a7e",
+        "filter": "grayscale(.35) brightness(.98) contrast(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "grayscale(.35) brightness(.98) contrast(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "grayscale(.35) brightness(.98) contrast(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "grayscale(.35) brightness(.98) contrast(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "曜石黑",
+        "value": "#23272c",
+        "filter": "brightness(.78) saturate(.55) contrast(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(.78) saturate(.55) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(.78) saturate(.55) contrast(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(.78) saturate(.55) contrast(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "海盐蓝",
+        "value": "#8ba7b8",
+        "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)"
+          },
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)"
+          }
+        ]
+      },
+      {
+        "name": "燕麦米",
+        "value": "#d7c9ac",
+        "filter": "sepia(.38) saturate(.9) brightness(1.08)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.38) saturate(.9) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.38) saturate(.9) brightness(1.08)"
+          },
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.38) saturate(.9) brightness(1.08)"
+          }
+        ]
+      },
+      {
+        "name": "鼠尾草绿",
+        "value": "#879786",
+        "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)"
+          },
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)"
+          },
+          {
+            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1860,12 +10176,76 @@ window.MORROW_PRODUCTS = [
     "image": "./assets/catalog/computer-apple-macbook-air-m4.jpg",
     "colors": [
       {
-        "name": "深空灰",
-        "value": "#4d5157"
+        "name": "天空蓝",
+        "value": "#9ab7d1",
+        "gallery": [
+          {
+            "src": "./assets/catalog/macbook-air-skyblue-top.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/catalog/macbook-air-skyblue-side.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain"
+          }
+        ]
       },
       {
-        "name": "月光银",
-        "value": "#c8cacc"
+        "name": "银色",
+        "value": "#d5d7d8",
+        "gallery": [
+          {
+            "src": "./assets/catalog/macbook-air-silver-top.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/catalog/macbook-air-silver-side.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain"
+          }
+        ]
+      },
+      {
+        "name": "星光色",
+        "value": "#e6ddca",
+        "gallery": [
+          {
+            "src": "./assets/catalog/macbook-air-starlight-top.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/catalog/macbook-air-starlight-side.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain"
+          }
+        ]
+      },
+      {
+        "name": "午夜色",
+        "value": "#263247",
+        "gallery": [
+          {
+            "src": "./assets/catalog/macbook-air-midnight-top.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain"
+          },
+          {
+            "src": "./assets/catalog/macbook-air-midnight-side.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain"
+          }
+        ]
       }
     ],
     "source": {
@@ -1876,7 +10256,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "公开零售页面型号核对后的参考价",
       "updatedAt": "2026-09-28",
       "note": "价格会随地区、版本和促销活动变化，下单前以支付入口展示为准。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "内存",
+        "options": [
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-32gb",
+            "label": "32GB",
+            "priceDelta": 1600
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "硬盘容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 500
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 1200
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-16gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "Apple MacBook Air 13 英寸 M4 16GB+256GB"
   },
   {
     "id": "computer-apple-macbook-pro-14-m4-pro",
@@ -1900,11 +10324,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "深空灰",
-        "value": "#4d5157"
+        "value": "#4d5157",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "月光银",
-        "value": "#c8cacc"
+        "value": "#c8cacc",
+        "filter": "brightness(1.15) saturate(.5) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜色",
+        "value": "#293346",
+        "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          },
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          },
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          }
+        ]
+      },
+      {
+        "name": "星光色",
+        "value": "#e7dfcf",
+        "filter": "sepia(.12) brightness(1.16) saturate(.7)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          },
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          },
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          }
+        ]
+      },
+      {
+        "name": "天空蓝",
+        "value": "#9ab7d1",
+        "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          },
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          },
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          }
+        ]
+      },
+      {
+        "name": "玫瑰金",
+        "value": "#c6a29c",
+        "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          },
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          },
+          {
+            "src": "./assets/catalog/computer-apple-macbook-pro-14-m4-pro.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1915,7 +10499,56 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "公开零售页面型号核对后的参考价",
       "updatedAt": "2026-09-28",
       "note": "价格会随地区、版本和促销活动变化，下单前以支付入口展示为准。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "内存",
+        "options": [
+          {
+            "id": "memory-8gb",
+            "label": "8GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 600
+          },
+          {
+            "id": "memory-32gb",
+            "label": "32GB",
+            "priceDelta": 2200
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "硬盘容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 500
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 1200
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-8gb",
+      "storage": "storage-256gb"
+    },
+    "displayName": "Apple MacBook Neo 13 英寸 A18 Pro 8GB+256GB"
   },
   {
     "id": "computer-honor-magicbook-x16-pro",
@@ -1939,11 +10572,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "深空灰",
-        "value": "#4d5157"
+        "value": "#4d5157",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "月光银",
-        "value": "#c8cacc"
+        "value": "#c8cacc",
+        "filter": "brightness(1.15) saturate(.5) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜色",
+        "value": "#293346",
+        "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          },
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          },
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          }
+        ]
+      },
+      {
+        "name": "星光色",
+        "value": "#e7dfcf",
+        "filter": "sepia(.12) brightness(1.16) saturate(.7)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          },
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          },
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          }
+        ]
+      },
+      {
+        "name": "天空蓝",
+        "value": "#9ab7d1",
+        "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          },
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          },
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          }
+        ]
+      },
+      {
+        "name": "玫瑰金",
+        "value": "#c6a29c",
+        "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          },
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          },
+          {
+            "src": "./assets/catalog/computer-honor-magicbook-x16-pro.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1954,7 +10747,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "公开零售页面型号核对后的参考价",
       "updatedAt": "2026-09-28",
       "note": "价格会随地区、版本和促销活动变化，下单前以支付入口展示为准。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "内存",
+        "options": [
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-32gb",
+            "label": "32GB",
+            "priceDelta": 1600
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "硬盘容量",
+        "options": [
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 700
+          },
+          {
+            "id": "storage-2tb",
+            "label": "2TB",
+            "priceDelta": 2700
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-16gb",
+      "storage": "storage-512gb"
+    },
+    "displayName": "荣耀 MagicBook X16 Pro 2025"
   },
   {
     "id": "computer-rog-zephyrus-g14",
@@ -1978,11 +10815,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "深空灰",
-        "value": "#4d5157"
+        "value": "#4d5157",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "月光银",
-        "value": "#c8cacc"
+        "value": "#c8cacc",
+        "filter": "brightness(1.15) saturate(.5) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜色",
+        "value": "#293346",
+        "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          },
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          },
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          }
+        ]
+      },
+      {
+        "name": "星光色",
+        "value": "#e7dfcf",
+        "filter": "sepia(.12) brightness(1.16) saturate(.7)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          },
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          },
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          }
+        ]
+      },
+      {
+        "name": "天空蓝",
+        "value": "#9ab7d1",
+        "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          },
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          },
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          }
+        ]
+      },
+      {
+        "name": "玫瑰金",
+        "value": "#c6a29c",
+        "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          },
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          },
+          {
+            "src": "./assets/catalog/computer-rog-zephyrus-g14.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          }
+        ]
       }
     ],
     "source": {
@@ -1993,7 +10990,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "公开零售页面型号核对后的参考价",
       "updatedAt": "2026-09-28",
       "note": "价格会随地区、版本和促销活动变化，下单前以支付入口展示为准。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "内存",
+        "options": [
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-32gb",
+            "label": "32GB",
+            "priceDelta": 1600
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "硬盘容量",
+        "options": [
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 700
+          },
+          {
+            "id": "storage-2tb",
+            "label": "2TB",
+            "priceDelta": 2700
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-16gb",
+      "storage": "storage-512gb"
+    },
+    "displayName": "ROG 幻 14 Air 2026 酷睿 Ultra 9 RTX 5070"
   },
   {
     "id": "computer-asus-tianxuan-6",
@@ -2017,11 +11058,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "深空灰",
-        "value": "#4d5157"
+        "value": "#4d5157",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "月光银",
-        "value": "#c8cacc"
+        "value": "#c8cacc",
+        "filter": "brightness(1.15) saturate(.5) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜色",
+        "value": "#293346",
+        "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          },
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          },
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          }
+        ]
+      },
+      {
+        "name": "星光色",
+        "value": "#e7dfcf",
+        "filter": "sepia(.12) brightness(1.16) saturate(.7)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          },
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          },
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          }
+        ]
+      },
+      {
+        "name": "天空蓝",
+        "value": "#9ab7d1",
+        "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          },
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          },
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          }
+        ]
+      },
+      {
+        "name": "玫瑰金",
+        "value": "#c6a29c",
+        "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          },
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          },
+          {
+            "src": "./assets/catalog/computer-asus-tianxuan-6.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          }
+        ]
       }
     ],
     "source": {
@@ -2032,7 +11233,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "公开零售页面型号核对后的参考价",
       "updatedAt": "2026-09-28",
       "note": "价格会随地区、版本和促销活动变化，下单前以支付入口展示为准。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "内存",
+        "options": [
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-32gb",
+            "label": "32GB",
+            "priceDelta": 1600
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "硬盘容量",
+        "options": [
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 700
+          },
+          {
+            "id": "storage-2tb",
+            "label": "2TB",
+            "priceDelta": 2700
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-16gb",
+      "storage": "storage-512gb"
+    },
+    "displayName": "华硕天选 7 Pro 酷睿版 RTX 5060"
   },
   {
     "id": "computer-hp-omen-10",
@@ -2056,11 +11301,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "深空灰",
-        "value": "#4d5157"
+        "value": "#4d5157",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "月光银",
-        "value": "#c8cacc"
+        "value": "#c8cacc",
+        "filter": "brightness(1.15) saturate(.5) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜色",
+        "value": "#293346",
+        "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          },
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          },
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          }
+        ]
+      },
+      {
+        "name": "星光色",
+        "value": "#e7dfcf",
+        "filter": "sepia(.12) brightness(1.16) saturate(.7)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          },
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          },
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          }
+        ]
+      },
+      {
+        "name": "天空蓝",
+        "value": "#9ab7d1",
+        "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          },
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          },
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          }
+        ]
+      },
+      {
+        "name": "玫瑰金",
+        "value": "#c6a29c",
+        "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          },
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          },
+          {
+            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          }
+        ]
       }
     ],
     "source": {
@@ -2071,7 +11476,51 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "公开零售页面型号核对后的参考价",
       "updatedAt": "2026-09-28",
       "note": "价格会随地区、版本和促销活动变化，下单前以支付入口展示为准。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "内存",
+        "options": [
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-32gb",
+            "label": "32GB",
+            "priceDelta": 1600
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "硬盘容量",
+        "options": [
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 700
+          },
+          {
+            "id": "storage-2tb",
+            "label": "2TB",
+            "priceDelta": 2700
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-16gb",
+      "storage": "storage-512gb"
+    },
+    "displayName": "惠普暗影精灵 10 游戏本"
   },
   {
     "id": "computer-lenovo-xiaoxin-pro-14",
@@ -2095,11 +11544,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "深空灰",
-        "value": "#4d5157"
+        "value": "#4d5157",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "月光银",
-        "value": "#c8cacc"
+        "value": "#c8cacc",
+        "filter": "brightness(1.15) saturate(.5) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜色",
+        "value": "#293346",
+        "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          },
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          },
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          }
+        ]
+      },
+      {
+        "name": "星光色",
+        "value": "#e7dfcf",
+        "filter": "sepia(.12) brightness(1.16) saturate(.7)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          },
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          },
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          }
+        ]
+      },
+      {
+        "name": "天空蓝",
+        "value": "#9ab7d1",
+        "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          },
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          },
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          }
+        ]
+      },
+      {
+        "name": "玫瑰金",
+        "value": "#c6a29c",
+        "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          },
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          },
+          {
+            "src": "./assets/catalog/computer-lenovo-xiaoxin-pro-14.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          }
+        ]
       }
     ],
     "source": {
@@ -2110,7 +11719,56 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "公开零售页面型号核对后的参考价",
       "updatedAt": "2026-09-28",
       "note": "价格会随地区、版本和促销活动变化，下单前以支付入口展示为准。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "内存",
+        "options": [
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": -800
+          },
+          {
+            "id": "memory-24gb",
+            "label": "24GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-32gb",
+            "label": "32GB",
+            "priceDelta": 800
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "硬盘容量",
+        "options": [
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": -700
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-2tb",
+            "label": "2TB",
+            "priceDelta": 2000
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-24gb",
+      "storage": "storage-1tb"
+    },
+    "displayName": "联想小新 Pro 14c 锐龙 7 H255 24GB+1TB"
   },
   {
     "id": "computer-thinkpad-x1-carbon-13",
@@ -2134,11 +11792,171 @@ window.MORROW_PRODUCTS = [
     "colors": [
       {
         "name": "深空灰",
-        "value": "#4d5157"
+        "value": "#4d5157",
+        "filter": "none",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "none"
+          },
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "none"
+          }
+        ]
       },
       {
         "name": "月光银",
-        "value": "#c8cacc"
+        "value": "#c8cacc",
+        "filter": "brightness(1.15) saturate(.5) contrast(.94)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          },
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
+          }
+        ]
+      },
+      {
+        "name": "午夜色",
+        "value": "#293346",
+        "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          },
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          },
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          }
+        ]
+      },
+      {
+        "name": "星光色",
+        "value": "#e7dfcf",
+        "filter": "sepia(.12) brightness(1.16) saturate(.7)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          },
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          },
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          }
+        ]
+      },
+      {
+        "name": "天空蓝",
+        "value": "#9ab7d1",
+        "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          },
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          },
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          }
+        ]
+      },
+      {
+        "name": "玫瑰金",
+        "value": "#c6a29c",
+        "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          },
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "54% 72%",
+            "scale": 1.28,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          },
+          {
+            "src": "./assets/catalog/computer-thinkpad-x1-carbon-13.jpg",
+            "position": "43% 38%",
+            "scale": 1.52,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
+          }
+        ]
       }
     ],
     "source": {
@@ -2149,6 +11967,50 @@ window.MORROW_PRODUCTS = [
       "priceBasis": "公开零售页面型号核对后的参考价",
       "updatedAt": "2026-09-28",
       "note": "价格会随地区、版本和促销活动变化，下单前以支付入口展示为准。"
-    }
+    },
+    "variantGroups": [
+      {
+        "id": "memory",
+        "label": "内存",
+        "options": [
+          {
+            "id": "memory-16gb",
+            "label": "16GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-32gb",
+            "label": "32GB",
+            "priceDelta": 1600
+          }
+        ]
+      },
+      {
+        "id": "storage",
+        "label": "硬盘容量",
+        "options": [
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 700
+          },
+          {
+            "id": "storage-2tb",
+            "label": "2TB",
+            "priceDelta": 2700
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "memory": "memory-16gb",
+      "storage": "storage-512gb"
+    },
+    "displayName": "联想 ThinkPad E14 2.8K AI 商务本"
   }
 ];
