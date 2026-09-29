@@ -3,130 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f4f7fb" />
-    <title>配送与售后 | MORROW</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <meta http-equiv="refresh" content="0; url=./service/" />
+    <title>正在打开配送与售后 | MORROW</title>
+    <script>
+      window.location.replace(`./service/${window.location.hash}`);
+    </script>
   </head>
   <body>
-    <a class="skip-link" href="#service-main">跳到主要内容</a>
-    <header class="site-header" aria-label="主导航">
-      <a class="brand" href="./index.html" aria-label="MORROW 首页">
-        <span class="brand-mark">M</span>
-        <span class="brand-word">MORROW</span>
-      </a>
-      <nav class="desktop-nav" aria-label="商店导航">
-        <a href="./index.html#catalog">选购</a>
-        <a href="./orders.html">我的</a>
-        <a href="./service.html" aria-current="page">配送与售后</a>
-        <a href="./admin.html">管理后台</a>
-      </nav>
-      <div class="header-actions">
-        <a class="icon-button" href="./orders.html" aria-label="我的订单">
-          <i data-lucide="user-round" aria-hidden="true"></i>
-        </a>
-        <a class="icon-button" href="./index.html#catalog" aria-label="返回商城">
-          <i data-lucide="shopping-bag" aria-hidden="true"></i>
-        </a>
-      </div>
-    </header>
-
-    <main id="service-main" class="system-page">
-      <section class="system-hero">
-        <p class="eyebrow">AFTER PURCHASE</p>
-        <h1>配送、退换、保修，讲清楚。</h1>
-        <p>
-          这里说明演示商城的配送规则、退换条件和售后处理方式。
-          页面右下角的虚拟客服可以回答常见问题，也能直接读取本机最近订单。
-        </p>
-      </section>
-
-      <section class="lookup-panel service-policy-panel" aria-labelledby="policy-title">
-        <div class="system-section-head">
-          <div>
-            <p class="eyebrow">SERVICE POLICY</p>
-            <h2 id="policy-title">服务标准</h2>
-          </div>
-          <span class="demo-pill">演示规则</span>
-        </div>
-        <div class="service-policy-grid">
-          <article class="service-policy-card">
-            <i data-lucide="truck" aria-hidden="true"></i>
-            <h3>配送时效</h3>
-            <p>现货商品预计 48 小时内出库。标准配送约 2 至 4 日，加急配送额外收取 ¥39，满 ¥999 免基础运费。</p>
-          </article>
-          <article class="service-policy-card">
-            <i data-lucide="refresh-cw" aria-hidden="true"></i>
-            <h3>退换条件</h3>
-            <p>签收后 30 天内可申请退换。商品、配件和包装需保持完整，人为损坏或缺少配件会影响退换。</p>
-          </article>
-          <article class="service-policy-card">
-            <i data-lucide="shield-check" aria-hidden="true"></i>
-            <h3>保修服务</h3>
-            <p>默认提供 2 年演示质保。手机、电脑和相机按品牌保修政策处理，家电以大件安装与检测流程为准。</p>
-          </article>
-          <article class="service-policy-card">
-            <i data-lucide="credit-card" aria-hidden="true"></i>
-            <h3>支付说明</h3>
-            <p>银行卡、支付宝和微信支付均为入口演示，不采集真实支付信息，也不会产生真实扣款或配送。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="lookup-panel service-flow-panel" aria-labelledby="flow-title">
-        <div class="system-section-head">
-          <div>
-            <p class="eyebrow">AFTER-SALES FLOW</p>
-            <h2 id="flow-title">售后怎么处理</h2>
-          </div>
-        </div>
-        <ol class="service-flow">
-          <li>
-            <strong>准备订单号</strong>
-            <span>在“我的”页面复制订单号，或在订单详情中查看购买配置。</span>
-          </li>
-          <li>
-            <strong>说明问题</strong>
-            <span>描述故障、配送或退换诉求，并准备商品外观与问题照片。</span>
-          </li>
-          <li>
-            <strong>确认处理方案</strong>
-            <span>客服会给出退换、检测或维修路径，并说明预计处理时间。</span>
-          </li>
-          <li>
-            <strong>跟进结果</strong>
-            <span>使用订单号继续查询状态，确认退款、换货或维修进度。</span>
-          </li>
-        </ol>
-      </section>
-
-      <section class="service-contact-band" aria-labelledby="contact-title">
-        <div>
-          <p class="eyebrow">SUPPORT</p>
-          <h2 id="contact-title">先问虚拟客服，通常就够了。</h2>
-          <p>演示服务时间：工作日 09:00 - 18:00。涉及复杂维修时，可留下订单号和问题描述。</p>
-        </div>
-        <div class="service-contact-actions">
-          <a class="button button-primary" href="./orders.html">
-            查看我的订单
-            <i data-lucide="receipt-text" aria-hidden="true"></i>
-          </a>
-          <button class="button button-secondary" type="button" data-action="open-support">
-            向虚拟客服提问
-            <i data-lucide="message-circle" aria-hidden="true"></i>
-          </button>
-        </div>
-      </section>
-    </main>
-
-    <footer class="system-footer">
-      <span>MORROW 商城系统 / 演示售后</span>
-      <span><a href="./orders.html">我的订单</a> / <a href="./index.html">返回商城</a></span>
-    </footer>
-
-    <script src="./assets/vendor/lucide.min.js"></script>
-    <script src="./support.js" defer></script>
-    <script>
-      window.lucide?.createIcons({ attrs: { "aria-hidden": "true" } });
-    </script>
+    <p>正在打开配送与售后，<a href="./service/">请点击这里</a>。</p>
   </body>
 </html>

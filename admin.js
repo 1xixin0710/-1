@@ -43,6 +43,12 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function resolveAssetUrl(value) {
+  const source = String(value ?? "");
+  if (!source || /^(?:[a-z][a-z0-9+.-]*:|\/)/i.test(source)) return source;
+  return new URL(source.replace(/^\.\//, ""), new URL("../", window.location.href)).href;
+}
+
 function formatCurrency(value) {
   return new Intl.NumberFormat("zh-CN", {
     style: "currency",
@@ -245,7 +251,7 @@ function renderProducts() {
         <tr data-product-row="${escapeHtml(product.id)}">
           <td>
             <div class="admin-product-cell">
-              <img src="${escapeHtml(product.image)}" alt="" width="1200" height="1500" />
+              <img src="${escapeHtml(resolveAssetUrl(product.image))}" alt="" width="1200" height="1500" />
               <div>
                 <strong>${escapeHtml(product.name)}</strong>
                 <span>${escapeHtml(product.brand)}</span>
@@ -346,7 +352,7 @@ function renderOrders() {
 
 async function loadAdminData() {
   try {
-    const payload = await adminRequest("./api/admin/summary");
+    const payload = await adminRequest("../api/admin/summary");
     adminState.summary = payload.summary;
     adminState.products = payload.products || [];
     adminState.orders = payload.orders || [];
@@ -418,7 +424,7 @@ document.addEventListener("click", async (event) => {
         saveStaticProduct(saveProduct.dataset.saveProduct, changes);
       } else {
         await adminRequest(
-          `./api/admin/products/${encodeURIComponent(saveProduct.dataset.saveProduct)}`,
+          `../api/admin/products/${encodeURIComponent(saveProduct.dataset.saveProduct)}`,
           {
             method: "PATCH",
             body: JSON.stringify(changes),
@@ -442,7 +448,7 @@ document.addEventListener("click", async (event) => {
         saveStaticOrder(saveOrder.dataset.saveOrder, status);
       } else {
         await adminRequest(
-          `./api/admin/orders/${encodeURIComponent(saveOrder.dataset.saveOrder)}`,
+          `../api/admin/orders/${encodeURIComponent(saveOrder.dataset.saveOrder)}`,
           {
             method: "PATCH",
             body: JSON.stringify({ status }),
@@ -468,7 +474,7 @@ adminDom.reset?.addEventListener("click", async () => {
     if (adminState.staticMode) {
       resetStaticData();
     } else {
-      await adminRequest("./api/admin/reset-demo", { method: "POST", body: "{}" });
+      await adminRequest("../api/admin/reset-demo", { method: "POST", body: "{}" });
     }
     showAdminToast("演示数据已重置", "订单已清空，库存和价格已恢复。");
     await loadAdminData();

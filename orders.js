@@ -27,6 +27,12 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function resolveAssetUrl(value) {
+  const source = String(value ?? "");
+  if (!source || /^(?:[a-z][a-z0-9+.-]*:|\/)/i.test(source)) return source;
+  return new URL(source.replace(/^\.\//, ""), new URL("../", window.location.href)).href;
+}
+
 function formatCurrency(value) {
   return new Intl.NumberFormat("zh-CN", {
     style: "currency",
@@ -155,7 +161,7 @@ function renderOrders(
                   .map(
                     (item) => `
                       <div class="order-result-item">
-                        <img src="${escapeHtml(item.image)}" alt="" width="1200" height="1500" />
+                        <img src="${escapeHtml(resolveAssetUrl(item.image))}" alt="" width="1200" height="1500" />
                         <div>
                           <strong>${escapeHtml(item.name)}</strong>
                           <span>${escapeHtml(item.variantLabel || item.color)} / 数量 ${item.quantity}</span>
@@ -193,7 +199,7 @@ lookupForm?.addEventListener("submit", async (event) => {
   try {
     const params = new URLSearchParams();
     params.set("orderNumber", orderNumber);
-    const response = await fetch(`./api/orders?${params.toString()}`);
+    const response = await fetch(`../api/orders?${params.toString()}`);
     const payload = await response.json();
     if (!response.ok) {
       renderEmpty("查询失败", payload.error?.message || "服务端未返回订单。", true);

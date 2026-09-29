@@ -1876,7 +1876,7 @@ document.addEventListener("click", (event) => {
       }
     }
     if (action === "open-orders") {
-      window.location.href = "./orders.html";
+      window.location.href = "./orders/";
     }
     if (action === "copy-order") {
       const orderNumber = event.target.closest("[data-order-number]")?.dataset.orderNumber;

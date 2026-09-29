@@ -591,7 +591,12 @@ async function handleApi(request, response, url) {
 }
 
 function serveStatic(response, pathname) {
-  const requested = pathname === "/" ? "/index.html" : pathname;
+  const requested =
+    pathname === "/"
+      ? "/index.html"
+      : pathname.endsWith("/")
+        ? `${pathname}index.html`
+        : pathname;
   const normalized = path.normalize(decodeURIComponent(requested)).replace(/^(\.\.[/\\])+/, "");
   const filePath = path.join(ROOT, normalized);
 
@@ -632,6 +637,6 @@ const server = http.createServer(async (request, response) => {
 
 server.listen(PORT, "127.0.0.1", () => {
   console.log(`MORROW Store running at http://127.0.0.1:${PORT}`);
-  console.log(`Admin console: http://127.0.0.1:${PORT}/admin.html`);
+  console.log(`Admin console: http://127.0.0.1:${PORT}/admin/`);
   console.log(`Demo admin code: ${ADMIN_CODE}`);
 });

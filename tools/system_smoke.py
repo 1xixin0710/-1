@@ -103,7 +103,7 @@ def run_desktop(browser):
     after_order = api("/api/products/phone-anchor-2177308")["product"]
     assert after_order["stock"] == previous_stock - 1
 
-    page.goto(f"{BASE_URL}/orders.html", wait_until="networkidle")
+    page.goto(f"{BASE_URL}/orders/", wait_until="networkidle")
     page.wait_for_selector(".order-result-card")
     assert page.locator(".order-result-card").count() >= 1
     page.locator('input[name="orderNumber"]').fill(order_number)
@@ -112,7 +112,7 @@ def run_desktop(browser):
     assert order_number in page.locator(".order-result-card").inner_text()
     assert "支付宝" in page.locator(".order-result-card").inner_text()
 
-    page.goto(f"{BASE_URL}/admin.html", wait_until="networkidle")
+    page.goto(f"{BASE_URL}/admin/", wait_until="networkidle")
     page.locator('input[name="code"]').fill("2026")
     page.locator("[data-admin-login] button[type='submit']").click()
     page.wait_for_selector("#admin-console:not([hidden])")
@@ -139,7 +139,7 @@ def run_desktop(browser):
     page.wait_for_timeout(250)
     assert api("/api/orders?email=linmo@example.com")["orders"] == []
 
-    page.goto(f"{BASE_URL}/service.html", wait_until="networkidle")
+    page.goto(f"{BASE_URL}/service/", wait_until="networkidle")
     page.locator("[data-support-trigger]").click()
     page.locator("[data-support-form] input[name='message']").fill("多久发货")
     page.locator("[data-support-form]").press("Enter")
@@ -180,14 +180,14 @@ def run_mobile(browser):
     assert broken_images == [], f"Broken images: {broken_images}"
     assert errors == [], f"Mobile errors: {errors}"
 
-    page.goto(f"{BASE_URL}/orders.html", wait_until="networkidle")
+    page.goto(f"{BASE_URL}/orders/", wait_until="networkidle")
     assert page.locator("body").evaluate("el => el.scrollWidth <= window.innerWidth + 1")
-    page.goto(f"{BASE_URL}/service.html", wait_until="networkidle")
+    page.goto(f"{BASE_URL}/service/", wait_until="networkidle")
     assert page.locator("body").evaluate("el => el.scrollWidth <= window.innerWidth + 1")
     page.locator("[data-support-trigger]").click()
     assert page.locator("[data-support-panel]").is_visible()
     assert page.locator("body").evaluate("el => el.scrollWidth <= window.innerWidth + 1")
-    page.goto(f"{BASE_URL}/admin.html", wait_until="networkidle")
+    page.goto(f"{BASE_URL}/admin/", wait_until="networkidle")
     assert page.locator("body").evaluate("el => el.scrollWidth <= window.innerWidth + 1")
 
     page.screenshot(path=str(SHOTS / "mobile-admin.png"), full_page=False)
