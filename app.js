@@ -329,6 +329,25 @@ function productDisplayName(product) {
   return product?.displayName || product?.name || "";
 }
 
+const SEARCH_CATEGORY_ALIASES = {
+  phone: ["手机数码", "智能手机", "手机"],
+  computer: ["电脑办公", "笔记本电脑", "台式电脑", "轻薄本", "游戏本", "笔记本", "电脑"],
+  camera: ["摄影器材", "数码相机", "微单相机", "单反相机", "相机", "摄影", "微单", "单反", "镜头"],
+  appliance: ["家用电器", "洗衣机", "电冰箱", "空调", "家电", "电器", "电视", "冰箱"],
+};
+
+const SEARCH_CATEGORY_LOOKUP = Object.entries(SEARCH_CATEGORY_ALIASES)
+  .flatMap(([category, aliases]) => aliases.map((alias) => [alias, category]))
+  .sort((a, b) => b[0].length - a[0].length);
+
+function searchCategoryIntent(query) {
+  const normalized = query.toLocaleLowerCase("zh-CN");
+  return (
+    SEARCH_CATEGORY_LOOKUP.find(([alias]) => normalized.includes(alias))?.[1] ||
+    null
+  );
+}
+
 function productSearchText(product) {
   const variantLabels = variantGroups(product)
     .flatMap((group) => [group.label, ...group.options.map((option) => option.label)])
@@ -337,13 +356,30 @@ function productSearchText(product) {
     product.name,
     product.displayName,
     product.brand,
-    product.description,
-    product.materials,
+    product.series,
+    product.categoryLabel,
+    SEARCH_CATEGORY_ALIASES[product.category]?.join(" "),
     variantLabels,
   ]
     .filter(Boolean)
     .join(" ")
     .toLowerCase();
+}
+
+function matchesProductQuery(product, query) {
+  const normalized = query.toLocaleLowerCase("zh-CN");
+  const category = searchCategoryIntent(normalized);
+  const haystack = productSearchText(product);
+
+  if (!category) return haystack.includes(normalized);
+  if (product.category !== category) return false;
+
+  const remaining = SEARCH_CATEGORY_ALIASES[category]
+    .reduce((text, alias) => text.replaceAll(alias, " "), normalized)
+    .replace(/\s+/g, " ")
+    .trim();
+
+  return !remaining || remaining.split(" ").every((token) => haystack.includes(token));
 }
 
 function formatCurrency(value) {
@@ -528,15 +564,12 @@ function getFilteredProducts() {
       state.priceBand,
     );
     const matchesStock = !state.inStockOnly || product.stock > 0;
-    const haystack = `${product.series} ${productSearchText(product)}`.toLocaleLowerCase(
-      "zh-CN",
-    );
     return (
       matchesCategory &&
       matchesBrand &&
       matchesPrice &&
       matchesStock &&
-      (!query || haystack.includes(query))
+      (!query || matchesProductQuery(product, query))
     );
   });
 
@@ -574,7 +607,9 @@ function renderCatalog(forceSkeleton = false) {
   }
 
   const filtered = getFilteredProducts();
-  const visible = filtered.slice(0, state.visibleCount);
+  const visible = state.search
+    ? filtered
+    : filtered.slice(0, state.visibleCount);
 
   if (dom.catalogMeta) {
     dom.catalogMeta.innerHTML = `

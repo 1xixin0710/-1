@@ -44,6 +44,24 @@ def run_desktop(browser):
     page.wait_for_timeout(100)
     assert page.locator(".product-card").count() == 25
 
+    page.locator('.site-header [data-action="open-search"]').click()
+    page.locator("[data-search-input]").fill("相机")
+    page.locator("[data-search-input]").press("Enter")
+    page.wait_for_timeout(150)
+    assert page.locator(".product-card").count() == 16
+    assert "共 16 件商品，当前显示 16 件" in page.locator("[data-catalog-meta]").inner_text()
+    search_product_ids = page.locator(".product-card [data-product-open]").evaluate_all(
+        "nodes => nodes.map(node => node.dataset.productOpen)"
+    )
+    assert search_product_ids
+    assert all(product_id.startswith("camera-") for product_id in search_product_ids)
+
+    page.locator('.site-header [data-action="open-search"]').click()
+    page.locator("[data-search-input]").fill("")
+    page.locator("[data-search-input]").press("Enter")
+    page.wait_for_timeout(100)
+
+    page.locator('[data-category="phone"]').click()
     page.locator("[data-brand-filter]").select_option(label="苹果")
     page.wait_for_timeout(100)
     assert page.locator(".product-card").count() == 3
