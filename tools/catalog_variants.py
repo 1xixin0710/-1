@@ -334,6 +334,17 @@ COLOR_GALLERY_OVERRIDES = {
     "computer-apple-macbook-air-m4": MACBOOK_AIR_GALLERY,
 }
 
+IPHONE_PANORAMA_IMAGES = {
+    "勃艮第酒红色": "./assets/catalog/iphone-18-pro-hero-burgundy.jpg",
+    "冰川蓝": "./assets/catalog/iphone-18-pro-hero-glacier.jpg",
+    "银色": "./assets/catalog/iphone-18-pro-hero-silver.jpg",
+    "黑色": "./assets/catalog/iphone-18-pro-hero-black.jpg",
+}
+
+PRICE_OVERRIDES = {
+    "computer-rog-zephyrus-g14": 21999,
+}
+
 
 def size_label(value: int) -> str:
     if value >= 1024 and value % 1024 == 0:
@@ -490,29 +501,37 @@ def gallery_view(
 def build_color_gallery(product: dict, color: dict) -> list[dict]:
     source = str(color.get("image") or product.get("image") or "")
     filter_value = str(color.get("filter") or "none")
-    return [
-        gallery_view(source, "50% 50%", 1, filter_value),
-        gallery_view(source, "54% 72%", 1.28, filter_value),
-        gallery_view(source, "43% 38%", 1.52, filter_value),
-    ]
+    return [gallery_view(source, "50% 50%", 1, filter_value)]
 
 
 def enrich_colors(product: dict) -> None:
-    override = COLOR_GALLERY_OVERRIDES.get(str(product.get("id") or ""))
+    product_id = str(product.get("id") or "")
+    override = COLOR_GALLERY_OVERRIDES.get(product_id)
     if override:
+        is_iphone = product_id in {"phone-anchor-2177308", "phone-009-2177461"}
         product["colors"] = [
             {
                 **{key: value for key, value in color.items() if key != "gallery"},
-                "gallery": [dict(item) for item in color["gallery"]],
+                "gallery": [
+                    (
+                        {
+                            "src": IPHONE_PANORAMA_IMAGES.get(
+                                color["name"],
+                                "./assets/catalog/iphone-18-pro-hero.jpg",
+                            ),
+                            "position": "50% 50%",
+                            "scale": 1,
+                            "fit": "contain",
+                            "filter": "none",
+                        }
+                        if is_iphone and index == 0
+                        else {**dict(item), "fit": "contain"}
+                    )
+                    for index, item in enumerate(color["gallery"])
+                ],
             }
             for color in override
         ]
-        return
-
-    current = product.get("colors")
-    if isinstance(current, list) and len(current) >= 4 and all(
-        isinstance(color, dict) and color.get("gallery") for color in current
-    ):
         return
 
     palette = COLOR_SETS.get(str(product.get("category") or ""), [])
@@ -530,6 +549,9 @@ def enrich_colors(product: dict) -> None:
 
 def enrich_catalog(catalog: list[dict]) -> list[dict]:
     for product in catalog:
+        if product.get("id") in PRICE_OVERRIDES:
+            product["price"] = PRICE_OVERRIDES[product["id"]]
+            product["priceLabel"] = f"¥{product['price']}"
         enrich_colors(product)
         variant_groups, default_variant, display_name = build_variant_groups(product)
         if not variant_groups:

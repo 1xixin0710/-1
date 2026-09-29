@@ -23,11 +23,15 @@
 
         <nav class="desktop-nav" aria-label="商店导航">
           <a href="#catalog" data-scroll-target="catalog">选购</a>
-          <a href="./orders.html">订单查询</a>
+          <a href="./service.html">配送与售后</a>
+          <a href="./orders.html">我的</a>
           <a href="./admin.html">管理后台</a>
         </nav>
 
         <div class="header-actions">
+          <a class="icon-button header-account" href="./orders.html" aria-label="我的订单">
+            <i data-lucide="user-round" aria-hidden="true"></i>
+          </a>
           <button class="icon-button" type="button" data-action="open-search" aria-label="搜索商品">
             <i data-lucide="search" aria-hidden="true"></i>
           </button>
@@ -227,8 +231,8 @@
         <div class="footer-links">
           <a href="#catalog" data-scroll-target="catalog">全部商品</a>
           <a href="#story" data-scroll-target="story">品牌理念</a>
-          <a href="#service" data-scroll-target="service">配送与售后</a>
-          <a href="./orders.html">订单查询</a>
+          <a href="./service.html">配送与售后</a>
+          <a href="./orders.html">我的订单</a>
           <a href="./admin.html">管理后台</a>
         </div>
         <p class="footer-note">
@@ -292,7 +296,8 @@
       </div>
       <nav class="mobile-nav-links" aria-label="移动端导航">
         <a href="#catalog" data-scroll-target="catalog">选购</a>
-        <a href="./orders.html">订单查询</a>
+        <a href="./service.html">配送与售后</a>
+        <a href="./orders.html">我的订单</a>
         <a href="./admin.html">管理后台</a>
         <button type="button" data-action="open-search">搜索</button>
       </nav>
@@ -303,6 +308,7 @@
 
     <script src="./data/catalog.js"></script>
     <script src="./assets/vendor/lucide.min.js"></script>
+    <script src="./support.js" defer></script>
     <script src="./app.js" defer></script>
   </body>
 </html>

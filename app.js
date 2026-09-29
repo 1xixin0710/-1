@@ -751,6 +751,7 @@ function renderProduct(productId, preserveQuantity = false) {
     Math.min(Number(state.galleryIndex || 0), gallery.length - 1),
   );
   const activeGalleryItem = gallery[galleryIndex];
+  const isPanorama = activeGalleryItem.fit === "contain";
   const colorOptions = product.colors
     .map(
       (color) => `
@@ -839,7 +840,7 @@ function renderProduct(productId, preserveQuantity = false) {
             )
             .join("")}
         </div>
-        <div class="gallery-main">
+        <div class="gallery-main${isPanorama ? " is-panorama" : ""}">
           <img
             src="${escapeHtml(activeGalleryItem.src)}"
             alt="${escapeHtml(`${productDisplayName(product)}，${colorName}，商品图 ${galleryIndex + 1}`)}"
@@ -1631,6 +1632,7 @@ async function completeOrder(checkout) {
   state.paymentStage = "idle";
   writeStorage(STORAGE_KEYS.orders, state.orders);
   persistCart();
+  showToast("订单已创建", `订单号 ${order.orderNumber}`);
   navigate("confirmation");
   loadProductsFromApi(true);
 }
@@ -1679,7 +1681,7 @@ function renderConfirmation() {
       <div class="confirmation-meta">
         <div>
           <span>订单编号</span>
-          <strong>${escapeHtml(order.orderNumber)}</strong>
+          <strong data-confirmation-order-number>${escapeHtml(order.orderNumber)}</strong>
         </div>
         <div>
           <span>支付状态</span>
@@ -1690,6 +1692,22 @@ function renderConfirmation() {
           <strong>${deliveryText}</strong>
         </div>
       </div>
+
+      <section class="confirmation-order-panel" aria-label="订单号">
+        <div>
+          <p class="eyebrow">ORDER NUMBER</p>
+          <h2>请保存这个订单号</h2>
+          <p>之后可以直接在“我的”页面查看订单，也可以用订单号单独查询。</p>
+        </div>
+        <div class="confirmation-order-number">
+          <span>订单号</span>
+          <strong>${escapeHtml(order.orderNumber)}</strong>
+          <button class="button button-secondary" type="button" data-action="copy-order" data-order-number="${escapeHtml(order.orderNumber)}">
+            复制订单号
+            <i data-lucide="copy" aria-hidden="true"></i>
+          </button>
+        </div>
+      </section>
 
       <aside class="order-summary" style="margin-top: 34px; position: static; box-shadow: none;">
         <h2>订单内容</h2>
@@ -1738,13 +1756,13 @@ function renderConfirmation() {
       </aside>
 
       <div class="confirmation-actions">
-        <button class="button button-primary" type="button" data-action="back-store">
-          返回商店
-          <i data-lucide="arrow-right" aria-hidden="true"></i>
-        </button>
         <button class="button button-secondary" type="button" data-action="open-orders">
-          查看本地订单记录
+          进入我的订单
           <i data-lucide="receipt-text" aria-hidden="true"></i>
+        </button>
+        <button class="button button-primary" type="button" data-action="back-store">
+          继续选购
+          <i data-lucide="arrow-right" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -1859,6 +1877,15 @@ document.addEventListener("click", (event) => {
     }
     if (action === "open-orders") {
       window.location.href = "./orders.html";
+    }
+    if (action === "copy-order") {
+      const orderNumber = event.target.closest("[data-order-number]")?.dataset.orderNumber;
+      if (orderNumber && navigator.clipboard) {
+        navigator.clipboard
+          .writeText(orderNumber)
+          .then(() => showToast("订单号已复制", orderNumber))
+          .catch(() => showToast("复制失败", "请手动记录订单号。", true));
+      }
     }
     return;
   }

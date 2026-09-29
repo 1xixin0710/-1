@@ -96,9 +96,14 @@ function renderEmpty(title, message, isError = false) {
   refreshIcons();
 }
 
-function renderOrders(orders, sourceLabel = "当前演示服务端") {
+function renderOrders(
+  orders,
+  sourceLabel = "当前演示服务端",
+  emptyTitle = "没有找到订单",
+  emptyMessage = "请检查订单号是否正确。",
+) {
   if (orders.length === 0) {
-    renderEmpty("没有找到订单", "请检查订单编号或邮箱是否正确。");
+    renderEmpty(emptyTitle, emptyMessage);
     return;
   }
 
@@ -117,9 +122,15 @@ function renderOrders(orders, sourceLabel = "当前演示服务端") {
                   <p>${formatDate(order.createdAt)}</p>
                   <h2>${escapeHtml(order.orderNumber)}</h2>
                 </div>
-                <span class="status-chip status-${escapeHtml(order.status)}">
-                  ${escapeHtml(statusLabels[order.status] || order.status)}
-                </span>
+                <div class="order-result-actions">
+                  <span class="status-chip status-${escapeHtml(order.status)}">
+                    ${escapeHtml(statusLabels[order.status] || order.status)}
+                  </span>
+                  <button class="order-copy" type="button" data-copy-order="${escapeHtml(order.orderNumber)}">
+                    <i data-lucide="copy" aria-hidden="true"></i>
+                    复制订单号
+                  </button>
+                </div>
               </div>
               <div class="order-result-meta">
                 <div>
@@ -172,36 +183,53 @@ lookupForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
   const values = Object.fromEntries(new FormData(lookupForm).entries());
   const orderNumber = String(values.orderNumber || "").trim();
-  const email = String(values.email || "").trim().toLowerCase();
 
-  if (!orderNumber && !email) {
-    renderEmpty("请先填写查询条件", "订单编号和邮箱至少填写一项。", true);
+  if (!orderNumber) {
+    renderEmpty("请先填写订单号", "输入结账完成后显示的订单编号即可查询。", true);
     return;
   }
 
   renderEmpty("正在查询", "正在读取服务端订单记录。");
   try {
     const params = new URLSearchParams();
-    if (orderNumber) params.set("orderNumber", orderNumber);
-    if (email) params.set("email", email);
+    params.set("orderNumber", orderNumber);
     const response = await fetch(`./api/orders?${params.toString()}`);
     const payload = await response.json();
     if (!response.ok) {
       renderEmpty("查询失败", payload.error?.message || "服务端未返回订单。", true);
       return;
     }
-    renderOrders(payload.orders || []);
+    const localMatches = getLocalOrders()
+      .map(normalizeLocalOrder)
+      .filter((order) => order.orderNumber === orderNumber);
+    renderOrders(
+      payload.orders?.length ? payload.orders : localMatches,
+      payload.orders?.length ? "当前演示服务端" : "浏览器本地演示数据",
+    );
   } catch {
     const orders = getLocalOrders()
       .map(normalizeLocalOrder)
-      .filter((order) => {
-        const matchesNumber = orderNumber && order.orderNumber === orderNumber;
-        const matchesEmail =
-          email && String(order.customer.email || "").toLowerCase() === email;
-        return matchesNumber || matchesEmail;
-      });
+      .filter((order) => order.orderNumber === orderNumber);
     renderOrders(orders, "浏览器本地演示数据");
   }
 });
 
+document.addEventListener("click", async (event) => {
+  const copyButton = event.target.closest("[data-copy-order]");
+  if (!copyButton) return;
+  const orderNumber = copyButton.dataset.copyOrder;
+  try {
+    await navigator.clipboard.writeText(orderNumber);
+    copyButton.textContent = "已复制";
+  } catch {
+    copyButton.textContent = "复制失败";
+  }
+});
+
+renderOrders(
+  getLocalOrders().map(normalizeLocalOrder),
+  "当前浏览器",
+  "还没有订单",
+  "完成一次商城结账后，订单号和购买内容会自动显示在这里。",
+);
 refreshIcons();

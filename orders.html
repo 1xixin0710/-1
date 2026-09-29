@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f4f7fb" />
-    <title>订单查询 | MORROW</title>
+    <title>我的订单 | MORROW</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -16,10 +16,14 @@
       </a>
       <nav class="desktop-nav" aria-label="商店导航">
         <a href="./index.html#catalog">选购</a>
-        <a href="./orders.html" aria-current="page">订单查询</a>
+        <a href="./service.html">配送与售后</a>
+        <a href="./orders.html" aria-current="page">我的</a>
         <a href="./admin.html">管理后台</a>
       </nav>
       <div class="header-actions">
+        <a class="icon-button" href="./index.html" aria-label="我的订单">
+          <i data-lucide="user-round" aria-hidden="true"></i>
+        </a>
         <a class="icon-button" href="./index.html#catalog" aria-label="返回商城">
           <i data-lucide="shopping-bag" aria-hidden="true"></i>
         </a>
@@ -28,40 +32,31 @@
 
     <main id="order-main" class="system-page">
       <section class="system-hero">
-        <p class="eyebrow">ORDER TRACKING</p>
-        <h1>查订单，不绕路。</h1>
+        <p class="eyebrow">MY ORDERS</p>
+        <h1>我的订单，一目了然。</h1>
         <p>
-          输入订单编号或下单邮箱，即可查看演示订单的商品、金额、配送地址和当前状态。
-          系统不会返回真实物流数据。
+          页面会直接显示当前浏览器保存的订单，包括订单号、商品、金额和状态。
+          你也可以只输入订单号，从演示服务端重新查询。
         </p>
       </section>
 
       <section class="lookup-panel" aria-labelledby="lookup-title">
         <div class="system-section-head">
           <div>
-            <p class="eyebrow">LOOKUP</p>
-            <h2 id="lookup-title">订单查询</h2>
+            <p class="eyebrow">ORDER LOOKUP</p>
+            <h2 id="lookup-title">按订单号查询</h2>
           </div>
           <span class="demo-pill">演示数据</span>
         </div>
 
-        <form class="order-lookup-form" data-order-lookup>
+        <form class="order-lookup-form is-single" data-order-lookup>
           <label class="field">
             <span>订单编号</span>
             <input
               type="text"
               name="orderNumber"
-              placeholder="例如 MR20260928ABC12"
+              placeholder="例如 MR-20260928-ABC12"
               autocomplete="off"
-            />
-          </label>
-          <label class="field">
-            <span>下单邮箱</span>
-            <input
-              type="email"
-              name="email"
-              placeholder="用于订单查询的电子邮箱"
-              autocomplete="email"
             />
           </label>
           <button class="button button-primary" type="submit">
@@ -69,24 +64,25 @@
             <i data-lucide="search" aria-hidden="true"></i>
           </button>
         </form>
-        <p class="form-footnote">订单编号和邮箱填写任意一项即可。演示订单会持久保存在服务端 JSON 文件中。</p>
+        <p class="form-footnote">只需要订单号。上方“我的订单”列表会自动读取当前浏览器中的本地订单。</p>
       </section>
 
       <section id="order-results" class="order-results" aria-live="polite">
         <div class="system-empty">
           <i data-lucide="receipt-text" aria-hidden="true"></i>
-          <h2>等待查询</h2>
-          <p>完成一次商城结账后，可使用订单编号或邮箱在这里查看。</p>
+          <h2>正在读取我的订单</h2>
+          <p>完成一次商城结账后，订单号和商品会显示在这里。</p>
         </div>
       </section>
     </main>
 
     <footer class="system-footer">
       <span>MORROW 商城系统 / 演示支付</span>
-      <a href="./index.html">返回商城</a>
+      <span><a href="./service.html">配送与售后</a> / <a href="./index.html">返回商城</a></span>
     </footer>
 
     <script src="./assets/vendor/lucide.min.js"></script>
+    <script src="./support.js" defer></script>
     <script src="./orders.js" defer></script>
   </body>
 </html>

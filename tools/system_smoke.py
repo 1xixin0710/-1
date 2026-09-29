@@ -62,7 +62,7 @@ def run_desktop(browser):
     assert "冰川蓝" in page.locator("[data-selected-color-label]").inner_text()
     glacier_gallery_image = page.locator(".gallery-main img").get_attribute("src")
     assert glacier_gallery_image != initial_gallery_image
-    assert "iphone-18-pro-glacier" in glacier_gallery_image
+    assert "iphone-18-pro-hero-glacier" in glacier_gallery_image
     page.locator('[data-gallery-thumb="1"]').click()
     assert page.locator(".gallery-counter").inner_text().strip() == "2 / 3"
     assert page.locator(".gallery-main img").get_attribute("src") != glacier_gallery_image
@@ -92,6 +92,8 @@ def run_desktop(browser):
     page.wait_for_timeout(80)
     page.locator("[data-checkout-form] button[type='submit']").click()
     page.wait_for_selector(".confirmation-icon", timeout=7000)
+    assert page.locator("[data-confirmation-order-number]").count() == 1
+    assert page.locator(".confirmation-order-number").inner_text().strip()
 
     order_number = page.locator(".confirmation-meta strong").first.inner_text().strip()
     assert order_number.startswith("MR")
@@ -102,6 +104,8 @@ def run_desktop(browser):
     assert after_order["stock"] == previous_stock - 1
 
     page.goto(f"{BASE_URL}/orders.html", wait_until="networkidle")
+    page.wait_for_selector(".order-result-card")
+    assert page.locator(".order-result-card").count() >= 1
     page.locator('input[name="orderNumber"]').fill(order_number)
     page.locator("[data-order-lookup] button[type='submit']").click()
     page.wait_for_selector(".order-result-card")
@@ -134,6 +138,12 @@ def run_desktop(browser):
     page.locator("[data-admin-reset]").click()
     page.wait_for_timeout(250)
     assert api("/api/orders?email=linmo@example.com")["orders"] == []
+
+    page.goto(f"{BASE_URL}/service.html", wait_until="networkidle")
+    page.locator("[data-support-trigger]").click()
+    page.locator("[data-support-form] input[name='message']").fill("多久发货")
+    page.locator("[data-support-form]").press("Enter")
+    assert "48 小时" in page.locator("[data-support-messages]").inner_text()
 
     page.goto(f"{BASE_URL}/index.html", wait_until="networkidle")
     page.screenshot(path=str(SHOTS / "desktop-store.png"), full_page=True)
@@ -171,6 +181,11 @@ def run_mobile(browser):
     assert errors == [], f"Mobile errors: {errors}"
 
     page.goto(f"{BASE_URL}/orders.html", wait_until="networkidle")
+    assert page.locator("body").evaluate("el => el.scrollWidth <= window.innerWidth + 1")
+    page.goto(f"{BASE_URL}/service.html", wait_until="networkidle")
+    assert page.locator("body").evaluate("el => el.scrollWidth <= window.innerWidth + 1")
+    page.locator("[data-support-trigger]").click()
+    assert page.locator("[data-support-panel]").is_visible()
     assert page.locator("body").evaluate("el => el.scrollWidth <= window.innerWidth + 1")
     page.goto(f"{BASE_URL}/admin.html", wait_until="networkidle")
     assert page.locator("body").evaluate("el => el.scrollWidth <= window.innerWidth + 1")
