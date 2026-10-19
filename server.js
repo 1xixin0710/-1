@@ -146,6 +146,23 @@ function variantPrice(product, selections = {}) {
   return Math.max(0, Number(product.price || 0) + delta);
 }
 
+function livePrice(product, timestamp) {
+  const base = Number(product.price || 0);
+  const seed = String(product.id)
+    .split("")
+    .reduce((hash, character) => (hash * 31 + character.charCodeAt(0)) % 100000, 7);
+  const tick = Math.floor(timestamp / 15000);
+  const wave =
+    Math.sin(tick * 0.73 + seed) * 0.012 +
+    Math.sin(tick * 0.21 + seed * 1.7) * 0.007;
+  const volatility = base >= 10000 ? 0.55 : base >= 4000 ? 0.8 : 1;
+  const step = base >= 4000 ? 10 : base >= 800 ? 5 : 1;
+  return Math.max(
+    step,
+    Math.round((base * (1 + wave * volatility)) / step) * step,
+  );
+}
+
 function variantLabel(product, selections = {}) {
   const normalized = normalizeVariantSelections(product, selections);
   return variantGroups(product)
@@ -228,6 +245,7 @@ function getPublicOrder(order) {
     discount: order.discount,
     total: order.total,
     paymentMethod: order.paymentMethod,
+    quoteAt: order.quoteAt,
   };
 }
 
@@ -379,9 +397,19 @@ async function handleApi(request, response, url) {
         return;
       }
 
+      const requestedQuoteAt = Number(payload.quoteAt);
+      const quoteAt =
+        Number.isFinite(requestedQuoteAt) &&
+        Math.abs(Date.now() - requestedQuoteAt) <= 60_000
+          ? requestedQuoteAt
+          : Date.now();
       const items = payload.items.map((item) => {
         const product = productById(item.productId);
         const variant = normalizeVariantSelections(product, item.variant || {});
+        const quotedProduct = {
+          ...product,
+          price: livePrice(product, quoteAt),
+        };
         return {
           productId: product.id,
           name: product.displayName || product.name,
@@ -390,7 +418,7 @@ async function handleApi(request, response, url) {
           variant,
           variantLabel: variantLabel(product, variant),
           quantity: Number(item.quantity),
-          price: variantPrice(product, variant),
+          price: variantPrice(quotedProduct, variant),
           image: product.image,
         };
       });
@@ -400,10 +428,13 @@ async function handleApi(request, response, url) {
       );
       const baseShipping = subtotal >= 999 ? 0 : 49;
       const expressFee = payload.deliveryMethod === "express" ? 39 : 0;
-      const discount =
+      const promoDiscount =
         String(payload.discountCode || "").toUpperCase() === "MORROW10"
           ? Math.round(subtotal * 0.1)
           : 0;
+      const couponDiscount =
+        payload.couponApplied === true && subtotal >= 1999 ? 100 : 0;
+      const discount = promoDiscount + couponDiscount;
       const shipping = baseShipping + expressFee;
 
       const order = {
@@ -430,6 +461,7 @@ async function handleApi(request, response, url) {
         discount,
         total: Math.max(0, subtotal + shipping - discount),
         note: String(payload.note || "").trim(),
+        quoteAt: new Date(quoteAt).toISOString(),
       };
 
       items.forEach((item) => {

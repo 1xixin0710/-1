@@ -4,6 +4,7 @@ const STORAGE_KEYS = {
   cart: "morrow.cart.v1",
   orders: "morrow.orders.v1",
   discount: "morrow.discount.v1",
+  coupon: "morrow.coupon.v1",
 };
 
 const legacyProducts = [
@@ -165,6 +166,16 @@ const products = Array.isArray(window.MORROW_PRODUCTS)
   ? [...window.MORROW_PRODUCTS]
   : legacyProducts;
 
+function rememberBasePrices() {
+  products.forEach((product) => {
+    product.basePrice = Number(product.basePrice || product.price || 0);
+    product.previousLivePrice = Number(product.price || product.basePrice);
+    product.liveChange = 0;
+  });
+}
+
+rememberBasePrices();
+
 const state = {
   route: "store",
   category: "all",
@@ -176,6 +187,8 @@ const state = {
   visibleCount: 16,
   catalogSource: "本地商品数据",
   priceUpdatedAt: "2026-09-28",
+  marketUpdatedAt: new Date(),
+  couponClaimed: readStorage(STORAGE_KEYS.coupon, false),
   activeProductId: null,
   selectedColors: {},
   selectedVariants: {},
@@ -211,6 +224,18 @@ const dom = {
   priceFilter: document.querySelector("[data-price-filter]"),
   stockFilter: document.querySelector("[data-stock-filter]"),
   toastRegion: document.querySelector("#toast-region"),
+  marketClock: document.querySelector("[data-market-clock]"),
+  dealGrid: document.querySelector("[data-deal-grid]"),
+  dealCountdown: document.querySelector("[data-deal-countdown]"),
+  sceneGrid: document.querySelector("[data-scene-grid]"),
+  heroName: document.querySelector("[data-hero-name]"),
+  heroSubtitle: document.querySelector("[data-hero-subtitle]"),
+  heroImage: document.querySelector("[data-hero-image]"),
+  heroPrice: document.querySelector("[data-hero-price]"),
+  heroChange: document.querySelector("[data-hero-change]"),
+  heroOpen: document.querySelector("[data-hero-open]"),
+  marketSearchForm: document.querySelector("[data-market-search]"),
+  marketSearchInput: document.querySelector("[data-market-search-input]"),
 };
 
 function readStorage(key, fallback) {
@@ -333,6 +358,9 @@ const SEARCH_CATEGORY_ALIASES = {
   phone: ["手机数码", "智能手机", "手机"],
   computer: ["电脑办公", "笔记本电脑", "台式电脑", "轻薄本", "游戏本", "笔记本", "电脑"],
   camera: ["摄影器材", "数码相机", "微单相机", "单反相机", "相机", "摄影", "微单", "单反", "镜头"],
+  audio: ["耳机影音", "降噪耳机", "蓝牙耳机", "头戴耳机", "入耳耳机", "耳机", "音箱", "音响"],
+  tablet: ["平板电脑", "学习平板", "娱乐平板", "平板"],
+  desk: ["桌面办公", "机械键盘", "无线鼠标", "游戏鼠标", "键盘", "鼠标", "外设"],
   appliance: ["家用电器", "洗衣机", "电冰箱", "空调", "家电", "电器", "电视", "冰箱"],
 };
 
@@ -389,6 +417,231 @@ function formatCurrency(value) {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
   }).format(value);
+}
+
+function hashSeed(value) {
+  return String(value)
+    .split("")
+    .reduce((hash, character) => (hash * 31 + character.charCodeAt(0)) % 100000, 7);
+}
+
+function calculateLivePrice(product, timestamp = Date.now()) {
+  const base = Number(product.basePrice || product.price || 0);
+  const seed = hashSeed(product.id);
+  const tick = Math.floor(timestamp / 15000);
+  const wave =
+    Math.sin(tick * 0.73 + seed) * 0.012 +
+    Math.sin(tick * 0.21 + seed * 1.7) * 0.007;
+  const volatility = base >= 10000 ? 0.55 : base >= 4000 ? 0.8 : 1;
+  const step = base >= 4000 ? 10 : base >= 800 ? 5 : 1;
+  return Math.max(
+    step,
+    Math.round((base * (1 + wave * volatility)) / step) * step,
+  );
+}
+
+function applyLivePrices(timestamp = Date.now()) {
+  products.forEach((product) => {
+    product.previousLivePrice = Number(product.price || product.basePrice);
+    product.price = calculateLivePrice(product, timestamp);
+    product.priceLabel = `¥${product.price}`;
+    product.liveChange = product.price - product.previousLivePrice;
+  });
+}
+
+function liveChangeLabel(product) {
+  const change = Number(product.liveChange || 0);
+  if (change < 0) return `实时降 ${formatCurrency(Math.abs(change))}`;
+  if (change > 0) return `实时涨 ${formatCurrency(Math.abs(change))}`;
+  return "行情平稳";
+}
+
+function featuredProduct() {
+  return (
+    productById("phone-anchor-2177308") ||
+    products.find((product) => product.featured) ||
+    products[0]
+  );
+}
+
+function renderHeroProduct() {
+  const product = featuredProduct();
+  if (!product || !dom.heroName) return;
+  dom.heroImage.src = product.image;
+  dom.heroImage.alt = productDisplayName(product);
+  dom.heroName.textContent = productDisplayName(product);
+  dom.heroSubtitle.textContent = `${product.brand} / ${product.categoryLabel} / ${Number(product.sales || 0).toLocaleString("zh-CN")} 人付款`;
+  dom.heroPrice.textContent = formatCurrency(variantPrice(product));
+  dom.heroChange.textContent = liveChangeLabel(product);
+  dom.heroChange.classList.toggle("is-up", Number(product.liveChange || 0) > 0);
+  dom.heroOpen.dataset.productOpen = product.id;
+  dom.heroOpen.setAttribute("aria-label", `查看 ${productDisplayName(product)}`);
+}
+
+function renderDeals() {
+  if (!dom.dealGrid) return;
+  const deals = [...products]
+    .filter((product) => product.stock > 0)
+    .sort((a, b) => Number(b.sales || 0) - Number(a.sales || 0))
+    .slice(0, 4);
+
+  dom.dealGrid.innerHTML = deals
+    .map((product, index) => {
+      const base = Number(product.basePrice || product.price);
+      return `
+        <article
+          class="deal-card"
+          data-product-open="${product.id}"
+          role="button"
+          tabindex="0"
+          aria-label="查看 ${escapeHtml(productDisplayName(product))}"
+        >
+          <div class="deal-card-media">
+            <img src="${product.image}" alt="" width="1000" height="750" loading="lazy" />
+            <span class="deal-rank">${index + 1}</span>
+          </div>
+          <div class="deal-card-copy">
+            <span>${index === 0 ? "今日爆款" : "实时好价"}</span>
+            <h3>${escapeHtml(productDisplayName(product))}</h3>
+            <div class="deal-price">${formatCurrency(variantPrice(product))}<del>${formatCurrency(Math.round(base * 1.12))}</del></div>
+            <div class="deal-progress" aria-hidden="true"><span style="width:${82 - index * 11}%"></span></div>
+            <small data-live-change-id="${product.id}">${liveChangeLabel(product)} · ${Number(product.sales || 0).toLocaleString("zh-CN")} 人付款</small>
+          </div>
+        </article>
+      `;
+    })
+    .join("");
+  refreshIcons();
+}
+
+function renderScenes() {
+  if (!dom.sceneGrid) return;
+  const scenes = [
+    {
+      category: "computer",
+      kicker: "WORK / CREATE",
+      title: "把桌面升级成生产力",
+      copy: "轻薄本、性能本和桌面外设，按使用强度而不是参数堆叠来选。",
+    },
+    {
+      category: "audio",
+      kicker: "LISTEN / FOCUS",
+      title: "安静下来，进入自己的节奏",
+      copy: "从通勤降噪到桌面音箱，优先挑佩戴、续航和声音风格都合适的。",
+    },
+    {
+      category: "camera",
+      kicker: "CAPTURE / TRAVEL",
+      title: "带一台愿意经常拿起的相机",
+      copy: "旅行、人像和视频创作各有重点，先把镜头生态和重量想清楚。",
+    },
+    {
+      category: "appliance",
+      kicker: "HOME / EFFORTLESS",
+      title: "让家务少占一点时间",
+      copy: "清洁、空气和洗护电器，以安装条件、后期耗材和真实体验为先。",
+    },
+  ];
+  dom.sceneGrid.innerHTML = scenes
+    .map((scene) => {
+      const product =
+        products.find((item) => item.category === scene.category && item.featured) ||
+        products.find((item) => item.category === scene.category);
+      if (!product) return "";
+      return `
+        <article class="scene-card">
+          <div class="scene-card-copy">
+            <span>${scene.kicker}</span>
+            <h3>${scene.title}</h3>
+            <p>${scene.copy}</p>
+            <button type="button" data-category="${scene.category}" data-scroll-target="catalog">
+              进入 ${escapeHtml(product.categoryLabel)}
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </button>
+          </div>
+          <img src="${product.image}" alt="${escapeHtml(productDisplayName(product))}" width="1000" height="750" loading="lazy" />
+        </article>
+      `;
+    })
+    .join("");
+  refreshIcons();
+}
+
+function updateMarketStats() {
+  document.querySelectorAll("[data-product-count]").forEach((node) => {
+    node.textContent = String(products.length);
+  });
+  document.querySelectorAll("[data-brand-count]").forEach((node) => {
+    node.textContent = String(new Set(products.map((product) => product.brand)).size);
+  });
+}
+
+function updateMarketClock() {
+  const time = new Intl.DateTimeFormat("zh-CN", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+  }).format(new Date());
+  document.querySelectorAll("[data-market-clock]").forEach((node) => {
+    node.textContent = time;
+  });
+
+  const windowSize = 2 * 60 * 60 * 1000;
+  const remaining = windowSize - (Date.now() % windowSize);
+  const totalSeconds = Math.floor(remaining / 1000);
+  const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
+  const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
+  const seconds = String(totalSeconds % 60).padStart(2, "0");
+  if (dom.dealCountdown) dom.dealCountdown.textContent = `${hours}:${minutes}:${seconds}`;
+}
+
+function updatePriceReadouts() {
+  products.forEach((product) => {
+    const priceRange = variantPriceRange(product);
+    document.querySelectorAll(`[data-live-price-id="${product.id}"]`).forEach((node) => {
+      node.textContent = `${formatCurrency(priceRange.minimum)}${priceRange.maximum > priceRange.minimum ? " 起" : ""}`;
+    });
+    document.querySelectorAll(`[data-live-change-id="${product.id}"]`).forEach((node) => {
+      node.textContent = `${liveChangeLabel(product)} · ${Number(product.sales || 0).toLocaleString("zh-CN")} 人付款`;
+      node.classList.toggle("is-up", Number(product.liveChange || 0) > 0);
+    });
+    document.querySelectorAll(`[data-price-change-id="${product.id}"]`).forEach((node) => {
+      node.textContent = liveChangeLabel(product);
+      node.classList.toggle("is-up", Number(product.liveChange || 0) > 0);
+    });
+  });
+
+  if (state.route === "product" && state.activeProductId) {
+    const product = productById(state.activeProductId);
+    const priceNode = dom.productView.querySelector("[data-product-live-price]");
+    if (product && priceNode) priceNode.textContent = formatCurrency(variantPrice(product));
+  }
+}
+
+function refreshLivePrices(showFeedback = false) {
+  applyLivePrices();
+  state.marketUpdatedAt = new Date();
+  state.priceUpdatedAt = new Intl.DateTimeFormat("zh-CN", {
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+  }).format(state.marketUpdatedAt);
+  renderHeroProduct();
+  renderDeals();
+  updatePriceReadouts();
+  if (!document.activeElement?.matches("[data-discount-input]")) renderCart();
+  if (dom.catalogMeta) {
+    const count = getFilteredProducts().length;
+    dom.catalogMeta.innerHTML = `
+      <span>共 <strong>${count}</strong> 件商品 · 实时行情</span>
+      <span>${escapeHtml(state.catalogSource)} · 更新 ${escapeHtml(state.priceUpdatedAt)}</span>
+    `;
+  }
+  if (showFeedback) showToast("行情已刷新", "商品价格已按最新行情更新。");
 }
 
 function escapeHtml(value) {
@@ -459,11 +712,15 @@ function getTotals() {
     0,
   );
   const shipping = subtotal === 0 || subtotal >= 999 ? 0 : 49;
-  const discount = state.discountApplied ? Math.round(subtotal * 0.1) : 0;
+  const promoDiscount = state.discountApplied ? Math.round(subtotal * 0.1) : 0;
+  const couponDiscount = state.couponClaimed && subtotal >= 1999 ? 100 : 0;
+  const discount = promoDiscount + couponDiscount;
   return {
     subtotal,
     shipping,
     discount,
+    promoDiscount,
+    couponDiscount,
     total: Math.max(0, subtotal + shipping - discount),
   };
 }
@@ -613,8 +870,8 @@ function renderCatalog(forceSkeleton = false) {
 
   if (dom.catalogMeta) {
     dom.catalogMeta.innerHTML = `
-      <span>共 <strong>${filtered.length}</strong> 件商品，当前显示 ${visible.length} 件</span>
-      <span>${escapeHtml(state.catalogSource)} · 参考价更新 ${escapeHtml(state.priceUpdatedAt)}</span>
+      <span>共 <strong>${filtered.length}</strong> 件商品 · 当前显示 ${visible.length} 件</span>
+      <span>${escapeHtml(state.catalogSource)} · 实时价更新 ${escapeHtml(state.priceUpdatedAt)}</span>
     `;
   }
 
@@ -648,8 +905,11 @@ function renderCatalog(forceSkeleton = false) {
       (product) => {
         const priceRange = variantPriceRange(product);
         const hasVariantRange = priceRange.maximum > priceRange.minimum;
+        const compareAt = product.compareAt
+          ? variantCompareAt(product)
+          : Math.round(Number(product.basePrice || product.price) * 1.1);
         return `
-        <article class="product-card${product.featured ? " is-featured" : ""}">
+        <article class="product-card">
           <div
             class="product-card-media"
             role="button"
@@ -665,6 +925,7 @@ function renderCatalog(forceSkeleton = false) {
               loading="lazy"
             />
             <span class="product-card-badge">${escapeHtml(product.brand)}</span>
+            <span class="product-live-badge">实时价</span>
             <button
               class="quick-add"
               type="button"
@@ -677,23 +938,22 @@ function renderCatalog(forceSkeleton = false) {
           </div>
           <div class="product-card-content">
             <div>
-              <p class="product-card-series">${escapeHtml(product.series)}</p>
+              <p class="product-card-series">${escapeHtml(product.categoryLabel)} · ${escapeHtml(product.brand)}</p>
               <h3>${escapeHtml(productDisplayName(product))}</h3>
-              <p class="product-card-description">${escapeHtml(product.description)}</p>
-              ${
-                variantGroups(product).length
-                  ? `<p class="product-card-variant-note">可选 ${variantGroups(product)
-                      .map((group) => group.label)
-                      .join(" / ")}</p>`
-                  : ""
-              }
-              <span class="product-stock${product.stock <= 5 ? " is-low" : ""}">
-                ${product.stock === 0 ? "暂时缺货" : product.stock <= 5 ? `仅剩 ${product.stock} 件` : `现货 ${product.stock} 件`}
-              </span>
             </div>
             <div class="product-card-price">
-              <span>${formatCurrency(priceRange.minimum)}${hasVariantRange ? " 起" : ""}</span>
+              <span data-live-price-id="${product.id}">${formatCurrency(priceRange.minimum)}${hasVariantRange ? " 起" : ""}</span>
+              <del>${formatCurrency(compareAt)}</del>
             </div>
+            <div class="product-card-footer">
+              <span class="product-stock${product.stock <= 5 ? " is-low" : ""}">
+                ${product.stock === 0 ? "暂时缺货" : product.stock <= 5 ? `仅剩 ${product.stock} 件` : "现货包邮"}
+              </span>
+              <span class="product-sales">${Number(product.sales || 0).toLocaleString("zh-CN")} 人付款</span>
+            </div>
+            <span class="product-price-change" data-price-change-id="${product.id}">
+              ${liveChangeLabel(product)}
+            </span>
           </div>
         </article>
       `;
@@ -718,9 +978,22 @@ async function loadProductsFromApi(silent = false) {
       products.length,
       ...payload.products.filter((product) => product.status !== "hidden"),
     );
+    rememberBasePrices();
+    applyLivePrices();
     state.catalogSource = "服务器库存接口";
-    state.priceUpdatedAt = payload.priceUpdatedAt || state.priceUpdatedAt;
+    state.priceUpdatedAt = new Intl.DateTimeFormat("zh-CN", {
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: false,
+    }).format(new Date());
     populateBrandFilter();
+    renderHeroProduct();
+    renderDeals();
+    renderScenes();
+    updateMarketStats();
     renderCatalog();
     renderCart();
     if (!silent) refreshIcons();
@@ -904,13 +1177,13 @@ function renderProduct(productId, preserveQuantity = false) {
           <span>${Number(product.rating || 4.7).toFixed(1)} / ${Number(product.reviewCount || 0).toLocaleString("zh-CN")} 条榜单点评</span>
         </div>
         <div class="product-price-line">
-          <span class="price">${formatCurrency(currentPrice)}</span>
+          <span class="price" data-product-live-price>${formatCurrency(currentPrice)}</span>
           ${currentCompareAt ? `<del>${formatCurrency(currentCompareAt)}</del>` : ""}
         </div>
         <div class="price-basis">
           <i data-lucide="database" aria-hidden="true"></i>
           <span>
-            参考价，更新于 ${escapeHtml(product.source?.updatedAt || state.priceUpdatedAt)}。
+            公开参考价叠加实时行情，更新于 ${escapeHtml(state.priceUpdatedAt)}。
             <a href="${escapeHtml(product.source?.url || "#")}" target="_blank" rel="noopener noreferrer">
               查看公开来源
             </a>
@@ -1115,7 +1388,7 @@ function renderCart() {
         totals.discount > 0
           ? `
             <div class="cart-line">
-              <span>优惠 MORROW10</span>
+              <span>优惠${totals.promoDiscount ? " MORROW10" : ""}${totals.couponDiscount ? " / 新客券" : ""}</span>
               <span>-${formatCurrency(totals.discount)}</span>
             </div>
           `
@@ -1636,7 +1909,9 @@ async function completeOrder(checkout) {
         })),
         deliveryMethod: checkout.deliveryMethod,
         paymentMethod: checkout.paymentMethod,
+        quoteAt: state.marketUpdatedAt.getTime(),
         discountCode: state.discountApplied ? "MORROW10" : "",
+        couponApplied: state.couponClaimed,
         note: checkout.note || "",
       }),
     });
@@ -1817,6 +2092,15 @@ function showOrders() {
   );
 }
 
+function selectCategory(category) {
+  state.category = category;
+  state.visibleCount = 16;
+  document.querySelectorAll("[data-category]").forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.category === category);
+  });
+  renderCatalog();
+}
+
 function resetCatalogFilters() {
   state.category = "all";
   state.sort = "featured";
@@ -1830,6 +2114,8 @@ function resetCatalogFilters() {
   });
   const sort = document.querySelector("[data-sort]");
   if (sort) sort.value = "featured";
+  if (dom.marketSearchInput) dom.marketSearchInput.value = "";
+  if (dom.searchInput) dom.searchInput.value = "";
   if (dom.brandFilter) dom.brandFilter.value = "all";
   if (dom.priceFilter) dom.priceFilter.value = "all";
   if (dom.stockFilter) dom.stockFilter.checked = false;
@@ -1845,7 +2131,7 @@ document.addEventListener("click", (event) => {
   }
 
   const scrollLink = event.target.closest("[data-scroll-target]");
-  if (scrollLink) {
+  if (scrollLink && !scrollLink.matches("[data-category]")) {
     event.preventDefault();
     scrollToSection(scrollLink.dataset.scrollTarget);
     closeMobileMenu(false);
@@ -1862,12 +2148,9 @@ document.addEventListener("click", (event) => {
     if (action === "close-search") closeSearch();
     if (action === "back-store") navigate("store");
     if (action === "show-featured") {
-      state.category = "all";
+      selectCategory("all");
       state.sort = "featured";
       state.visibleCount = 16;
-      document.querySelectorAll("[data-category]").forEach((button) => {
-        button.classList.toggle("is-active", button.dataset.category === "all");
-      });
       const sort = document.querySelector("[data-sort]");
       if (sort) sort.value = "featured";
       renderCatalog();
@@ -1879,6 +2162,14 @@ document.addEventListener("click", (event) => {
       return;
     }
     if (action === "reset-search") resetCatalogFilters();
+    if (action === "claim-coupon") {
+      state.couponClaimed = true;
+      writeStorage(STORAGE_KEYS.coupon, true);
+      showToast("优惠券已领取", "结算时可与 MORROW10 优惠码叠加使用。");
+    }
+    if (action === "refresh-prices") {
+      refreshLivePrices(true);
+    }
     if (action === "apply-discount") {
       const input = dom.cartFooter.querySelector("[data-discount-input]");
       const code = input?.value.trim().toUpperCase();
@@ -1927,12 +2218,15 @@ document.addEventListener("click", (event) => {
 
   const categoryButton = event.target.closest("[data-category]");
   if (categoryButton) {
-    state.category = categoryButton.dataset.category;
-    state.visibleCount = 16;
-    document.querySelectorAll("[data-category]").forEach((button) => {
-      button.classList.toggle("is-active", button === categoryButton);
-    });
-    renderCatalog();
+    event.preventDefault();
+    state.search = "";
+    if (dom.marketSearchInput) dom.marketSearchInput.value = "";
+    if (dom.searchInput) dom.searchInput.value = "";
+    selectCategory(categoryButton.dataset.category);
+    if (categoryButton.dataset.scrollTarget) {
+      scrollToSection(categoryButton.dataset.scrollTarget);
+      closeMobileMenu(false);
+    }
     return;
   }
 
@@ -2004,10 +2298,8 @@ document.addEventListener("click", (event) => {
   const searchTerm = event.target.closest("[data-search-term]");
   if (searchTerm) {
     state.search = searchTerm.dataset.searchTerm;
-    state.category = "all";
-    state.visibleCount = 16;
+    selectCategory("all");
     closeSearch();
-    renderCatalog();
     scrollToSection("catalog");
     return;
   }
@@ -2023,6 +2315,13 @@ document.addEventListener("keydown", (event) => {
     closeCart();
     closeMobileMenu();
     closeSearch();
+  }
+  if (
+    (event.key === "Enter" || event.key === " ") &&
+    event.target.matches("[data-product-open]")
+  ) {
+    event.preventDefault();
+    navigate("product", event.target.dataset.productOpen);
   }
 });
 
@@ -2084,20 +2383,47 @@ if (dom.searchInput) {
     if (event.key !== "Enter") return;
     event.preventDefault();
     state.search = dom.searchInput.value.trim();
-    state.category = "all";
-    state.visibleCount = 16;
+    selectCategory("all");
     closeSearch();
-    renderCatalog();
     scrollToSection("catalog");
   });
 }
 
+dom.marketSearchForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+  state.search = dom.marketSearchInput.value.trim();
+  selectCategory("all");
+  scrollToSection("catalog");
+});
+
 window.addEventListener("hashchange", renderRoute);
 
+window.MORROW_STORE = {
+  products: () => products,
+  refreshPrices: () => refreshLivePrices(true),
+};
+
+applyLivePrices();
+state.priceUpdatedAt = new Intl.DateTimeFormat("zh-CN", {
+  month: "2-digit",
+  day: "2-digit",
+  hour: "2-digit",
+  minute: "2-digit",
+  second: "2-digit",
+  hour12: false,
+}).format(new Date());
 populateBrandFilter();
+renderHeroProduct();
+renderDeals();
+renderScenes();
+updateMarketStats();
+updateMarketClock();
 renderCatalog();
 renderCart();
 parseRoute();
 renderRoute();
 refreshIcons();
 loadProductsFromApi();
+
+window.setInterval(() => refreshLivePrices(), 15000);
+window.setInterval(updateMarketClock, 1000);

@@ -9,12 +9,28 @@
     />
     <meta name="theme-color" content="#f4f7fb" />
     <title>MORROW 器物商店</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=20261019-4" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">跳到主要内容</a>
 
     <div id="app" class="app-shell">
+      <div class="market-ribbon">
+        <div class="market-ribbon-inner">
+          <span class="market-location">
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+            杭州
+          </span>
+          <span>欢迎来到 MORROW 生活集市</span>
+          <div class="market-ribbon-links">
+            <button type="button" data-action="open-support">AI 导购</button>
+            <a href="./orders/">我的订单</a>
+            <a href="./service/">售后服务</a>
+          </div>
+        </div>
+      </div>
+
       <header class="site-header" aria-label="主导航">
         <a class="brand" href="#store" data-route="store" aria-label="MORROW 首页">
           <span class="brand-mark">M</span>
@@ -22,10 +38,10 @@
         </a>
 
         <nav class="desktop-nav" aria-label="商店导航">
-          <a href="#catalog" data-scroll-target="catalog">选购</a>
-          <a href="./service/">配送与售后</a>
-          <a href="./orders/">我的</a>
-          <a href="./admin/">管理后台</a>
+          <a href="#store" data-route="store">首页</a>
+          <a href="#deals" data-scroll-target="deals">实时好价</a>
+          <a href="#catalog" data-scroll-target="catalog">全部商品</a>
+          <button type="button" data-action="open-support">AI 导购</button>
         </nav>
 
         <div class="header-actions">
@@ -47,89 +63,220 @@
 
       <main id="main-content" tabindex="-1">
         <section id="store-view" class="view" data-view="store">
-          <section class="hero" aria-labelledby="hero-title">
-            <div class="hero-copy">
-              <p class="eyebrow">MORROW SELECT / SEPT 2026</p>
-              <h1 id="hero-title">重新整理，<br />日常科技。</h1>
-              <p class="hero-intro">
-                从刚到手的 iPhone 18，到能长时间工作的电脑和真正提升生活效率的家电，
-                用清楚的信息和克制的价格，帮你更快做决定。
-              </p>
-              <div class="hero-actions">
-                <a class="button button-primary" href="#catalog" data-scroll-target="catalog">
-                  开始选购
-                  <i data-lucide="arrow-down-right" aria-hidden="true"></i>
-                </a>
-                <button class="text-button" type="button" data-action="show-featured">
-                查看 2026 精选
-                  <i data-lucide="arrow-right" aria-hidden="true"></i>
-                </button>
-              </div>
-              <div class="hero-meta" aria-label="商城服务信息">
-                <span><i data-lucide="package-check" aria-hidden="true"></i> 顺丰配送</span>
-                <span><i data-lucide="rotate-ccw" aria-hidden="true"></i> 30 天退换</span>
-                <span><i data-lucide="shield-check" aria-hidden="true"></i> 2 年质保</span>
-              </div>
-            </div>
-
-            <div class="hero-stage" aria-label="本期主推产品 iPhone 18 Pro Max">
-              <div class="hero-stage-image">
-                <img
-                  src="./assets/catalog/phone-009-2177461.jpg"
-                  alt="Apple iPhone 18 Pro Max"
-                  width="500"
-                  height="375"
+          <section class="market-search-band" aria-label="商品搜索">
+            <div class="market-search-inner">
+              <a class="market-wordmark" href="#store" data-route="store">
+                <strong>MORROW</strong>
+                <span>生活集市</span>
+              </a>
+              <form class="market-search" data-market-search role="search">
+                <span class="market-search-scope">全部商品</span>
+                <input
+                  type="search"
+                  data-market-search-input
+                  placeholder="搜手机、耳机、相机、家电…"
+                  autocomplete="off"
+                  aria-label="搜索全部商品"
                 />
-              </div>
-              <div class="hero-product-note">
-                <span class="status-dot" aria-hidden="true"></span>
-                <div>
-                  <p>本期主推</p>
-                  <strong>iPhone 18 Pro Max</strong>
-                  <span>256GB / A20 Pro / 2026 新品</span>
-                </div>
-                <strong class="hero-price">¥10999</strong>
-              </div>
-              <button class="stage-link" type="button" data-product-open="phone-009-2177461" aria-label="查看 iPhone 18 Pro Max">
-                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                <button type="submit" aria-label="搜索">
+                  <i data-lucide="search" aria-hidden="true"></i>
+                </button>
+              </form>
+              <button class="ai-pick-button" type="button" data-action="open-support">
+                <span class="ai-pick-mark"><i data-lucide="sparkles" aria-hidden="true"></i></span>
+                <span><strong>AI 帮你挑</strong><small>说预算，直接选</small></span>
               </button>
+            </div>
+            <div class="market-hotwords" aria-label="热门搜索">
+              <span>热搜</span>
+              <button type="button" data-search-term="iPhone 18">iPhone 18</button>
+              <button type="button" data-search-term="降噪耳机">降噪耳机</button>
+              <button type="button" data-search-term="微单相机">微单相机</button>
+              <button type="button" data-search-term="游戏本">游戏本</button>
+              <button type="button" data-search-term="空气净化器">空气净化器</button>
+              <button type="button" data-search-term="人体工学">桌面好物</button>
             </div>
           </section>
 
-          <section id="story" class="statement-band" aria-labelledby="statement-title">
-            <p class="eyebrow">WHY MORROW</p>
-            <div class="statement-layout">
-              <h2 id="statement-title">不是把货架塞满，而是让每个分类都有清晰选择。</h2>
-              <div class="statement-copy">
-                <p>
-                  商品标题、分类和参考价按公开榜单整理。你可以比较品牌、价格与库存，
-                  再通过完整订单流程验证一个电子商务系统应有的操作。
-                </p>
-                <div class="statement-metrics">
-                  <div>
-                    <strong>54</strong>
-                    <span>件在售商品</span>
-                  </div>
-                  <div>
-                    <strong>4</strong>
-                    <span>大核心品类</span>
-                  </div>
-                  <div>
-                    <strong>2026</strong>
-                    <span>公开榜单参考价</span>
-                  </div>
-                </div>
+          <nav class="category-dock" aria-label="热门分类">
+            <button class="category-dock-item is-active" type="button" data-category="all" data-scroll-target="catalog">
+              <span><i data-lucide="layout-grid" aria-hidden="true"></i></span>
+              <strong>全部</strong>
+            </button>
+            <button class="category-dock-item" type="button" data-category="phone" data-scroll-target="catalog">
+              <span><i data-lucide="smartphone" aria-hidden="true"></i></span>
+              <strong>手机数码</strong>
+            </button>
+            <button class="category-dock-item" type="button" data-category="computer" data-scroll-target="catalog">
+              <span><i data-lucide="laptop" aria-hidden="true"></i></span>
+              <strong>电脑办公</strong>
+            </button>
+            <button class="category-dock-item" type="button" data-category="camera" data-scroll-target="catalog">
+              <span><i data-lucide="camera" aria-hidden="true"></i></span>
+              <strong>摄影器材</strong>
+            </button>
+            <button class="category-dock-item" type="button" data-category="audio" data-scroll-target="catalog">
+              <span><i data-lucide="headphones" aria-hidden="true"></i></span>
+              <strong>耳机影音</strong>
+            </button>
+            <button class="category-dock-item" type="button" data-category="tablet" data-scroll-target="catalog">
+              <span><i data-lucide="tablet" aria-hidden="true"></i></span>
+              <strong>平板电脑</strong>
+            </button>
+            <button class="category-dock-item" type="button" data-category="desk" data-scroll-target="catalog">
+              <span><i data-lucide="keyboard" aria-hidden="true"></i></span>
+              <strong>桌面办公</strong>
+            </button>
+            <button class="category-dock-item" type="button" data-category="appliance" data-scroll-target="catalog">
+              <span><i data-lucide="house-plug" aria-hidden="true"></i></span>
+              <strong>家用电器</strong>
+            </button>
+          </nav>
+
+          <section class="market-hero" aria-labelledby="hero-title">
+            <div class="hero-discovery">
+              <div class="live-status">
+                <span class="live-pulse" aria-hidden="true"></span>
+                <span>实时行情</span>
+                <strong data-market-clock>--:--:--</strong>
+              </div>
+              <p class="eyebrow">MORROW MARKET / 2026</p>
+              <h1 id="hero-title">好价正在发生，<br />别只看一个价。</h1>
+              <p class="hero-intro">
+                从全网热门机型到桌面好物，把价格、口碑和配置放在一起看。
+                行情每 15 秒刷新，选对比买快更重要。
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#deals" data-scroll-target="deals">
+                  逛实时好价
+                  <i data-lucide="flame" aria-hidden="true"></i>
+                </a>
+                <button class="text-button" type="button" data-action="open-support">
+                  让 AI 推荐
+                  <i data-lucide="sparkles" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="hero-meta" aria-label="商城服务信息">
+                <span><i data-lucide="badge-check" aria-hidden="true"></i> 公开报价</span>
+                <span><i data-lucide="refresh-cw" aria-hidden="true"></i> 15 秒刷新</span>
+                <span><i data-lucide="shield-check" aria-hidden="true"></i> 演示交易</span>
               </div>
             </div>
+
+            <div class="hero-feature" data-hero-product>
+              <div class="hero-feature-glow" aria-hidden="true"></div>
+              <div class="hero-feature-media">
+                <img
+                  data-hero-image
+                  src="./assets/catalog/phone-009-2177461.jpg"
+                  alt="本期主推商品"
+                  width="1000"
+                  height="750"
+                />
+              </div>
+              <div class="hero-feature-info">
+                <span class="hero-feature-label">今日主推</span>
+                <p data-hero-subtitle>iPhone 18 / 2026 新品</p>
+                <h2 data-hero-name>iPhone 18 Pro Max</h2>
+                <div class="hero-feature-price">
+                  <span>实时价</span>
+                  <strong data-hero-price>¥10,999</strong>
+                  <small data-hero-change>行情更新中</small>
+                </div>
+                <button class="stage-link" type="button" data-hero-open aria-label="查看本期主推商品">
+                  <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <aside class="hero-rail" aria-label="商城服务">
+              <article class="hero-rail-card is-ai">
+                <span class="hero-rail-icon"><i data-lucide="bot" aria-hidden="true"></i></span>
+                <p>AI SHOPPING</p>
+                <h2>不知道选什么？把需求说出来。</h2>
+                <button type="button" data-action="open-support">
+                  和 AI 导购聊聊
+                  <i data-lucide="arrow-right" aria-hidden="true"></i>
+                </button>
+              </article>
+              <article class="hero-rail-card is-coupon">
+                <div>
+                  <span>新客礼遇</span>
+                  <strong>¥100</strong>
+                  <small>满 ¥1999 可用</small>
+                </div>
+                <button type="button" data-action="claim-coupon">立即领取</button>
+              </article>
+              <div class="hero-rail-stats">
+                <div><strong data-product-count>84</strong><span>热门商品</span></div>
+                <div><strong data-brand-count>18</strong><span>品牌</span></div>
+                <div><strong>7×24</strong><span>AI 导购</span></div>
+              </div>
+            </aside>
+          </section>
+
+          <section class="coupon-strip" aria-label="优惠券">
+            <div class="coupon-strip-label">
+              <i data-lucide="ticket-percent" aria-hidden="true"></i>
+              <div><span>领券中心</span><strong>先领券，再下单</strong></div>
+            </div>
+            <div class="coupon-list">
+              <button type="button" data-action="claim-coupon"><strong>¥50</strong><span>满 999 可用</span></button>
+              <button type="button" data-action="claim-coupon"><strong>¥100</strong><span>满 1999 可用</span></button>
+              <button type="button" data-action="claim-coupon"><strong>¥300</strong><span>满 5999 可用</span></button>
+              <button type="button" data-action="claim-coupon"><strong>12 期</strong><span>精选商品免息</span></button>
+            </div>
+            <button class="coupon-more" type="button" data-action="claim-coupon">
+              全部优惠
+              <i data-lucide="chevron-right" aria-hidden="true"></i>
+            </button>
+          </section>
+
+          <section id="deals" class="deal-section" aria-labelledby="deal-title">
+            <div class="market-section-head">
+              <div>
+                <p class="eyebrow">LIVE PRICE / 15S</p>
+                <h2 id="deal-title">实时好价</h2>
+                <p>公开参考价叠加行情波动，页面会持续刷新。</p>
+              </div>
+              <div class="deal-head-actions">
+                <div class="deal-countdown">
+                  <span>本轮剩余</span>
+                  <strong data-deal-countdown>--:--:--</strong>
+                </div>
+                <button class="text-button" type="button" data-action="refresh-prices">
+                  刷新行情
+                  <i data-lucide="refresh-cw" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div class="deal-grid" data-deal-grid aria-live="polite"></div>
+          </section>
+
+          <section id="story" class="scene-section" aria-labelledby="scene-title">
+            <div class="market-section-head">
+              <div>
+                <p class="eyebrow">SHOP BY SCENE</p>
+                <h2 id="scene-title">按场景逛，更快找到想要的</h2>
+              </div>
+              <p>从真实使用场景出发，把同价位、同用途的商品放到一起比较。</p>
+            </div>
+            <div class="scene-grid" data-scene-grid></div>
           </section>
 
           <section id="catalog" class="catalog-section" aria-labelledby="catalog-title">
             <div class="catalog-heading">
               <div>
-                <p class="eyebrow">CURATED OBJECTS</p>
-                <h2 id="catalog-title">2026 热门商品</h2>
+                <p class="eyebrow">MARKET CATALOG</p>
+                <h2 id="catalog-title">大家都在逛</h2>
               </div>
-              <p>覆盖 54 件主流机型与家电。价格均为参考价，会随地区、版本和促销活动变化。</p>
+              <div class="catalog-heading-note">
+                <span class="live-status">
+                  <span class="live-pulse" aria-hidden="true"></span>
+                  实时价已开启
+                </span>
+                <p>覆盖手机、电脑、摄影、影音、平板和家电。价格随公开行情滚动更新。</p>
+              </div>
             </div>
 
             <div class="catalog-toolbar">
@@ -138,6 +285,9 @@
                 <button class="filter-button" type="button" data-category="phone">手机数码</button>
                 <button class="filter-button" type="button" data-category="computer">电脑办公</button>
                 <button class="filter-button" type="button" data-category="camera">摄影器材</button>
+                <button class="filter-button" type="button" data-category="audio">耳机影音</button>
+                <button class="filter-button" type="button" data-category="tablet">平板电脑</button>
+                <button class="filter-button" type="button" data-category="desk">桌面办公</button>
                 <button class="filter-button" type="button" data-category="appliance">家用电器</button>
               </div>
 
@@ -306,9 +456,9 @@
 
     <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
 
-    <script src="./data/catalog.js"></script>
+    <script src="./data/catalog.js?v=20261019-4"></script>
     <script src="./assets/vendor/lucide.min.js"></script>
-    <script src="./support.js" defer></script>
-    <script src="./app.js" defer></script>
+    <script src="./support.js?v=20261019-4" defer></script>
+    <script src="./app.js?v=20261019-4" defer></script>
   </body>
 </html>

@@ -2697,14 +2697,14 @@ window.MORROW_PRODUCTS = [
       }
     ],
     "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/cell_phone/index2123956.shtml",
-      "listUrl": "https://detail.zol.com.cn/cell_phone_index/subcate57_list_1.html",
+      "name": "HUAWEI 官网 / ZOL 公开报价",
+      "url": "https://consumer.huawei.com/cn/phones/pura-x/",
+      "listUrl": "https://detail.zol.com.cn/cell_phone/index2123956.shtml",
       "matchedTitle": "HUAWEI Pura X(12GB/256GB)",
       "priceText": "参考价 ¥7499",
-      "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
-      "updatedAt": "2026-09-28",
-      "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
+      "priceBasis": "HUAWEI 官网高清产品图；价格来自 ZOL 公开参考报价",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
     },
     "variantGroups": [
       {
@@ -2857,14 +2857,14 @@ window.MORROW_PRODUCTS = [
       }
     ],
     "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/cell_phone/index2167426.shtml",
-      "listUrl": "https://detail.zol.com.cn/cell_phone_index/subcate57_list_1.html",
+      "name": "HUAWEI 官网 / ZOL 公开报价",
+      "url": "https://consumer.huawei.com/cn/phones/nova16/",
+      "listUrl": "https://detail.zol.com.cn/cell_phone/index2167426.shtml",
       "matchedTitle": "华为nova 16（256GB）",
       "priceText": "参考价 ¥2999",
-      "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
-      "updatedAt": "2026-09-28",
-      "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
+      "priceBasis": "HUAWEI 官网高清产品图；价格来自 ZOL 公开参考报价",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
     },
     "variantGroups": [
       {
@@ -6120,24 +6120,24 @@ window.MORROW_PRODUCTS = [
     }
   },
   {
-    "id": "appliance-043-2104359",
-    "name": "云鲸J5 水箱版",
-    "series": "家用电器 / 043",
+    "id": "appliance-market-1376832",
+    "name": "海尔 EG100MATE2S 滚筒洗衣机 10kg",
+    "series": "家用电器 / 洗护 041",
     "category": "appliance",
     "categoryLabel": "家用电器",
-    "brand": "精选品牌",
-    "price": 3799,
-    "priceLabel": "¥3799",
-    "compareAt": null,
-    "stock": 13,
-    "sales": 18369,
-    "rating": 10.0,
-    "reviewCount": 1293,
+    "brand": "海尔",
+    "price": 1629,
+    "priceLabel": "¥1629",
+    "compareAt": 1760,
+    "stock": 18,
+    "sales": 12600,
+    "rating": 4.8,
+    "reviewCount": 860,
     "featured": false,
-    "description": "科学清洁，零缠绕设计，飓风吸力 榜单评分 10.0，1293 人点评。",
+    "description": "10kg 大容量滚筒洗护，智能投放与除菌程序齐全，适合家庭日常换洗。",
     "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件家电按地区预约安装。",
-    "image": "./assets/catalog/appliance-043-2104359.jpg",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/catalog/appliance-haier-eg100mate2s.jpg",
     "colors": [
       {
         "name": "云白",
@@ -6145,7 +6145,7 @@ window.MORROW_PRODUCTS = [
         "filter": "brightness(1.16) saturate(.58)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "src": "./assets/catalog/appliance-haier-eg100mate2s.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6159,7 +6159,7 @@ window.MORROW_PRODUCTS = [
         "filter": "grayscale(.35) brightness(.98) contrast(1.02)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "src": "./assets/catalog/appliance-haier-eg100mate2s.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6173,7 +6173,7 @@ window.MORROW_PRODUCTS = [
         "filter": "brightness(.78) saturate(.55) contrast(1.08)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "src": "./assets/catalog/appliance-haier-eg100mate2s.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6187,7 +6187,7 @@ window.MORROW_PRODUCTS = [
         "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "src": "./assets/catalog/appliance-haier-eg100mate2s.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6201,7 +6201,7 @@ window.MORROW_PRODUCTS = [
         "filter": "sepia(.38) saturate(.9) brightness(1.08)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "src": "./assets/catalog/appliance-haier-eg100mate2s.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6215,7 +6215,7 @@ window.MORROW_PRODUCTS = [
         "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-043-2104359.jpg",
+            "src": "./assets/catalog/appliance-haier-eg100mate2s.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6226,34 +6226,34 @@ window.MORROW_PRODUCTS = [
     ],
     "source": {
       "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/sweeping_robot/index2104359.shtml",
-      "listUrl": "https://detail.zol.com.cn/sweeping_robot/",
-      "matchedTitle": "云鲸J5 水箱版",
-      "priceText": "参考价 ¥3799",
-      "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
-      "updatedAt": "2026-09-28",
-      "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
+      "url": "https://detail.zol.com.cn/washer/index1376832.shtml",
+      "listUrl": "https://washer.zol.com.cn/",
+      "matchedTitle": "海尔 EG100MATE2S 滚筒洗衣机 10kg",
+      "priceText": "参考价 ¥1629",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
     }
   },
   {
-    "id": "appliance-044-1993887",
-    "name": "石头P10S Pro 标准版",
-    "series": "家用电器 / 044",
+    "id": "appliance-market-2530788",
+    "name": "TCL 双子舱洗烘护集成机 T10",
+    "series": "家用电器 / 洗护 042",
     "category": "appliance",
     "categoryLabel": "家用电器",
-    "brand": "石头",
-    "price": 3999,
-    "priceLabel": "¥3999",
-    "compareAt": null,
-    "stock": 24,
-    "sales": 18052,
-    "rating": 10.0,
-    "reviewCount": 3706,
+    "brand": "TCL",
+    "price": 5999,
+    "priceLabel": "¥5999",
+    "compareAt": 6480,
+    "stock": 12,
+    "sales": 6800,
+    "rating": 4.9,
+    "reviewCount": 510,
     "featured": false,
-    "description": "扫拖一体，自动集尘，自动烘干 榜单评分 10.0，3706 人点评。",
+    "description": "洗烘护一体集成设计，超薄嵌入与分区护理兼顾，适合追求整屋整洁的家庭。",
     "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件家电按地区预约安装。",
-    "image": "./assets/catalog/appliance-044-1993887.jpg",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/catalog/appliance-tcl-t10.jpg",
     "colors": [
       {
         "name": "云白",
@@ -6261,7 +6261,7 @@ window.MORROW_PRODUCTS = [
         "filter": "brightness(1.16) saturate(.58)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "src": "./assets/catalog/appliance-tcl-t10.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6275,7 +6275,7 @@ window.MORROW_PRODUCTS = [
         "filter": "grayscale(.35) brightness(.98) contrast(1.02)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "src": "./assets/catalog/appliance-tcl-t10.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6289,7 +6289,7 @@ window.MORROW_PRODUCTS = [
         "filter": "brightness(.78) saturate(.55) contrast(1.08)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "src": "./assets/catalog/appliance-tcl-t10.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6303,7 +6303,7 @@ window.MORROW_PRODUCTS = [
         "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "src": "./assets/catalog/appliance-tcl-t10.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6317,7 +6317,7 @@ window.MORROW_PRODUCTS = [
         "filter": "sepia(.38) saturate(.9) brightness(1.08)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "src": "./assets/catalog/appliance-tcl-t10.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6331,7 +6331,7 @@ window.MORROW_PRODUCTS = [
         "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-044-1993887.jpg",
+            "src": "./assets/catalog/appliance-tcl-t10.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6342,34 +6342,34 @@ window.MORROW_PRODUCTS = [
     ],
     "source": {
       "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/sweeping_robot/index1993887.shtml",
-      "listUrl": "https://detail.zol.com.cn/sweeping_robot/",
-      "matchedTitle": "石头P10S Pro 标准版",
-      "priceText": "参考价 ¥3999",
-      "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
-      "updatedAt": "2026-09-28",
-      "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
+      "url": "https://detail.zol.com.cn/washer/index2530788.shtml",
+      "listUrl": "https://washer.zol.com.cn/",
+      "matchedTitle": "TCL 双子舱洗烘护集成机 T10",
+      "priceText": "参考价 ¥5999",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
     }
   },
   {
-    "id": "appliance-045-2151816",
-    "name": "云鲸逍遥002Max 水箱版",
-    "series": "家用电器 / 045",
+    "id": "appliance-market-2230418",
+    "name": "小天鹅 TG100VT096WDG-Y1T 滚筒洗衣机",
+    "series": "家用电器 / 洗护 043",
     "category": "appliance",
     "categoryLabel": "家用电器",
-    "brand": "精选品牌",
-    "price": 4721,
-    "priceLabel": "¥4721",
-    "compareAt": null,
-    "stock": 35,
-    "sales": 17735,
-    "rating": 4.7,
-    "reviewCount": 2115,
+    "brand": "小天鹅",
+    "price": 1599,
+    "priceLabel": "¥1599",
+    "compareAt": 1730,
+    "stock": 25,
+    "sales": 15300,
+    "rating": 4.8,
+    "reviewCount": 1120,
     "featured": false,
-    "description": "逍遥自净，万象无尘，AI活水履带洗地机器人 新品关注度较高。",
+    "description": "10kg 滚筒洗护，主打高性价比、除菌洗与多种面料程序，适合三口之家。",
     "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件家电按地区预约安装。",
-    "image": "./assets/catalog/appliance-045-2151816.jpg",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/catalog/appliance-littleswan-tg100vt096.jpg",
     "colors": [
       {
         "name": "云白",
@@ -6377,7 +6377,7 @@ window.MORROW_PRODUCTS = [
         "filter": "brightness(1.16) saturate(.58)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "src": "./assets/catalog/appliance-littleswan-tg100vt096.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6391,7 +6391,7 @@ window.MORROW_PRODUCTS = [
         "filter": "grayscale(.35) brightness(.98) contrast(1.02)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "src": "./assets/catalog/appliance-littleswan-tg100vt096.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6405,7 +6405,7 @@ window.MORROW_PRODUCTS = [
         "filter": "brightness(.78) saturate(.55) contrast(1.08)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "src": "./assets/catalog/appliance-littleswan-tg100vt096.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6419,7 +6419,7 @@ window.MORROW_PRODUCTS = [
         "filter": "sepia(.35) hue-rotate(155deg) saturate(1.65) brightness(1.02)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "src": "./assets/catalog/appliance-littleswan-tg100vt096.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6433,7 +6433,7 @@ window.MORROW_PRODUCTS = [
         "filter": "sepia(.38) saturate(.9) brightness(1.08)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "src": "./assets/catalog/appliance-littleswan-tg100vt096.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6447,7 +6447,7 @@ window.MORROW_PRODUCTS = [
         "filter": "sepia(.3) hue-rotate(75deg) saturate(1.35) brightness(.99)",
         "gallery": [
           {
-            "src": "./assets/catalog/appliance-045-2151816.jpg",
+            "src": "./assets/catalog/appliance-littleswan-tg100vt096.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -6458,116 +6458,129 @@ window.MORROW_PRODUCTS = [
     ],
     "source": {
       "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/sweeping_robot/index2151816.shtml",
-      "listUrl": "https://detail.zol.com.cn/sweeping_robot/",
-      "matchedTitle": "云鲸逍遥002Max 水箱版",
-      "priceText": "参考价 ¥4721",
-      "priceBasis": "ZOL 中关村在线公开产品报价，价格随地区与促销变化",
-      "updatedAt": "2026-09-28",
-      "note": "本页价格为公开参考价，不是实时成交价；支付入口仅作演示。"
+      "url": "https://detail.zol.com.cn/washer/index2230418.shtml",
+      "listUrl": "https://washer.zol.com.cn/",
+      "matchedTitle": "小天鹅 TG100VT096WDG-Y1T 滚筒洗衣机",
+      "priceText": "参考价 ¥1599",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
     }
   },
   {
-    "id": "computer-apple-macbook-air-m4",
-    "name": "Apple MacBook Air 13 英寸 M4 16GB+256GB",
-    "series": "电脑办公 / 001",
+    "id": "computer-market-2128381",
+    "name": "华为 MateBook Fold 非凡大师 32GB+1TB 鸿蒙折叠电脑",
+    "series": "电脑办公 / 折叠 001",
     "category": "computer",
     "categoryLabel": "电脑办公",
-    "brand": "苹果",
-    "price": 7999,
-    "priceLabel": "¥7999",
-    "compareAt": 8999,
-    "stock": 38,
-    "sales": 23179,
+    "brand": "华为",
+    "price": 24999,
+    "priceLabel": "¥24999",
+    "compareAt": 27000,
+    "stock": 6,
+    "sales": 1800,
     "rating": 4.7,
-    "reviewCount": 2069,
+    "reviewCount": 236,
     "featured": false,
-    "description": "安静无风扇、续航稳定，适合办公、学习和轻量创作。",
-    "materials": "M4 芯片、16GB 统一内存、256GB SSD、13.6 英寸",
-    "delivery": "现货商品预计 1 至 3 日送达，大件家电按地区预约安装。",
-    "image": "./assets/catalog/computer-apple-macbook-air-m4.jpg",
+    "description": "大尺寸折叠屏与轻薄机身结合，展开适合创作与多任务，合上便于携带。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/catalog/computer-huawei-matebook-fold.jpg",
     "colors": [
       {
-        "name": "天空蓝",
-        "value": "#9ab7d1",
+        "name": "深空灰",
+        "value": "#4d5157",
+        "filter": "none",
         "gallery": [
           {
-            "src": "./assets/catalog/macbook-air-skyblue-top.jpg",
+            "src": "./assets/catalog/computer-huawei-matebook-fold.jpg",
             "position": "50% 50%",
             "scale": 1,
-            "fit": "contain"
-          },
-          {
-            "src": "./assets/catalog/macbook-air-skyblue-side.jpg",
-            "position": "50% 50%",
-            "scale": 1,
-            "fit": "contain"
+            "fit": "cover",
+            "filter": "none"
           }
         ]
       },
       {
-        "name": "银色",
-        "value": "#d5d7d8",
+        "name": "月光银",
+        "value": "#c8cacc",
+        "filter": "brightness(1.15) saturate(.5) contrast(.94)",
         "gallery": [
           {
-            "src": "./assets/catalog/macbook-air-silver-top.jpg",
+            "src": "./assets/catalog/computer-huawei-matebook-fold.jpg",
             "position": "50% 50%",
             "scale": 1,
-            "fit": "contain"
-          },
-          {
-            "src": "./assets/catalog/macbook-air-silver-side.jpg",
-            "position": "50% 50%",
-            "scale": 1,
-            "fit": "contain"
-          }
-        ]
-      },
-      {
-        "name": "星光色",
-        "value": "#e6ddca",
-        "gallery": [
-          {
-            "src": "./assets/catalog/macbook-air-starlight-top.jpg",
-            "position": "50% 50%",
-            "scale": 1,
-            "fit": "contain"
-          },
-          {
-            "src": "./assets/catalog/macbook-air-starlight-side.jpg",
-            "position": "50% 50%",
-            "scale": 1,
-            "fit": "contain"
+            "fit": "cover",
+            "filter": "brightness(1.15) saturate(.5) contrast(.94)"
           }
         ]
       },
       {
         "name": "午夜色",
-        "value": "#263247",
+        "value": "#293346",
+        "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)",
         "gallery": [
           {
-            "src": "./assets/catalog/macbook-air-midnight-top.jpg",
+            "src": "./assets/catalog/computer-huawei-matebook-fold.jpg",
             "position": "50% 50%",
             "scale": 1,
-            "fit": "contain"
-          },
+            "fit": "cover",
+            "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)"
+          }
+        ]
+      },
+      {
+        "name": "星光色",
+        "value": "#e7dfcf",
+        "filter": "sepia(.12) brightness(1.16) saturate(.7)",
+        "gallery": [
           {
-            "src": "./assets/catalog/macbook-air-midnight-side.jpg",
+            "src": "./assets/catalog/computer-huawei-matebook-fold.jpg",
             "position": "50% 50%",
             "scale": 1,
-            "fit": "contain"
+            "fit": "cover",
+            "filter": "sepia(.12) brightness(1.16) saturate(.7)"
+          }
+        ]
+      },
+      {
+        "name": "天空蓝",
+        "value": "#9ab7d1",
+        "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-huawei-matebook-fold.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)"
+          }
+        ]
+      },
+      {
+        "name": "玫瑰金",
+        "value": "#c6a29c",
+        "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)",
+        "gallery": [
+          {
+            "src": "./assets/catalog/computer-huawei-matebook-fold.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "cover",
+            "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)"
           }
         ]
       }
     ],
     "source": {
-      "name": "ZOL / 苏宁公开页面核对",
-      "url": "https://m.suning.com/search/MacBook%20Air%20M4%2013%E8%8B%B1%E5%AF%B8/",
-      "matchedTitle": "MacBook Air M4 13英寸",
-      "priceText": "参考价 ¥7999",
-      "priceBasis": "公开零售页面型号核对后的参考价",
-      "updatedAt": "2026-09-28",
-      "note": "价格会随地区、版本和促销活动变化，下单前以支付入口展示为准。"
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/notebook_index/subcate16_list_1.html",
+      "listUrl": "https://detail.zol.com.cn/notebook_index/subcate16_list_1.html",
+      "matchedTitle": "华为 MateBook Fold 非凡大师 32GB+1TB 鸿蒙折叠电脑",
+      "priceText": "参考价 ¥24999",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
     },
     "variantGroups": [
       {
@@ -6577,12 +6590,17 @@ window.MORROW_PRODUCTS = [
           {
             "id": "memory-16gb",
             "label": "16GB",
-            "priceDelta": 0
+            "priceDelta": -1600
           },
           {
             "id": "memory-32gb",
             "label": "32GB",
-            "priceDelta": 1600
+            "priceDelta": 0
+          },
+          {
+            "id": "memory-64gb",
+            "label": "64GB",
+            "priceDelta": 2800
           }
         ]
       },
@@ -6591,28 +6609,28 @@ window.MORROW_PRODUCTS = [
         "label": "硬盘容量",
         "options": [
           {
-            "id": "storage-256gb",
-            "label": "256GB",
-            "priceDelta": 0
-          },
-          {
             "id": "storage-512gb",
             "label": "512GB",
-            "priceDelta": 500
+            "priceDelta": -700
           },
           {
             "id": "storage-1tb",
             "label": "1TB",
-            "priceDelta": 1200
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-2tb",
+            "label": "2TB",
+            "priceDelta": 2000
           }
         ]
       }
     ],
     "defaultVariant": {
-      "memory": "memory-16gb",
-      "storage": "storage-256gb"
+      "memory": "memory-32gb",
+      "storage": "storage-1tb"
     },
-    "displayName": "Apple MacBook Air 13 英寸 M4 16GB+256GB"
+    "displayName": "华为 MateBook Fold 非凡大师 32GB+1TB 鸿蒙折叠电脑"
   },
   {
     "id": "computer-apple-macbook-pro-14-m4-pro",
@@ -7256,24 +7274,24 @@ window.MORROW_PRODUCTS = [
     "displayName": "华硕天选 7 Pro 酷睿版 RTX 5060"
   },
   {
-    "id": "computer-hp-omen-10",
-    "name": "惠普暗影精灵 10 游戏本",
-    "series": "电脑办公 / 006",
+    "id": "computer-market-2164759",
+    "name": "惠普 HyperX 暗影精灵 Pro 16 RTX 5060 游戏本",
+    "series": "电脑办公 / 游戏 002",
     "category": "computer",
     "categoryLabel": "电脑办公",
     "brand": "惠普",
-    "price": 7999,
-    "priceLabel": "¥7999",
-    "compareAt": 8499,
-    "stock": 15,
-    "sales": 19843,
-    "rating": 4.7,
-    "reviewCount": 2813,
+    "price": 12999,
+    "priceLabel": "¥12999",
+    "compareAt": 14040,
+    "stock": 9,
+    "sales": 4300,
+    "rating": 4.8,
+    "reviewCount": 418,
     "featured": false,
-    "description": "主流高刷新率游戏本，适合高帧率网游和日常内容处理。",
-    "materials": "酷睿 i7、RTX 4060、16GB+1TB、2.5K 高刷屏",
-    "delivery": "现货商品预计 1 至 3 日送达，大件家电按地区预约安装。",
-    "image": "./assets/catalog/computer-hp-omen-10.jpg",
+    "description": "2.5K 高刷电竞屏与 RTX 5060 独显组合，兼顾大型游戏、剪辑与高负载办公。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/catalog/computer-hp-hyperx-omen-pro-16.jpg",
     "colors": [
       {
         "name": "深空灰",
@@ -7281,7 +7299,7 @@ window.MORROW_PRODUCTS = [
         "filter": "none",
         "gallery": [
           {
-            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "src": "./assets/catalog/computer-hp-hyperx-omen-pro-16.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -7295,7 +7313,7 @@ window.MORROW_PRODUCTS = [
         "filter": "brightness(1.15) saturate(.5) contrast(.94)",
         "gallery": [
           {
-            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "src": "./assets/catalog/computer-hp-hyperx-omen-pro-16.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -7309,7 +7327,7 @@ window.MORROW_PRODUCTS = [
         "filter": "sepia(.25) hue-rotate(180deg) saturate(1.2) brightness(.82)",
         "gallery": [
           {
-            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "src": "./assets/catalog/computer-hp-hyperx-omen-pro-16.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -7323,7 +7341,7 @@ window.MORROW_PRODUCTS = [
         "filter": "sepia(.12) brightness(1.16) saturate(.7)",
         "gallery": [
           {
-            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "src": "./assets/catalog/computer-hp-hyperx-omen-pro-16.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -7337,7 +7355,7 @@ window.MORROW_PRODUCTS = [
         "filter": "sepia(.45) hue-rotate(160deg) saturate(1.8)",
         "gallery": [
           {
-            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "src": "./assets/catalog/computer-hp-hyperx-omen-pro-16.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -7351,7 +7369,7 @@ window.MORROW_PRODUCTS = [
         "filter": "sepia(.48) hue-rotate(310deg) saturate(1.25) brightness(1.03)",
         "gallery": [
           {
-            "src": "./assets/catalog/computer-hp-omen-10.jpg",
+            "src": "./assets/catalog/computer-hp-hyperx-omen-pro-16.jpg",
             "position": "50% 50%",
             "scale": 1,
             "fit": "cover",
@@ -7361,13 +7379,14 @@ window.MORROW_PRODUCTS = [
       }
     ],
     "source": {
-      "name": "ZOL / 苏宁公开页面核对",
-      "url": "https://m.suning.com/search/%E6%83%A0%E6%99%AE%20%E6%9A%97%E5%BD%B1%E7%B2%BE%E7%81%B510/",
-      "matchedTitle": "惠普 暗影精灵10",
-      "priceText": "参考价 ¥7999",
-      "priceBasis": "公开零售页面型号核对后的参考价",
-      "updatedAt": "2026-09-28",
-      "note": "价格会随地区、版本和促销活动变化，下单前以支付入口展示为准。"
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/notebook_index/subcate16_list_1.html",
+      "listUrl": "https://detail.zol.com.cn/notebook_index/subcate16_list_1.html",
+      "matchedTitle": "惠普 HyperX 暗影精灵 Pro 16 RTX 5060 游戏本",
+      "priceText": "参考价 ¥12999",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
     },
     "variantGroups": [
       {
@@ -7412,7 +7431,7 @@ window.MORROW_PRODUCTS = [
       "memory": "memory-16gb",
       "storage": "storage-512gb"
     },
-    "displayName": "惠普暗影精灵 10 游戏本"
+    "displayName": "惠普 HyperX 暗影精灵 Pro 16 RTX 5060 游戏本"
   },
   {
     "id": "computer-lenovo-xiaoxin-pro-14",
@@ -7736,5 +7755,1205 @@ window.MORROW_PRODUCTS = [
       "storage": "storage-512gb"
     },
     "displayName": "联想 ThinkPad E14 2.8K AI 商务本"
+  },
+  {
+    "id": "audio-market-2169631",
+    "name": "爱国者CA88 AI版",
+    "series": "耳机影音 / 001",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "精选品牌",
+    "price": 198,
+    "priceLabel": "¥198",
+    "compareAt": 220,
+    "stock": 38,
+    "sales": 4800,
+    "rating": 4.6,
+    "reviewCount": 520,
+    "featured": true,
+    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/audio-2169631.jpg",
+    "colors": [
+      {
+        "name": "曜石黑",
+        "value": "#20242b"
+      },
+      {
+        "name": "云母白",
+        "value": "#e9e8e2"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/microphone/index2169631.shtml",
+      "listUrl": "https://headphone.zol.com.cn/",
+      "matchedTitle": "爱国者CA88 AI版",
+      "priceText": "参考价 ¥198",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-market-2109554",
+    "name": "爱国者G03",
+    "series": "耳机影音 / 002",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "精选品牌",
+    "price": 119,
+    "priceLabel": "¥119",
+    "compareAt": 130,
+    "stock": 32,
+    "sales": 6175,
+    "rating": 4.7,
+    "reviewCount": 707,
+    "featured": true,
+    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/audio-2109554.jpg",
+    "colors": [
+      {
+        "name": "曜石黑",
+        "value": "#20242b"
+      },
+      {
+        "name": "云母白",
+        "value": "#e9e8e2"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/microphone/index2109554.shtml",
+      "listUrl": "https://headphone.zol.com.cn/",
+      "matchedTitle": "爱国者G03",
+      "priceText": "参考价 ¥119",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-market-69156",
+    "name": "森海塞尔HD600",
+    "series": "耳机影音 / 003",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "精选品牌",
+    "price": 1999,
+    "priceLabel": "¥1999",
+    "compareAt": 2280,
+    "stock": 47,
+    "sales": 7550,
+    "rating": 4.8,
+    "reviewCount": 894,
+    "featured": true,
+    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/audio-69156.jpg",
+    "colors": [
+      {
+        "name": "曜石黑",
+        "value": "#20242b"
+      },
+      {
+        "name": "云母白",
+        "value": "#e9e8e2"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/microphone/index69156.shtml",
+      "listUrl": "https://headphone.zol.com.cn/",
+      "matchedTitle": "森海塞尔HD600",
+      "priceText": "参考价 ¥1999",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-market-69159",
+    "name": "森海塞尔HD650",
+    "series": "耳机影音 / 004",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "精选品牌",
+    "price": 3699,
+    "priceLabel": "¥3699",
+    "compareAt": 4290,
+    "stock": 21,
+    "sales": 8925,
+    "rating": 4.9,
+    "reviewCount": 1081,
+    "featured": true,
+    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/audio-69159.jpg",
+    "colors": [
+      {
+        "name": "曜石黑",
+        "value": "#20242b"
+      },
+      {
+        "name": "云母白",
+        "value": "#e9e8e2"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/microphone/index69159.shtml",
+      "listUrl": "https://headphone.zol.com.cn/",
+      "matchedTitle": "森海塞尔HD650",
+      "priceText": "参考价 ¥3699",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-market-1166385",
+    "name": "铁三角ATH-M20x",
+    "series": "耳机影音 / 005",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "精选品牌",
+    "price": 379,
+    "priceLabel": "¥379",
+    "compareAt": 420,
+    "stock": 18,
+    "sales": 10300,
+    "rating": 4.6,
+    "reviewCount": 1268,
+    "featured": false,
+    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/audio-1166385.jpg",
+    "colors": [
+      {
+        "name": "曜石黑",
+        "value": "#20242b"
+      },
+      {
+        "name": "云母白",
+        "value": "#e9e8e2"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/microphone/index1166385.shtml",
+      "listUrl": "https://headphone.zol.com.cn/",
+      "matchedTitle": "铁三角ATH-M20x",
+      "priceText": "参考价 ¥379",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-market-2180006",
+    "name": "JBL SOUNDGEAR ",
+    "series": "耳机影音 / 006",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "精选品牌",
+    "price": 1105,
+    "priceLabel": "¥1105",
+    "compareAt": 1240,
+    "stock": 36,
+    "sales": 11675,
+    "rating": 4.7,
+    "reviewCount": 1455,
+    "featured": false,
+    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/audio-2180006.jpg",
+    "colors": [
+      {
+        "name": "曜石黑",
+        "value": "#20242b"
+      },
+      {
+        "name": "云母白",
+        "value": "#e9e8e2"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/microphone/index2180006.shtml",
+      "listUrl": "https://headphone.zol.com.cn/",
+      "matchedTitle": "JBL SOUNDGEAR ",
+      "priceText": "参考价 ¥1105",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-market-2180525",
+    "name": "苹果HomePod mini 2",
+    "series": "耳机影音 / 001",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "苹果",
+    "price": 1099,
+    "priceLabel": "¥1099",
+    "compareAt": 1210,
+    "stock": 32,
+    "sales": 4800,
+    "rating": 4.6,
+    "reviewCount": 520,
+    "featured": true,
+    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/audio-2180525.jpg",
+    "colors": [
+      {
+        "name": "曜石黑",
+        "value": "#20242b"
+      },
+      {
+        "name": "云母白",
+        "value": "#e9e8e2"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/speaker/index2180525.shtml",
+      "listUrl": "https://detail.zol.com.cn/speaker/",
+      "matchedTitle": "苹果HomePod mini 2",
+      "priceText": "参考价 ¥1099",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-market-2180011",
+    "name": "哈曼卡顿AURA STUDIO 5 黑金典藏版",
+    "series": "耳机影音 / 002",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "精选品牌",
+    "price": 2554,
+    "priceLabel": "¥2554",
+    "compareAt": 2860,
+    "stock": 31,
+    "sales": 6175,
+    "rating": 4.7,
+    "reviewCount": 707,
+    "featured": true,
+    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/audio-2180011.jpg",
+    "colors": [
+      {
+        "name": "曜石黑",
+        "value": "#20242b"
+      },
+      {
+        "name": "云母白",
+        "value": "#e9e8e2"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/speaker/index2180011.shtml",
+      "listUrl": "https://detail.zol.com.cn/speaker/",
+      "matchedTitle": "哈曼卡顿AURA STUDIO 5 黑金典藏版",
+      "priceText": "参考价 ¥2554",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-market-2158948",
+    "name": "JBL PARTYBOX CLUB 120",
+    "series": "耳机影音 / 003",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "精选品牌",
+    "price": 2289,
+    "priceLabel": "¥2289",
+    "compareAt": 2610,
+    "stock": 39,
+    "sales": 7550,
+    "rating": 4.8,
+    "reviewCount": 894,
+    "featured": true,
+    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/audio-2158948.jpg",
+    "colors": [
+      {
+        "name": "曜石黑",
+        "value": "#20242b"
+      },
+      {
+        "name": "云母白",
+        "value": "#e9e8e2"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/speaker/index2158948.shtml",
+      "listUrl": "https://detail.zol.com.cn/speaker/",
+      "matchedTitle": "JBL PARTYBOX CLUB 120",
+      "priceText": "参考价 ¥2289",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-market-2143229",
+    "name": "小米Sound 2 Max",
+    "series": "耳机影音 / 004",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "小米",
+    "price": 1999,
+    "priceLabel": "¥1999",
+    "compareAt": 2320,
+    "stock": 33,
+    "sales": 8925,
+    "rating": 4.9,
+    "reviewCount": 1081,
+    "featured": true,
+    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/audio-2143229.jpg",
+    "colors": [
+      {
+        "name": "曜石黑",
+        "value": "#20242b"
+      },
+      {
+        "name": "云母白",
+        "value": "#e9e8e2"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/speaker/index2143229.shtml",
+      "listUrl": "https://detail.zol.com.cn/speaker/",
+      "matchedTitle": "小米Sound 2 Max",
+      "priceText": "参考价 ¥1999",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-market-2131584",
+    "name": "harman/kardon 音乐水晶5代 流光版",
+    "series": "耳机影音 / 005",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "精选品牌",
+    "price": 2939,
+    "priceLabel": "¥2939",
+    "compareAt": 3230,
+    "stock": 17,
+    "sales": 10300,
+    "rating": 4.6,
+    "reviewCount": 1268,
+    "featured": false,
+    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/audio-2131584.jpg",
+    "colors": [
+      {
+        "name": "曜石黑",
+        "value": "#20242b"
+      },
+      {
+        "name": "云母白",
+        "value": "#e9e8e2"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/speaker/index2131584.shtml",
+      "listUrl": "https://detail.zol.com.cn/speaker/",
+      "matchedTitle": "harman/kardon 音乐水晶5代 流光版",
+      "priceText": "参考价 ¥2939",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-market-2123273",
+    "name": "得胜E17（新版）",
+    "series": "耳机影音 / 006",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "精选品牌",
+    "price": 1299,
+    "priceLabel": "¥1299",
+    "compareAt": 1450,
+    "stock": 19,
+    "sales": 11675,
+    "rating": 4.7,
+    "reviewCount": 1455,
+    "featured": false,
+    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/audio-2123273.jpg",
+    "colors": [
+      {
+        "name": "曜石黑",
+        "value": "#20242b"
+      },
+      {
+        "name": "云母白",
+        "value": "#e9e8e2"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/loudspeaker/index2123273.shtml",
+      "listUrl": "https://detail.zol.com.cn/speaker/",
+      "matchedTitle": "得胜E17（新版）",
+      "priceText": "参考价 ¥1299",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-market-2123270",
+    "name": "得胜E188M升级版",
+    "series": "耳机影音 / 007",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "精选品牌",
+    "price": 169,
+    "priceLabel": "¥169",
+    "compareAt": 190,
+    "stock": 29,
+    "sales": 13050,
+    "rating": 4.8,
+    "reviewCount": 1642,
+    "featured": false,
+    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/audio-2123270.jpg",
+    "colors": [
+      {
+        "name": "曜石黑",
+        "value": "#20242b"
+      },
+      {
+        "name": "云母白",
+        "value": "#e9e8e2"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/loudspeaker/index2123270.shtml",
+      "listUrl": "https://detail.zol.com.cn/speaker/",
+      "matchedTitle": "得胜E188M升级版",
+      "priceText": "参考价 ¥169",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-market-2181205",
+    "name": "狼蛛F87Pro V2宗师版 海穹轴",
+    "series": "桌面办公 / 001",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "精选品牌",
+    "price": 296,
+    "priceLabel": "¥296",
+    "compareAt": 330,
+    "stock": 12,
+    "sales": 4800,
+    "rating": 4.6,
+    "reviewCount": 520,
+    "featured": true,
+    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/desk-2181205.jpg",
+    "colors": [
+      {
+        "name": "石墨黑",
+        "value": "#23262b"
+      },
+      {
+        "name": "雾白",
+        "value": "#e7e5df"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/keyboard/index2181205.shtml",
+      "listUrl": "https://detail.zol.com.cn/keyboard/",
+      "matchedTitle": "狼蛛F87Pro V2宗师版 海穹轴",
+      "priceText": "参考价 ¥296",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-market-2181204",
+    "name": "狼蛛F87Pro V2宗师版 焦糖拿铁轴",
+    "series": "桌面办公 / 002",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "精选品牌",
+    "price": 284,
+    "priceLabel": "¥284",
+    "compareAt": 320,
+    "stock": 24,
+    "sales": 6175,
+    "rating": 4.7,
+    "reviewCount": 707,
+    "featured": true,
+    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/desk-2181204.jpg",
+    "colors": [
+      {
+        "name": "石墨黑",
+        "value": "#23262b"
+      },
+      {
+        "name": "雾白",
+        "value": "#e7e5df"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/keyboard/index2181204.shtml",
+      "listUrl": "https://detail.zol.com.cn/keyboard/",
+      "matchedTitle": "狼蛛F87Pro V2宗师版 焦糖拿铁轴",
+      "priceText": "参考价 ¥284",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-market-2180780",
+    "name": "微星X68K",
+    "series": "桌面办公 / 003",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "精选品牌",
+    "price": 779,
+    "priceLabel": "¥779",
+    "compareAt": 890,
+    "stock": 29,
+    "sales": 7550,
+    "rating": 4.8,
+    "reviewCount": 894,
+    "featured": true,
+    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/desk-2180780.jpg",
+    "colors": [
+      {
+        "name": "石墨黑",
+        "value": "#23262b"
+      },
+      {
+        "name": "雾白",
+        "value": "#e7e5df"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/keyboard/index2180780.shtml",
+      "listUrl": "https://detail.zol.com.cn/keyboard/",
+      "matchedTitle": "微星X68K",
+      "priceText": "参考价 ¥779",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-market-2180756",
+    "name": "AULA（狼蛛）WIN68 粉雾透 灰木磁轴",
+    "series": "桌面办公 / 004",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "精选品牌",
+    "price": 219,
+    "priceLabel": "¥219",
+    "compareAt": 250,
+    "stock": 18,
+    "sales": 8925,
+    "rating": 4.9,
+    "reviewCount": 1081,
+    "featured": true,
+    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/desk-2180756.jpg",
+    "colors": [
+      {
+        "name": "石墨黑",
+        "value": "#23262b"
+      },
+      {
+        "name": "雾白",
+        "value": "#e7e5df"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/keyboard/index2180756.shtml",
+      "listUrl": "https://detail.zol.com.cn/keyboard/",
+      "matchedTitle": "AULA（狼蛛）WIN68 粉雾透 灰木磁轴",
+      "priceText": "参考价 ¥219",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-market-2180753",
+    "name": "AULA（狼蛛）WIN68 陨石黑蝶恋 灰木磁轴",
+    "series": "桌面办公 / 005",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "精选品牌",
+    "price": 199,
+    "priceLabel": "¥199",
+    "compareAt": 220,
+    "stock": 28,
+    "sales": 10300,
+    "rating": 4.6,
+    "reviewCount": 1268,
+    "featured": false,
+    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/desk-2180753.jpg",
+    "colors": [
+      {
+        "name": "石墨黑",
+        "value": "#23262b"
+      },
+      {
+        "name": "雾白",
+        "value": "#e7e5df"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/keyboard/index2180753.shtml",
+      "listUrl": "https://detail.zol.com.cn/keyboard/",
+      "matchedTitle": "AULA（狼蛛）WIN68 陨石黑蝶恋 灰木磁轴",
+      "priceText": "参考价 ¥199",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-market-2180752",
+    "name": "狼蛛WIN68 标准粉 灰木磁轴",
+    "series": "桌面办公 / 006",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "精选品牌",
+    "price": 129,
+    "priceLabel": "¥129",
+    "compareAt": 140,
+    "stock": 40,
+    "sales": 11675,
+    "rating": 4.7,
+    "reviewCount": 1455,
+    "featured": false,
+    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/desk-2180752.jpg",
+    "colors": [
+      {
+        "name": "石墨黑",
+        "value": "#23262b"
+      },
+      {
+        "name": "雾白",
+        "value": "#e7e5df"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/keyboard/index2180752.shtml",
+      "listUrl": "https://detail.zol.com.cn/keyboard/",
+      "matchedTitle": "狼蛛WIN68 标准粉 灰木磁轴",
+      "priceText": "参考价 ¥129",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-market-2180750",
+    "name": "狼蛛WIN68 标准白 灰木磁轴",
+    "series": "桌面办公 / 007",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "精选品牌",
+    "price": 179,
+    "priceLabel": "¥179",
+    "compareAt": 200,
+    "stock": 9,
+    "sales": 13050,
+    "rating": 4.8,
+    "reviewCount": 1642,
+    "featured": false,
+    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/desk-2180750.jpg",
+    "colors": [
+      {
+        "name": "石墨黑",
+        "value": "#23262b"
+      },
+      {
+        "name": "雾白",
+        "value": "#e7e5df"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/keyboard/index2180750.shtml",
+      "listUrl": "https://detail.zol.com.cn/keyboard/",
+      "matchedTitle": "狼蛛WIN68 标准白 灰木磁轴",
+      "priceText": "参考价 ¥179",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-market-2180749",
+    "name": "狼蛛WIN68 微尘灰 灰木磁轴",
+    "series": "桌面办公 / 008",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "精选品牌",
+    "price": 179,
+    "priceLabel": "¥179",
+    "compareAt": 210,
+    "stock": 21,
+    "sales": 14425,
+    "rating": 4.9,
+    "reviewCount": 1829,
+    "featured": false,
+    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/desk-2180749.jpg",
+    "colors": [
+      {
+        "name": "石墨黑",
+        "value": "#23262b"
+      },
+      {
+        "name": "雾白",
+        "value": "#e7e5df"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/keyboard/index2180749.shtml",
+      "listUrl": "https://detail.zol.com.cn/keyboard/",
+      "matchedTitle": "狼蛛WIN68 微尘灰 灰木磁轴",
+      "priceText": "参考价 ¥179",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-market-2180816",
+    "name": "惠普清新国风无线鼠标 蓝牙双模",
+    "series": "桌面办公 / 001",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "惠普",
+    "price": 65,
+    "priceLabel": "¥65",
+    "compareAt": 70,
+    "stock": 23,
+    "sales": 4800,
+    "rating": 4.6,
+    "reviewCount": 520,
+    "featured": true,
+    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/desk-2180816.jpg",
+    "colors": [
+      {
+        "name": "石墨黑",
+        "value": "#23262b"
+      },
+      {
+        "name": "雾白",
+        "value": "#e7e5df"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/mice/index2180816.shtml",
+      "listUrl": "https://detail.zol.com.cn/mice/",
+      "matchedTitle": "惠普清新国风无线鼠标 蓝牙双模",
+      "priceText": "参考价 ¥65",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-market-2180815",
+    "name": "惠普清新国风无线鼠标 标准",
+    "series": "桌面办公 / 002",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "惠普",
+    "price": 45,
+    "priceLabel": "¥45",
+    "compareAt": 50,
+    "stock": 35,
+    "sales": 6175,
+    "rating": 4.7,
+    "reviewCount": 707,
+    "featured": true,
+    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/desk-2180815.jpg",
+    "colors": [
+      {
+        "name": "石墨黑",
+        "value": "#23262b"
+      },
+      {
+        "name": "雾白",
+        "value": "#e7e5df"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/mice/index2180815.shtml",
+      "listUrl": "https://detail.zol.com.cn/mice/",
+      "matchedTitle": "惠普清新国风无线鼠标 标准",
+      "priceText": "参考价 ¥45",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-market-2180810",
+    "name": "惠普渐变鼠标 蓝牙双模",
+    "series": "桌面办公 / 003",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "惠普",
+    "price": 65,
+    "priceLabel": "¥65",
+    "compareAt": 70,
+    "stock": 43,
+    "sales": 7550,
+    "rating": 4.8,
+    "reviewCount": 894,
+    "featured": true,
+    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/desk-2180810.jpg",
+    "colors": [
+      {
+        "name": "石墨黑",
+        "value": "#23262b"
+      },
+      {
+        "name": "雾白",
+        "value": "#e7e5df"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/mice/index2180810.shtml",
+      "listUrl": "https://detail.zol.com.cn/mice/",
+      "matchedTitle": "惠普渐变鼠标 蓝牙双模",
+      "priceText": "参考价 ¥65",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-market-2178341",
+    "name": "AKKO 疾风TAN7 Master",
+    "series": "桌面办公 / 004",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "精选品牌",
+    "price": 299,
+    "priceLabel": "¥299",
+    "compareAt": 350,
+    "stock": 45,
+    "sales": 8925,
+    "rating": 4.9,
+    "reviewCount": 1081,
+    "featured": true,
+    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/desk-2178341.jpg",
+    "colors": [
+      {
+        "name": "石墨黑",
+        "value": "#23262b"
+      },
+      {
+        "name": "雾白",
+        "value": "#e7e5df"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/mice/index2178341.shtml",
+      "listUrl": "https://detail.zol.com.cn/mice/",
+      "matchedTitle": "AKKO 疾风TAN7 Master",
+      "priceText": "参考价 ¥299",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-market-2178340",
+    "name": "AKKO 疾风TAN7 Ultra",
+    "series": "桌面办公 / 005",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "精选品牌",
+    "price": 139,
+    "priceLabel": "¥139",
+    "compareAt": 150,
+    "stock": 15,
+    "sales": 10300,
+    "rating": 4.6,
+    "reviewCount": 1268,
+    "featured": false,
+    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/desk-2178340.jpg",
+    "colors": [
+      {
+        "name": "石墨黑",
+        "value": "#23262b"
+      },
+      {
+        "name": "雾白",
+        "value": "#e7e5df"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/mice/index2178340.shtml",
+      "listUrl": "https://detail.zol.com.cn/mice/",
+      "matchedTitle": "AKKO 疾风TAN7 Ultra",
+      "priceText": "参考价 ¥139",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-market-2178338",
+    "name": "B.O.W S1",
+    "series": "桌面办公 / 006",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "精选品牌",
+    "price": 119,
+    "priceLabel": "¥119",
+    "compareAt": 130,
+    "stock": 26,
+    "sales": 11675,
+    "rating": 4.7,
+    "reviewCount": 1455,
+    "featured": false,
+    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/desk-2178338.jpg",
+    "colors": [
+      {
+        "name": "石墨黑",
+        "value": "#23262b"
+      },
+      {
+        "name": "雾白",
+        "value": "#e7e5df"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/mice/index2178338.shtml",
+      "listUrl": "https://detail.zol.com.cn/mice/",
+      "matchedTitle": "B.O.W S1",
+      "priceText": "参考价 ¥119",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-market-2178337",
+    "name": "B.O.W M19",
+    "series": "桌面办公 / 007",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "精选品牌",
+    "price": 59,
+    "priceLabel": "¥59",
+    "compareAt": 70,
+    "stock": 38,
+    "sales": 13050,
+    "rating": 4.8,
+    "reviewCount": 1642,
+    "featured": false,
+    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/desk-2178337.jpg",
+    "colors": [
+      {
+        "name": "石墨黑",
+        "value": "#23262b"
+      },
+      {
+        "name": "雾白",
+        "value": "#e7e5df"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/mice/index2178337.shtml",
+      "listUrl": "https://detail.zol.com.cn/mice/",
+      "matchedTitle": "B.O.W M19",
+      "priceText": "参考价 ¥59",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "tablet-market-2136094",
+    "name": "华为MatePad Pro 12.2英寸 2025(12GB/512GB/柔光版)",
+    "series": "平板电脑 / 001",
+    "category": "tablet",
+    "categoryLabel": "平板电脑",
+    "brand": "华为",
+    "price": 4799,
+    "priceLabel": "¥4799",
+    "compareAt": 5280,
+    "stock": 17,
+    "sales": 4800,
+    "rating": 4.6,
+    "reviewCount": 520,
+    "featured": true,
+    "description": "平板电脑热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/tablet-2136094.jpg",
+    "colors": [
+      {
+        "name": "深空灰",
+        "value": "#4d5157"
+      },
+      {
+        "name": "冰川银",
+        "value": "#cfd3d7"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/tablepc/index2136094.shtml",
+      "listUrl": "https://pad.zol.com.cn/",
+      "matchedTitle": "华为MatePad Pro 12.2英寸 2025(12GB/512GB/柔光版)",
+      "priceText": "参考价 ¥4799",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "tablet-market-2115273",
+    "name": "华为MatePad Pro 13.2 英寸 2025（12GB/256GB）",
+    "series": "平板电脑 / 002",
+    "category": "tablet",
+    "categoryLabel": "平板电脑",
+    "brand": "华为",
+    "price": 4899,
+    "priceLabel": "¥4899",
+    "compareAt": 5490,
+    "stock": 9,
+    "sales": 6175,
+    "rating": 4.7,
+    "reviewCount": 707,
+    "featured": true,
+    "description": "平板电脑热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/tablet-2115273.jpg",
+    "colors": [
+      {
+        "name": "深空灰",
+        "value": "#4d5157"
+      },
+      {
+        "name": "冰川银",
+        "value": "#cfd3d7"
+      }
+    ],
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/tablepc/index2115273.shtml",
+      "listUrl": "https://pad.zol.com.cn/",
+      "matchedTitle": "华为MatePad Pro 13.2 英寸 2025（12GB/256GB）",
+      "priceText": "参考价 ¥4899",
+      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
+      "updatedAt": "2026-10-19",
+      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    }
   }
 ];
