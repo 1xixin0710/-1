@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#f4f7fb" />
     <title>MORROW 器物商店</title>
     <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css?v=20261019-4" />
+    <link rel="stylesheet" href="./styles.css?v=20261019-5" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">跳到主要内容</a>
@@ -26,7 +26,8 @@
           <div class="market-ribbon-links">
             <button type="button" data-action="open-support">AI 导购</button>
             <a href="./orders/">我的订单</a>
-            <a href="./service/">售后服务</a>
+            <a class="ribbon-service" href="./service/">售后服务</a>
+            <a href="./admin/">管理后台</a>
           </div>
         </div>
       </div>
@@ -38,9 +39,10 @@
         </a>
 
         <nav class="desktop-nav" aria-label="商店导航">
-          <a href="#store" data-route="store">首页</a>
+          <a class="is-active" href="#store" data-route="store">首页</a>
           <a href="#deals" data-scroll-target="deals">实时好价</a>
           <a href="#catalog" data-scroll-target="catalog">全部商品</a>
+          <a href="./admin/">管理后台</a>
           <button type="button" data-action="open-support">AI 导购</button>
         </nav>
 
@@ -456,9 +458,9 @@
 
     <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
 
-    <script src="./data/catalog.js?v=20261019-4"></script>
+    <script src="./data/catalog.js?v=20261019-5"></script>
     <script src="./assets/vendor/lucide.min.js"></script>
-    <script src="./support.js?v=20261019-4" defer></script>
-    <script src="./app.js?v=20261019-4" defer></script>
+    <script src="./support.js?v=20261019-5" defer></script>
+    <script src="./app.js?v=20261019-5" defer></script>
   </body>
 </html>

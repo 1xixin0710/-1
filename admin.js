@@ -391,6 +391,13 @@ adminDom.loginForm?.addEventListener("submit", async (event) => {
   }
 });
 
+document.querySelector("[data-admin-demo-login]")?.addEventListener("click", () => {
+  const codeInput = adminDom.loginForm?.elements.code;
+  if (!adminDom.loginForm || !codeInput) return;
+  codeInput.value = "2026";
+  adminDom.loginForm.requestSubmit();
+});
+
 adminDom.logout?.addEventListener("click", () => {
   window.sessionStorage.removeItem("morrow.admin.code");
   window.location.reload();

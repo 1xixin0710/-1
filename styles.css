@@ -4166,13 +4166,19 @@ body {
 }
 
 .desktop-nav {
-  gap: 30px;
+  gap: 2px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f6f7f7;
   font-size: 13px;
 }
 
 .desktop-nav a,
 .desktop-nav button {
   min-height: 40px;
+  padding: 0 13px;
+  border-radius: 6px;
   cursor: pointer;
   background: transparent;
   color: var(--ink-soft);
@@ -4184,6 +4190,26 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 5px;
+  color: var(--market-teal);
+}
+
+.desktop-nav a::after {
+  display: none;
+}
+
+.desktop-nav a:hover,
+.desktop-nav button:hover {
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.desktop-nav a.is-active {
+  background: #ffffff;
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgba(25, 28, 31, 0.08);
+}
+
+.desktop-nav button:hover {
   color: var(--market-teal);
 }
 
@@ -5451,15 +5477,19 @@ body {
   }
 
   .market-hero {
-    grid-template-columns: minmax(275px, 0.8fr) minmax(390px, 1.25fr) minmax(220px, 0.58fr);
+    grid-template-columns: minmax(280px, 0.85fr) minmax(390px, 1.35fr);
   }
 
   .hero-discovery {
-    padding: 30px;
+    padding: 28px;
   }
 
   .hero-discovery h1 {
-    font-size: 48px;
+    font-size: 40px;
+  }
+
+  .hero-rail {
+    display: none;
   }
 
   .deal-grid,
@@ -5544,7 +5574,7 @@ body {
     gap: 12px;
   }
 
-  .market-ribbon-links a:last-child {
+  .market-ribbon-links a.ribbon-service {
     display: none;
   }
 
@@ -5631,34 +5661,44 @@ body {
   }
 
   .hero-discovery {
-    padding: 28px 22px;
+    padding: 22px 18px;
   }
 
   .hero-discovery .eyebrow {
-    margin-top: 28px;
+    display: none;
   }
 
   .hero-discovery h1 {
-    font-size: 39px;
+    margin-top: 20px;
+    font-size: 32px;
+    line-height: 1.08;
   }
 
   .hero-discovery .hero-intro {
-    margin-top: 16px;
+    display: -webkit-box;
+    margin-top: 10px;
     font-size: 12px;
+    line-height: 1.65;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 
   .hero-discovery .hero-actions {
-    margin-top: 22px;
+    margin-top: 16px;
+  }
+
+  .hero-discovery .hero-actions .text-button {
+    display: none;
   }
 
   .hero-discovery .hero-meta {
-    margin-top: 28px;
-    padding-top: 20px;
+    display: none;
   }
 
   .hero-feature {
-    min-height: 390px;
-    padding: 18px;
+    min-height: 268px;
+    padding: 14px;
   }
 
   .hero-feature-media {
@@ -5676,8 +5716,7 @@ body {
   }
 
   .hero-rail {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    display: none;
   }
 
   .hero-rail-card {
