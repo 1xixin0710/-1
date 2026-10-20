@@ -2939,7 +2939,7 @@ textarea:focus-visible {
 .system-hero h1 {
   grid-column: 1;
   margin-top: 12px;
-  font-size: clamp(48px, 7vw, 88px);
+  font-size: clamp(48px, 5.2vw, 72px);
   line-height: 0.98;
 }
 
@@ -3376,7 +3376,7 @@ textarea:focus-visible {
   gap: 8px;
 }
 
-.support-service-link {
+.support-service-trigger {
   display: inline-flex;
   min-height: 48px;
   align-items: center;
@@ -3392,12 +3392,12 @@ textarea:focus-visible {
   backdrop-filter: blur(12px);
 }
 
-.support-service-link:hover {
+.support-service-trigger:hover {
   border-color: var(--market-teal);
   color: var(--market-teal);
 }
 
-.support-service-link svg {
+.support-service-trigger svg {
   width: 17px;
   height: 17px;
 }
@@ -3988,7 +3988,7 @@ textarea:focus-visible {
   }
 
   .system-hero h1 {
-    font-size: 50px;
+    font-size: 38px;
   }
 
   .lookup-panel {
@@ -4055,11 +4055,13 @@ textarea:focus-visible {
   .service-flow li,
   .service-flow li:nth-child(3),
   .service-flow li:nth-child(4) {
+    min-height: 0;
     border-top: 0;
     border-right: 1px solid var(--line);
   }
 
   .service-flow li:first-child {
+    min-height: 0;
     border-top: 1px solid var(--line);
   }
 
@@ -4078,14 +4080,14 @@ textarea:focus-visible {
   }
 
   .support-trigger {
-    width: 50px;
-    min-width: 50px;
-    padding: 0;
+    width: auto;
+    min-width: 0;
+    padding: 0 12px;
     justify-content: center;
   }
 
   .support-trigger span {
-    display: none;
+    display: inline;
   }
 
   .support-panel {
@@ -5452,8 +5454,29 @@ body {
   background: #095c53;
 }
 
+.support-trigger.support-service-trigger {
+  border: 1px solid #cbe4de;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 10px 28px rgba(13, 116, 104, 0.12);
+  color: var(--market-teal);
+}
+
+.support-trigger.support-service-trigger:hover {
+  border-color: var(--market-teal);
+  background: #f0faf7;
+  color: #095c53;
+}
+
 .support-panel {
   border-radius: 8px;
+}
+
+.support-panel-service .support-head {
+  border-top: 3px solid var(--market-teal);
+}
+
+.support-panel-ai .support-head {
+  border-top: 3px solid var(--ink);
 }
 
 .support-message.is-user p {

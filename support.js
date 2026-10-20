@@ -40,26 +40,19 @@ function supportOrderSummary(order) {
   return `订单号 ${order.orderNumber}，共 ${itemCount} 件商品，金额 ${supportCurrency(order.total)}，当前状态：${order.paymentStatus || "演示支付已确认"}。`;
 }
 
-function supportLocalReply(message) {
+function supportNeedsCustomerService(message) {
+  return /(订单|订单号|查单|物流|发货|配送|多久到|快递|退换|退货|退款|换货|保修|质保|维修|故障|坏了|售后|支付|扣款|支付宝|微信|银行卡|地址|收件人|发票|开票)/.test(
+    String(message || ""),
+  );
+}
+
+function customerSupportReply(message) {
   const text = String(message || "").trim();
   const orders = supportOrders();
   const orderCode = text.match(/MR[-\w]+/i)?.[0];
 
   if (/^(你好|您好|在吗|有人吗|嗨|hello|hi)[！!。,.，\s]*$/i.test(text)) {
-    return "你好，我是 MORROW AI 导购。告诉我预算、用途或想比较的商品，我会直接从当前商城筛选。";
-  }
-
-  if (/(优惠|活动|好价|便宜|划算)/.test(text)) {
-    const picks = supportRelevantProducts("热门 优惠")
-      .slice(0, 3)
-      .map(
-        (product) =>
-          `${product.displayName || product.name} ${supportCurrency(product.price)}`,
-      )
-      .join("、");
-    return picks
-      ? `当前精选商品里可以优先看：${picks}。页面价格会按实时行情小幅变化，最终以商品详情为准。`
-      : "当前可以按品类查看实时好价。告诉我预算和用途，我会直接筛出更合适的商品。";
+    return "你好，我是 MORROW 售后客服。请告诉我订单号，或直接说明发货、退换、保修方面的问题。";
   }
 
   if (orderCode) {
@@ -103,11 +96,37 @@ function supportLocalReply(message) {
     return "演示环境不生成真实发票。正式商城通常会根据订单号和抬头信息开具电子发票。";
   }
 
-  return "";
+  if (
+    supportCategoryIntent(text) ||
+    /(推荐|怎么选|哪款|哪个好|比较|适合|值得买|性价比|热门|想买|选一)/.test(
+      text,
+    )
+  ) {
+    return "商品推荐、比价和配置选择请使用右下角的“AI 导购”。这里专门处理订单、配送、退换和保修。";
+  }
+
+  return "我在。请提供订单号，并简单说明是配送、退换、保修还是支付问题，我会按当前售后规则给出处理路径。";
 }
 
 function supportRecommendationReply(message) {
   const text = String(message || "").trim();
+  if (/^(你好|您好|在吗|有人吗|嗨|hello|hi)[！!。,.，\s]*$/i.test(text)) {
+    return "你好，我是 MORROW AI 导购。告诉我预算、用途或想比较的商品，我会从当前商城直接筛选。订单和售后问题请使用“售后客服”。";
+  }
+
+  if (/(优惠|活动|好价|便宜|划算)/.test(text)) {
+    const picks = supportRelevantProducts(`${text} 热门 优惠`)
+      .slice(0, 3)
+      .map(
+        (product) =>
+          `${product.displayName || product.name} ${supportCurrency(product.price)}`,
+      )
+      .join("、");
+    return picks
+      ? `当前精选商品里可以优先看：${picks}。页面价格会按实时行情小幅变化，最终以商品详情为准。`
+      : "当前可以按品类查看实时好价。告诉我预算和用途，我会直接筛出更合适的商品。";
+  }
+
   const category = supportCategoryIntent(text);
   const budget = Number(
     text.match(/(?:预算|以内|不超过|低于|左右)?\s*(\d{3,6})\s*(?:元|块)?/)?.[1] || 0,
@@ -226,8 +245,10 @@ function supportProductContext(message) {
 }
 
 async function supportAiReply(message, history) {
-  const localReply = supportLocalReply(message);
-  if (localReply) return localReply;
+  if (supportNeedsCustomerService(message)) {
+    return "订单、物流、退换和保修问题请使用右下角的“售后客服”。AI 导购只负责商品筛选、比较和推荐。";
+  }
+
   const recommendationReply = supportRecommendationReply(message);
   if (recommendationReply) return recommendationReply;
 
@@ -237,7 +258,7 @@ async function supportAiReply(message, history) {
     "优先根据下面提供的商品上下文推荐 2-3 件商品，说明价格、定位和适合人群。",
     "商品价格是公开参考价叠加实时行情演示，不能承诺最低价、库存或真实成交。",
     "不要编造上下文里没有的商品、优惠、物流或支付结果。",
-    "订单、物流、退换、保修、支付、发票问题只按商城演示规则说明事实。",
+    "你只负责商品推荐与比较。订单、物流、退换、保修、支付和发票问题应提示用户联系“售后客服”，不要自行处理。",
     "回答控制在 180 个汉字左右，不使用 Markdown 表格。",
     "",
     "当前商品上下文：",
@@ -290,30 +311,80 @@ async function supportAiReply(message, history) {
 function installSupportWidget() {
   if (document.querySelector("[data-support-widget]")) return;
 
-  const serviceUrl = /\/(admin|orders|service)(\/|$)/.test(window.location.pathname)
-    ? "../service/"
-    : "./service/";
   const widget = document.createElement("section");
   widget.className = "support-widget";
   widget.dataset.supportWidget = "";
   widget.innerHTML = `
     <div class="support-launcher">
-      <a class="support-service-link" href="${serviceUrl}">
-        <i data-lucide="headset" aria-hidden="true"></i>
-        <span>售后服务</span>
-      </a>
       <button
-        class="support-trigger"
+        class="support-trigger support-service-trigger"
+        type="button"
+        data-service-trigger
+        aria-label="打开售后客服"
+        aria-controls="support-service-panel"
+        aria-expanded="false"
+      >
+        <i data-lucide="headset" aria-hidden="true"></i>
+        <span>售后客服</span>
+      </button>
+      <button
+        class="support-trigger support-ai-trigger"
         type="button"
         data-support-trigger
         aria-label="打开 AI 导购"
+        aria-controls="support-ai-panel"
         aria-expanded="false"
       >
         <i data-lucide="sparkles" aria-hidden="true"></i>
         <span>AI 导购</span>
       </button>
     </div>
-    <div class="support-panel" data-support-panel hidden>
+    <div
+      class="support-panel support-panel-service"
+      id="support-service-panel"
+      data-service-panel
+      hidden
+    >
+      <div class="support-head">
+        <div>
+          <p class="eyebrow">AFTER-SALES SERVICE</p>
+          <h2>MORROW 售后客服</h2>
+          <span class="support-online"><i></i> 在线处理</span>
+        </div>
+        <button class="icon-button" type="button" data-service-close aria-label="关闭售后客服">
+          <i data-lucide="x" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="support-messages" data-service-messages aria-live="polite"></div>
+      <div class="support-quick-actions" aria-label="常见售后问题">
+        <button type="button" data-service-question="查最近订单">查最近订单</button>
+        <button type="button" data-service-question="多久发货">发货时间</button>
+        <button type="button" data-service-question="怎么退换">退换流程</button>
+        <button type="button" data-service-question="保修怎么办">保修服务</button>
+      </div>
+      <form class="support-form" data-service-form>
+        <label>
+          <span class="sr-only">输入售后问题</span>
+          <input
+            type="text"
+            name="message"
+            placeholder="输入订单号或售后问题"
+            autocomplete="off"
+            maxlength="180"
+          />
+        </label>
+        <button class="button button-primary" type="submit" aria-label="发送售后问题">
+          <i data-lucide="send" aria-hidden="true"></i>
+        </button>
+      </form>
+      <p class="support-note">售后客服只处理订单、配送、退换与保修；商品推荐请使用 AI 导购。</p>
+    </div>
+    <div
+      class="support-panel support-panel-ai"
+      id="support-ai-panel"
+      data-support-panel
+      hidden
+    >
       <div class="support-head">
         <div>
           <p class="eyebrow">AI SHOPPING CONCIERGE</p>
@@ -325,11 +396,11 @@ function installSupportWidget() {
         </button>
       </div>
       <div class="support-messages" data-support-messages aria-live="polite"></div>
-      <div class="support-quick-actions" aria-label="常见问题">
+      <div class="support-quick-actions" aria-label="常见导购问题">
         <button type="button" data-support-question="5000 元内拍照手机怎么选">5000 元拍照手机</button>
         <button type="button" data-support-question="推荐一款适合通勤的降噪耳机">通勤降噪耳机</button>
+        <button type="button" data-support-question="热门外设怎么选">热门外设</button>
         <button type="button" data-support-question="最近有什么优惠">最近优惠</button>
-        <button type="button" data-support-question="查最近订单">查最近订单</button>
       </div>
       <form class="support-form" data-support-form>
         <label>
@@ -346,97 +417,150 @@ function installSupportWidget() {
           <i data-lucide="send" aria-hidden="true"></i>
         </button>
       </form>
-      <p class="support-note">AI 生成内容仅供参考，订单与支付说明以页面展示为准。</p>
+      <p class="support-note">AI 导购只负责商品筛选与比较；订单和售后问题请使用售后客服。</p>
     </div>
   `;
   document.body.append(widget);
 
-  const panel = widget.querySelector("[data-support-panel]");
-  const trigger = widget.querySelector("[data-support-trigger]");
-  const messages = widget.querySelector("[data-support-messages]");
-  const form = widget.querySelector("[data-support-form]");
-  const input = form.elements.message;
-  const history = [];
-  let isSending = false;
+  const controllers = [];
 
   function refreshSupportIcons() {
     window.lucide?.createIcons({ attrs: { "aria-hidden": "true" } });
   }
 
-  function addMessage(role, text) {
-    const message = document.createElement("div");
-    message.className = `support-message is-${role}`;
-    const paragraph = document.createElement("p");
-    paragraph.textContent = text;
-    message.append(paragraph);
-    messages.append(message);
-    messages.scrollTop = messages.scrollHeight;
-    return message;
-  }
+  function createConversation(config) {
+    const { panel, trigger, messages, form } = config;
+    const input = form.elements.message;
+    const history = [];
+    let isSending = false;
+    let controller;
 
-  function addTyping() {
-    const message = document.createElement("div");
-    message.className = "support-message is-bot support-typing";
-    message.innerHTML = "<p><i></i><i></i><i></i></p>";
-    messages.append(message);
-    messages.scrollTop = messages.scrollHeight;
-    return message;
-  }
-
-  function openSupport() {
-    panel.hidden = false;
-    trigger.setAttribute("aria-expanded", "true");
-    if (!messages.children.length) {
-      addMessage(
-        "bot",
-        "你好，我是 MORROW AI 导购。告诉我预算、用途或想比较的商品，我会从当前商城里给你精简建议。",
-      );
+    function addMessage(role, text) {
+      const message = document.createElement("div");
+      message.className = `support-message is-${role}`;
+      const paragraph = document.createElement("p");
+      paragraph.textContent = text;
+      message.append(paragraph);
+      messages.append(message);
+      messages.scrollTop = messages.scrollHeight;
+      return message;
     }
-    window.setTimeout(() => input.focus(), 80);
+
+    function addTyping() {
+      const message = document.createElement("div");
+      message.className = "support-message is-bot support-typing";
+      message.innerHTML = "<p><i></i><i></i><i></i></p>";
+      messages.append(message);
+      messages.scrollTop = messages.scrollHeight;
+      return message;
+    }
+
+    function open() {
+      controllers.forEach((item) => {
+        if (item !== controller) item.close();
+      });
+      panel.hidden = false;
+      trigger.setAttribute("aria-expanded", "true");
+      if (!messages.children.length) {
+        addMessage("bot", config.initialMessage);
+      }
+      window.setTimeout(() => input.focus(), 80);
+    }
+
+    function close() {
+      panel.hidden = true;
+      trigger.setAttribute("aria-expanded", "false");
+    }
+
+    async function sendQuestion(question) {
+      const text = String(question || "").trim();
+      if (!text || isSending) return;
+      isSending = true;
+      addMessage("user", text);
+      input.value = "";
+      const typing = addTyping();
+      try {
+        if (config.delay) {
+          await new Promise((resolve) => window.setTimeout(resolve, config.delay));
+        }
+        const reply = await config.responder(text, history);
+        typing.remove();
+        addMessage("bot", reply);
+        if (config.rememberHistory) {
+          history.push(
+            { role: "user", content: text },
+            { role: "assistant", content: reply },
+          );
+        }
+      } catch {
+        typing.remove();
+        addMessage("bot", "服务暂时没有响应，请稍后再试。");
+      } finally {
+        isSending = false;
+        input.focus();
+      }
+    }
+
+    trigger.addEventListener("click", () => {
+      if (panel.hidden) open();
+      else close();
+    });
+    config.closeButton.addEventListener("click", close);
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      sendQuestion(input.value);
+    });
+    config.quickButtons.forEach((button) => {
+      button.addEventListener("click", () =>
+        sendQuestion(button.dataset[config.questionDataset]),
+      );
+    });
+
+    controller = { open, close, panel };
+    controllers.push(controller);
+    return controller;
   }
 
-  function closeSupport() {
-    panel.hidden = true;
-    trigger.setAttribute("aria-expanded", "false");
-  }
+  const service = createConversation({
+    panel: widget.querySelector("[data-service-panel]"),
+    trigger: widget.querySelector("[data-service-trigger]"),
+    messages: widget.querySelector("[data-service-messages]"),
+    form: widget.querySelector("[data-service-form]"),
+    closeButton: widget.querySelector("[data-service-close]"),
+    quickButtons: [
+      ...widget.querySelectorAll("[data-service-question]"),
+    ],
+    questionDataset: "serviceQuestion",
+    initialMessage:
+      "你好，我是 MORROW 售后客服。请告诉我订单号，或直接说明发货、退换、保修问题。",
+    responder: async (text) => customerSupportReply(text),
+    delay: 120,
+  });
 
-  async function sendQuestion(question) {
-    const text = String(question || "").trim();
-    if (!text || isSending) return;
-    isSending = true;
-    addMessage("user", text);
-    input.value = "";
-    const typing = addTyping();
-    const reply = await supportAiReply(text, history);
-    typing.remove();
-    addMessage("bot", reply);
-    history.push(
-      { role: "user", content: text },
-      { role: "assistant", content: reply },
-    );
-    isSending = false;
-    input.focus();
-  }
+  const concierge = createConversation({
+    panel: widget.querySelector("[data-support-panel]"),
+    trigger: widget.querySelector("[data-support-trigger]"),
+    messages: widget.querySelector("[data-support-messages]"),
+    form: widget.querySelector("[data-support-form]"),
+    closeButton: widget.querySelector("[data-support-close]"),
+    quickButtons: [
+      ...widget.querySelectorAll("[data-support-question]"),
+    ],
+    questionDataset: "supportQuestion",
+    initialMessage:
+      "你好，我是 MORROW AI 导购。告诉我预算、用途或想比较的商品，我会从当前商城直接筛选。",
+    responder: supportAiReply,
+    rememberHistory: true,
+  });
 
-  trigger.addEventListener("click", () => {
-    if (panel.hidden) openSupport();
-    else closeSupport();
-  });
-  widget.querySelector("[data-support-close]").addEventListener("click", closeSupport);
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    sendQuestion(input.value);
-  });
-  widget.querySelectorAll("[data-support-question]").forEach((button) => {
-    button.addEventListener("click", () =>
-      sendQuestion(button.dataset.supportQuestion),
-    );
-  });
   document.addEventListener("click", (event) => {
-    if (event.target.closest('[data-action="open-support"]')) openSupport();
+    if (event.target.closest('[data-action="open-support"]')) concierge.open();
+    if (event.target.closest('[data-action="open-customer-service"]')) service.open();
   });
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && !panel.hidden) closeSupport();
+    if (event.key === "Escape") {
+      controllers.forEach((item) => item.close());
+    }
   });
 
   refreshSupportIcons();

@@ -290,6 +290,620 @@ window.MORROW_PRODUCTS = [
     }
   },
   {
+    "id": "desk-rog-azoth-extreme",
+    "name": "ROG 夜魔 Extreme 机械键盘",
+    "displayName": "ROG 夜魔 Extreme 机械键盘",
+    "series": "外设 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "外设",
+    "brand": "ROG",
+    "price": 3599,
+    "priceLabel": "¥3599",
+    "compareAt": null,
+    "stock": 9,
+    "sales": 19600,
+    "rating": 4.9,
+    "reviewCount": 986,
+    "featured": true,
+    "description": "75% 铝合金三模客制化键盘，配 1.47 英寸 OLED 触控屏、可调 Gasket 结构和热插拔 ROG NX 轴。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-rog-azoth-extreme.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-rog-azoth-extreme.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [
+      {
+        "id": "switch",
+        "label": "轴体",
+        "options": [
+          {
+            "id": "switch-nx-snow",
+            "label": "NX 雪武白轴",
+            "priceDelta": 0
+          },
+          {
+            "id": "switch-nx-storm",
+            "label": "NX 暴风蓝轴",
+            "priceDelta": 0
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "switch": "switch-nx-snow"
+    },
+    "source": {
+      "name": "ROG 中国官网",
+      "url": "https://rog.asus.com.cn/keyboards/keyboards/compact/rog-azoth-extreme/",
+      "listUrl": "https://rog.asus.com.cn/keyboards/keyboards/compact/rog-azoth-extreme/",
+      "matchedTitle": "ROG 夜魔 Extreme 机械键盘",
+      "priceText": "ROG 中国官网价 ¥3599",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-logitech-g502x-plus",
+    "name": "罗技 G502 X PLUS 无线游戏鼠标",
+    "displayName": "罗技 G502 X PLUS 无线游戏鼠标",
+    "series": "外设 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "外设",
+    "brand": "罗技",
+    "price": 799,
+    "priceLabel": "¥799",
+    "compareAt": 1049,
+    "stock": 42,
+    "sales": 68400,
+    "rating": 4.8,
+    "reviewCount": 5362,
+    "featured": true,
+    "description": "G502 系列旗舰无线鼠标，搭载 HERO 25K 传感器、LIGHTFORCE 混合微动、13 个可编程按键与 LIGHTSYNC RGB。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-logitech-g502x-plus.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-logitech-g502x-plus.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/mice/index1426842.shtml",
+      "listUrl": "https://detail.zol.com.cn/mice/index1426842.shtml",
+      "matchedTitle": "罗技 G502 X PLUS 无线游戏鼠标",
+      "priceText": "ZOL 参考价 ¥1049；京东在售价 ¥799",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-mchose-g98-v3",
+    "name": "迈从 G98 V3 机械键盘",
+    "displayName": "迈从 G98 V3 机械键盘",
+    "series": "外设 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "外设",
+    "brand": "迈从",
+    "price": 410,
+    "priceLabel": "¥410",
+    "compareAt": null,
+    "stock": 38,
+    "sales": 45800,
+    "rating": 4.8,
+    "reviewCount": 2148,
+    "featured": true,
+    "description": "98% 配列三模机械键盘，兼顾数字小键盘与桌面空间，适合办公、游戏和客制化入门。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-mchose-g98-v3.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-mchose-g98-v3.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/keyboard/index2180689.shtml",
+      "listUrl": "https://detail.zol.com.cn/keyboard/index2180689.shtml",
+      "matchedTitle": "迈从 G98 V3 机械键盘",
+      "priceText": "ZOL 公开在售价 ¥410",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-aula-f75max",
+    "name": "狼蛛 F75MAX 机械键盘",
+    "displayName": "狼蛛 F75MAX 机械键盘",
+    "series": "外设 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "外设",
+    "brand": "狼蛛",
+    "price": 349,
+    "priceLabel": "¥349",
+    "compareAt": null,
+    "stock": 46,
+    "sales": 57200,
+    "rating": 4.7,
+    "reviewCount": 3416,
+    "featured": true,
+    "description": "75% 配列三模热插拔键盘，主打 Gasket 结构和轻量化桌搭，星矢轴与收割者轴在同一商品内选择。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-aula-f75max.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-aula-f75max.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [
+      {
+        "id": "switch",
+        "label": "轴体",
+        "options": [
+          {
+            "id": "switch-star-arrow",
+            "label": "星矢轴",
+            "priceDelta": 0
+          },
+          {
+            "id": "switch-harvester",
+            "label": "收割者轴",
+            "priceDelta": 20
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "switch": "switch-star-arrow"
+    },
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/keyboard/index2180491.shtml",
+      "listUrl": "https://detail.zol.com.cn/keyboard/index2180491.shtml",
+      "matchedTitle": "狼蛛 F75MAX 机械键盘",
+      "priceText": "ZOL 公开在售价 ¥349 起",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-madcatz-mad75",
+    "name": "美加狮 MAD 75 机械键盘",
+    "displayName": "美加狮 MAD 75 机械键盘",
+    "series": "外设 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "外设",
+    "brand": "美加狮",
+    "price": 289,
+    "priceLabel": "¥289",
+    "compareAt": null,
+    "stock": 34,
+    "sales": 28300,
+    "rating": 4.7,
+    "reviewCount": 1276,
+    "featured": true,
+    "description": "75% 配列三模机械键盘，紧凑布局、热插拔与 Gasket 结构兼顾游戏和日常输入。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-madcatz-mad75.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-madcatz-mad75.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/keyboard/index2180478.shtml",
+      "listUrl": "https://detail.zol.com.cn/keyboard/index2180478.shtml",
+      "matchedTitle": "美加狮 MAD 75 机械键盘",
+      "priceText": "ZOL 公开在售价 ¥289",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-logitech-g304x",
+    "name": "罗技 G304X 无线游戏鼠标",
+    "displayName": "罗技 G304X 无线游戏鼠标",
+    "series": "外设 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "外设",
+    "brand": "罗技",
+    "price": 199,
+    "priceLabel": "¥199",
+    "compareAt": 209,
+    "stock": 58,
+    "sales": 91600,
+    "rating": 4.8,
+    "reviewCount": 8824,
+    "featured": true,
+    "description": "罗技入门无线游戏鼠标，HERO 传感器、长续航与轻巧机身，适合学生党和首次搭建电竞桌面。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-logitech-g304x.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-logitech-g304x.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/mice/index2162390.shtml",
+      "listUrl": "https://detail.zol.com.cn/mice/index2162390.shtml",
+      "matchedTitle": "罗技 G304X 无线游戏鼠标",
+      "priceText": "ZOL 参考价 ¥209；京东在售价 ¥199",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-rapoo-vt9-max",
+    "name": "雷柏 VT9 MAX 二代双 8K 无线鼠标",
+    "displayName": "雷柏 VT9 MAX 二代双 8K 无线鼠标",
+    "series": "外设 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "外设",
+    "brand": "雷柏",
+    "price": 329,
+    "priceLabel": "¥329",
+    "compareAt": null,
+    "stock": 44,
+    "sales": 62300,
+    "rating": 4.8,
+    "reviewCount": 4186,
+    "featured": true,
+    "description": "国产高性价比无线电竞鼠标，双 8K 回报率、轻量化机身与长续航，适合 FPS 玩家和桌面主力鼠标。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-rapoo-vt9-max.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-rapoo-vt9-max.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/mice/index2149947.shtml",
+      "listUrl": "https://detail.zol.com.cn/mice/index2149947.shtml",
+      "matchedTitle": "雷柏 VT9 MAX 二代双 8K 无线鼠标",
+      "priceText": "ZOL 公开参考价 ¥329",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-rapoo-vt3s-max",
+    "name": "雷柏 VT3s MAX 无线游戏鼠标",
+    "displayName": "雷柏 VT3s MAX 无线游戏鼠标",
+    "series": "外设 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "外设",
+    "brand": "雷柏",
+    "price": 299,
+    "priceLabel": "¥299",
+    "compareAt": null,
+    "stock": 39,
+    "sales": 38600,
+    "rating": 4.8,
+    "reviewCount": 2294,
+    "featured": true,
+    "description": "轻量化右手无线电竞鼠标，兼顾抓握与趴握，适合中大手型玩家和主流 2K、4K 电竞桌面。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-rapoo-vt3s-max.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-rapoo-vt3s-max.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/mice/index2169495.shtml",
+      "listUrl": "https://detail.zol.com.cn/mice/index2169495.shtml",
+      "matchedTitle": "雷柏 VT3s MAX 无线游戏鼠标",
+      "priceText": "ZOL 公开参考价 ¥299",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-logitech-mx-master-4",
+    "name": "罗技 MX Master 4 无线鼠标",
+    "displayName": "罗技 MX Master 4 无线鼠标",
+    "series": "外设 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "外设",
+    "brand": "罗技",
+    "price": 899,
+    "priceLabel": "¥899",
+    "compareAt": null,
+    "stock": 26,
+    "sales": 27700,
+    "rating": 4.8,
+    "reviewCount": 1893,
+    "featured": true,
+    "description": "旗舰办公无线鼠标，主打多设备切换、精细滚轮与人体工学握持，适合创作、办公和跨平台使用。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-logitech-mx-master-4.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-logitech-mx-master-4.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/mice/index2153839.shtml",
+      "listUrl": "https://detail.zol.com.cn/mice/index2153839.shtml",
+      "matchedTitle": "罗技 MX Master 4 无线鼠标",
+      "priceText": "ZOL 公开参考价 ¥899",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-flydigi-icewolf",
+    "name": "飞智 冰原狼 多模版游戏手柄",
+    "displayName": "飞智 冰原狼 多模版游戏手柄",
+    "series": "外设 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "外设",
+    "brand": "飞智",
+    "price": 199,
+    "priceLabel": "¥199",
+    "compareAt": null,
+    "stock": 61,
+    "sales": 54800,
+    "rating": 4.7,
+    "reviewCount": 3618,
+    "featured": true,
+    "description": "国产多模游戏手柄，支持 PC、手机与 Switch，霍尔摇杆和体感操控适合学生党与跨平台玩家。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-flydigi-icewolf.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-flydigi-icewolf.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/gamepad/index1439959.shtml",
+      "listUrl": "https://detail.zol.com.cn/gamepad/index1439959.shtml",
+      "matchedTitle": "飞智 冰原狼 多模版游戏手柄",
+      "priceText": "ZOL 公开参考价 ¥199",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-beitong-kunpeng-50",
+    "name": "北通 鲲鹏 50 智能游戏手柄",
+    "displayName": "北通 鲲鹏 50 智能游戏手柄",
+    "series": "外设 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "外设",
+    "brand": "北通",
+    "price": 369,
+    "priceLabel": "¥369",
+    "compareAt": null,
+    "stock": 35,
+    "sales": 41200,
+    "rating": 4.8,
+    "reviewCount": 2645,
+    "featured": true,
+    "description": "面向 PC 和主机的智能游戏手柄，支持自定义按键、体感与多平台连接，适合动作和竞速游戏。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-beitong-kunpeng-50.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-beitong-kunpeng-50.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/gamepad/index2113841.shtml",
+      "listUrl": "https://detail.zol.com.cn/gamepad/index2113841.shtml",
+      "matchedTitle": "北通 鲲鹏 50 智能游戏手柄",
+      "priceText": "ZOL 公开参考价 ¥369",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-8bitdo-orion-wireless",
+    "name": "八位堂 猎户座真无线手柄 十周年国内共创版",
+    "displayName": "八位堂 猎户座真无线手柄 十周年国内共创版",
+    "series": "外设 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "外设",
+    "brand": "八位堂",
+    "price": 458,
+    "priceLabel": "¥458",
+    "compareAt": null,
+    "stock": 23,
+    "sales": 24600,
+    "rating": 4.8,
+    "reviewCount": 1572,
+    "featured": true,
+    "description": "八位堂猎户座十周年国内共创版，支持 PC、Switch 与移动设备，兼顾霍尔摇杆、体感和复古外观。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-8bitdo-orion-wireless.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-8bitdo-orion-wireless.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/gamepad/index1827284.shtml",
+      "listUrl": "https://detail.zol.com.cn/gamepad/index1827284.shtml",
+      "matchedTitle": "八位堂 猎户座真无线手柄 十周年国内共创版",
+      "priceText": "ZOL 公开参考价 ¥458",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
     "id": "tablet-xiaomi-pad7-ultra",
     "name": "小米平板7 Ultra（12GB/256GB）",
     "displayName": "小米平板7 Ultra（12GB/256GB）",

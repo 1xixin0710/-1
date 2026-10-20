@@ -107,6 +107,9 @@ def assert_site_chrome(browser):
             page.set_viewport_size({"width": 1440, "height": 900})
             page.locator('.site-header [data-action="open-support"]').click()
             assert page.locator("[data-support-panel]").is_visible()
+            page.locator("[data-service-trigger]").click()
+            assert page.locator("[data-service-panel]").is_visible()
+            assert not page.locator("[data-support-panel]").is_visible()
 
     context.close()
 
@@ -124,11 +127,11 @@ def run_desktop(browser):
     page.goto(f"{BASE_URL}/index.html", wait_until="networkidle")
     page.wait_for_selector(".product-card")
     assert page.locator(".product-card").count() == 16
-    assert "71" in page.locator("[data-catalog-meta]").inner_text()
+    assert "83" in page.locator("[data-catalog-meta]").inner_text()
+    assert page.locator("[data-product-count]").inner_text().strip() == "83"
+    assert page.locator("[data-brand-count]").inner_text().strip() == "31"
     assert "外设好物" in page.locator(".market-hotwords").inner_text()
     assert "桌面好物" not in page.locator(".market-hotwords").inner_text()
-    page.wait_for_selector('.product-card [data-product-open="phone-anchor-2177308"]')
-
     page.locator('.filter-row [data-category="phone"]').click()
     page.wait_for_timeout(100)
     assert "25" in page.locator("[data-catalog-meta]").inner_text()
@@ -183,6 +186,23 @@ def run_desktop(browser):
 
     page.goto(f"{BASE_URL}/index.html", wait_until="networkidle")
     page.locator('.site-header [data-action="open-search"]').click()
+    page.locator("[data-search-input]").fill("夜魔 Extreme")
+    page.locator("[data-search-input]").press("Enter")
+    page.wait_for_timeout(150)
+    assert page.locator(".product-card").count() == 1
+    page.locator('.product-card [data-product-open="desk-rog-azoth-extreme"]').click()
+    page.wait_for_selector('[data-action="add-product"]')
+    assert "ROG 夜魔 Extreme" in page.locator(".product-info h1").inner_text()
+    assert page.locator('[data-variant-group="switch"]').count() == 2
+    page.locator('[data-variant-option="switch-nx-storm"]').click()
+    assert "NX 暴风蓝轴" in page.locator(".selected-variant-summary").inner_text()
+    rog_price = int(
+        re.sub(r"[^\d]", "", page.locator("[data-product-live-price]").inner_text())
+    )
+    assert 3500 <= rog_price <= 3700
+
+    page.goto(f"{BASE_URL}/index.html", wait_until="networkidle")
+    page.locator('.site-header [data-action="open-search"]').click()
     page.locator("[data-search-input]").fill("F87Pro")
     page.locator("[data-search-input]").press("Enter")
     page.wait_for_timeout(150)
@@ -206,8 +226,11 @@ def run_desktop(browser):
 
     page.locator('.category-dock [data-category="desk"]').click()
     page.wait_for_timeout(100)
-    assert page.locator(".product-card").count() == 6
-    assert "6" in page.locator("[data-catalog-meta]").inner_text()
+    assert page.locator(".product-card").count() == 16
+    assert "18" in page.locator("[data-catalog-meta]").inner_text()
+    page.locator('[data-action="load-more"]').click()
+    page.wait_for_timeout(100)
+    assert page.locator(".product-card").count() == 18
     assert "桌面办公" not in page.locator("#catalog").inner_text()
 
     page.locator('.category-dock [data-category="audio"]').click()
@@ -223,6 +246,10 @@ def run_desktop(browser):
     page.locator('.filter-row [data-category="all"]').click()
     page.locator("[data-brand-filter]").select_option("all")
     page.wait_for_timeout(100)
+    page.locator('.site-header [data-action="open-search"]').click()
+    page.locator("[data-search-input]").fill("iPhone 18 Pro")
+    page.locator("[data-search-input]").press("Enter")
+    page.wait_for_timeout(150)
     page.locator('.product-card [data-product-open="phone-anchor-2177308"]').click()
     page.wait_for_selector('[data-action="add-product"]')
     assert "iPhone 18 Pro" in page.locator(".product-info h1").inner_text()
@@ -289,7 +316,7 @@ def run_desktop(browser):
     page.locator('input[name="code"]').fill("2026")
     page.locator("[data-admin-login] button[type='submit']").click()
     page.wait_for_selector("#admin-console:not([hidden])")
-    assert "71" in page.locator("#admin-kpis").inner_text()
+    assert "83" in page.locator("#admin-kpis").inner_text()
     assert page.locator("#admin-order-rows tr").count() == 1
 
     page.locator("[data-admin-tab='orders']").click()
@@ -322,13 +349,43 @@ def run_desktop(browser):
         ),
     )
     page.goto(f"{BASE_URL}/service/", wait_until="networkidle")
-    assert page.locator(".support-service-link").is_visible()
+    assert page.locator("[data-service-trigger]").is_visible()
+    assert page.locator("[data-support-trigger]").is_visible()
+    assert page.locator('[data-action="open-customer-service"]').count() == 1
+    page.locator("[data-service-trigger]").click()
+    assert page.locator("[data-service-panel]").is_visible()
+    assert not page.locator("[data-support-panel]").is_visible()
+    page.locator("[data-service-form] input[name='message']").fill("多久发货")
+    page.locator("[data-service-form]").press("Enter")
+    page.wait_for_function(
+        """
+        () =>
+          document.querySelector("[data-service-messages]").innerText.includes(
+            "48 小时"
+          )
+        """,
+        timeout=1800,
+    )
+    assert "售后客服" in page.locator("[data-service-messages]").inner_text()
+
     page.locator("[data-support-trigger]").click()
+    assert page.locator("[data-support-panel]").is_visible()
+    assert not page.locator("[data-service-panel]").is_visible()
     page.locator("[data-support-form] input[name='message']").fill("多久发货")
     page.locator("[data-support-form]").press("Enter")
-    assert "48 小时" in page.locator("[data-support-messages]").inner_text()
+    page.wait_for_function(
+        """
+        () =>
+          document.querySelector("[data-support-messages]").innerText.includes(
+            "售后客服"
+          )
+        """,
+        timeout=1800,
+    )
+    assert "AI 导购只负责" in page.locator("[data-support-messages]").inner_text()
+
     bot_count = page.locator(
-        ".support-message.is-bot:not(.support-typing)"
+        "[data-support-messages] .support-message.is-bot:not(.support-typing)"
     ).count()
     page.locator("[data-support-form] input[name='message']").fill(
         "5000 元内拍照手机怎么选"
@@ -338,7 +395,7 @@ def run_desktop(browser):
         """
         (count) =>
           document.querySelectorAll(
-            ".support-message.is-bot:not(.support-typing)"
+            "[data-support-messages] .support-message.is-bot:not(.support-typing)"
           ).length > count
         """,
         arg=bot_count,
@@ -386,8 +443,15 @@ def run_mobile(browser):
     assert page.locator("body").evaluate("el => el.scrollWidth <= window.innerWidth + 1")
     page.goto(f"{BASE_URL}/service/", wait_until="networkidle")
     assert page.locator("body").evaluate("el => el.scrollWidth <= window.innerWidth + 1")
+    assert page.locator("[data-service-trigger] span").is_visible()
+    assert page.locator("[data-support-trigger] span").is_visible()
+    page.locator('[data-action="open-customer-service"]').click()
+    assert page.locator("[data-service-panel]").is_visible()
+    assert not page.locator("[data-support-panel]").is_visible()
+    assert page.locator("body").evaluate("el => el.scrollWidth <= window.innerWidth + 1")
     page.locator("[data-support-trigger]").click()
     assert page.locator("[data-support-panel]").is_visible()
+    assert not page.locator("[data-service-panel]").is_visible()
     assert page.locator("body").evaluate("el => el.scrollWidth <= window.innerWidth + 1")
     page.goto(f"{BASE_URL}/admin/", wait_until="networkidle")
     assert page.locator("body").evaluate("el => el.scrollWidth <= window.innerWidth + 1")
