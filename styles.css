@@ -4146,6 +4146,7 @@ body {
 }
 
 .site-header {
+  align-items: center;
   height: var(--header-height);
   padding: 0 max(20px, calc((100vw - 1500px) / 2));
   border-bottom: 1px solid var(--line);
@@ -4163,6 +4164,7 @@ body {
 
 .brand-word {
   font-size: 15px;
+  line-height: 1;
 }
 
 .desktop-nav {
@@ -4176,7 +4178,10 @@ body {
 
 .desktop-nav a,
 .desktop-nav button {
+  display: inline-flex;
   min-height: 40px;
+  align-items: center;
+  justify-content: center;
   padding: 0 13px;
   border-radius: 6px;
   cursor: pointer;
@@ -4184,6 +4189,7 @@ body {
   color: var(--ink-soft);
   font-size: 13px;
   font-weight: 700;
+  line-height: 1;
 }
 
 .desktop-nav button {
@@ -5509,6 +5515,10 @@ body {
 
   .site-header {
     grid-template-columns: 1fr auto;
+  }
+
+  .mobile-menu-button {
+    display: inline-grid;
   }
 
   .market-search-inner {

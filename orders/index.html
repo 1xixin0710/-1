@@ -5,27 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f4f7fb" />
     <title>我的订单 | MORROW</title>
-    <link rel="stylesheet" href="../styles.css?v=20261019-6" />
+    <link rel="stylesheet" href="../styles.css?v=20261019-7" />
   </head>
   <body>
     <a class="skip-link" href="#order-main">跳到主要内容</a>
+    <div class="market-ribbon">
+      <div class="market-ribbon-inner">
+        <span class="market-location">
+          <i data-lucide="map-pin" aria-hidden="true"></i>
+          杭州
+        </span>
+        <span>欢迎来到 MORROW 生活集市</span>
+        <div class="market-ribbon-links">
+          <button type="button" data-action="open-support">AI 导购</button>
+          <a href="./" aria-current="page">我的订单</a>
+          <a class="ribbon-service" href="../service/">售后服务</a>
+          <a href="../admin/">管理后台</a>
+        </div>
+      </div>
+    </div>
+
     <header class="site-header" aria-label="主导航">
-      <a class="brand" href="../index.html" aria-label="MORROW 首页">
+      <a class="brand" href="../index.html#store" aria-label="MORROW 首页">
         <span class="brand-mark">M</span>
         <span class="brand-word">MORROW</span>
       </a>
       <nav class="desktop-nav" aria-label="商店导航">
-        <a href="../index.html#catalog">选购</a>
-        <a href="../service/">配送与售后</a>
-        <a href="./" aria-current="page">我的</a>
+        <a href="../index.html#store">首页</a>
+        <a href="../index.html#deals">实时好价</a>
+        <a href="../index.html#catalog">全部商品</a>
         <a href="../admin/">管理后台</a>
+        <button type="button" data-action="open-support">AI 导购</button>
       </nav>
       <div class="header-actions">
-        <a class="icon-button" href="../index.html" aria-label="我的订单">
+        <a class="icon-button header-account" href="./" aria-label="我的订单" title="我的订单">
           <i data-lucide="user-round" aria-hidden="true"></i>
         </a>
-        <a class="icon-button" href="../index.html#catalog" aria-label="返回商城">
+        <a class="icon-button" href="../index.html#catalog" aria-label="返回商城搜索" title="搜索商品">
+          <i data-lucide="search" aria-hidden="true"></i>
+        </a>
+        <a class="icon-button header-cart" href="../index.html#catalog" aria-label="返回商城购物袋" title="购物袋">
           <i data-lucide="shopping-bag" aria-hidden="true"></i>
+        </a>
+        <a class="icon-button mobile-menu-button" href="../index.html" aria-label="返回商城菜单" title="返回商城">
+          <i data-lucide="menu" aria-hidden="true"></i>
         </a>
       </div>
     </header>
@@ -82,7 +105,7 @@
     </footer>
 
     <script src="../assets/vendor/lucide.min.js"></script>
-    <script src="../support.js?v=20261019-6" defer></script>
-    <script src="../orders.js" defer></script>
+    <script src="../support.js?v=20261019-7" defer></script>
+    <script src="../orders.js?v=20261019-7" defer></script>
   </body>
 </html>

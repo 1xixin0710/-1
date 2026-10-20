@@ -22,6 +22,95 @@ def api(path: str, options: dict | None = None):
         return json.loads(response.read().decode("utf-8"))
 
 
+def assert_site_chrome(browser):
+    context = browser.new_context(viewport={"width": 1440, "height": 900}, locale="zh-CN")
+    page = context.new_page()
+    pages = [
+        ("/index.html", "首页"),
+        ("/admin/", "管理后台"),
+        ("/orders/", None),
+        ("/service/", None),
+    ]
+    expected_nav = ["首页", "实时好价", "全部商品", "管理后台", "AI 导购"]
+
+    for path, active_label in pages:
+        page.goto(f"{BASE_URL}{path}", wait_until="networkidle")
+        page.wait_for_selector(".site-header")
+        assert page.locator(".market-ribbon").count() == 1
+
+        for width in (2334, 1440, 980, 390):
+            page.set_viewport_size({"width": width, "height": 900})
+            page.wait_for_timeout(40)
+            metrics = page.evaluate(
+                """
+                () => {
+                  const box = (selector) => {
+                    const element = document.querySelector(selector);
+                    if (!element || getComputedStyle(element).display === "none") return null;
+                    const rect = element.getBoundingClientRect();
+                    return {
+                      y: rect.y,
+                      height: rect.height,
+                      center: rect.y + rect.height / 2,
+                      display: getComputedStyle(element).display,
+                    };
+                  };
+                  const header = box(".site-header");
+                  return {
+                    ribbon: box(".market-ribbon"),
+                    header,
+                    brand: box(".brand"),
+                    nav: box(".desktop-nav"),
+                    actions: box(".header-actions"),
+                    menu: box(".mobile-menu-button"),
+                    navItems: [...document.querySelectorAll(".desktop-nav > *")].map(
+                      (element) => {
+                        const rect = element.getBoundingClientRect();
+                        return {
+                          text: element.textContent.trim(),
+                          center: rect.y + rect.height / 2,
+                        };
+                      },
+                    ),
+                    viewportWidth: window.innerWidth,
+                    documentWidth: document.body.scrollWidth,
+                  };
+                }
+                """
+            )
+
+            assert metrics["ribbon"]["height"] == 32
+            assert metrics["header"]["height"] == 66
+            assert metrics["documentWidth"] <= metrics["viewportWidth"] + 1
+            assert [item["text"] for item in metrics["navItems"]] == expected_nav
+
+            if width > 980:
+                centers = [
+                    metrics["header"]["center"],
+                    metrics["brand"]["center"],
+                    metrics["nav"]["center"],
+                    metrics["actions"]["center"],
+                ]
+                assert max(centers) - min(centers) <= 1
+                assert all(
+                    abs(item["center"] - metrics["header"]["center"]) <= 1
+                    for item in metrics["navItems"]
+                )
+            else:
+                assert metrics["nav"] is None
+                assert metrics["menu"]["display"] == "grid"
+
+        if active_label:
+            assert page.locator(".desktop-nav .is-active").text_content().strip() == active_label
+
+        if path == "/admin/":
+            page.set_viewport_size({"width": 1440, "height": 900})
+            page.locator('.site-header [data-action="open-support"]').click()
+            assert page.locator("[data-support-panel]").is_visible()
+
+    context.close()
+
+
 def run_desktop(browser):
     context = browser.new_context(viewport={"width": 1440, "height": 1000}, locale="zh-CN")
     page = context.new_page()
@@ -262,6 +351,7 @@ if __name__ == "__main__":
     SHOTS.mkdir(parents=True, exist_ok=True)
     with sync_playwright() as playwright:
         chromium = playwright.chromium.launch()
+        assert_site_chrome(chromium)
         run_desktop(chromium)
         run_mobile(chromium)
         chromium.close()
