@@ -129,15 +129,14 @@ function supportRecommendationReply(message) {
 
   const category = supportCategoryIntent(text);
   const deskType = supportDeskTypeIntent(text);
-  const budget = Number(
-    text.match(/(?:预算|以内|不超过|低于|左右)?\s*(\d{3,6})\s*(?:元|块)?/)?.[1] || 0,
-  );
+  const budget = supportBudgetIntent(text);
   const hasBrand = supportProducts().some(
     (product) =>
       product.brand && text.toLowerCase().includes(String(product.brand).toLowerCase()),
   );
   const hasShoppingIntent =
     category ||
+    deskType ||
     budget ||
     hasBrand ||
     /(推荐|怎么选|哪款|哪个好|比较|适合|值得买|性价比|热门|想要|想买|选一)/.test(
@@ -213,6 +212,18 @@ function supportDeskTypeIntent(text) {
   return null;
 }
 
+function supportBudgetIntent(text) {
+  const source = String(text || "");
+  const match =
+    source.match(/(?:预算|不超过|低于|最多)\s*[¥￥]?\s*(\d{1,6})/) ||
+    source.match(/[¥￥]\s*(\d{1,6})/) ||
+    source.match(/(\d{1,6})\s*(?:元|块|以内|以下|左右)/) ||
+    source.match(
+      /^\s*(\d{1,6})\s*(?=(?:键盘|鼠标|外设|手机|电脑|笔记本|相机|耳机|平板|家电))/,
+    );
+  return Number(match?.[1] || 0);
+}
+
 function supportProductDeskType(product) {
   // ponytail: catalog has no subcategory field; classify from product copy until one exists.
   const text = [
@@ -233,9 +244,7 @@ function supportRelevantProducts(text) {
   const products = supportProducts();
   const category = supportCategoryIntent(text);
   const deskType = supportDeskTypeIntent(text);
-  const budget = Number(
-    text.match(/(?:预算|以内|不超过|低于|左右)?\s*(\d{3,6})\s*(?:元|块)?/)?.[1] || 0,
-  );
+  const budget = supportBudgetIntent(text);
   const lowered = text.toLowerCase();
   const brands = [...new Set(products.map((product) => String(product.brand || "")))]
     .filter((brand) => brand && lowered.includes(brand.toLowerCase()));
@@ -243,7 +252,8 @@ function supportRelevantProducts(text) {
   const ranked = products
     .filter(
       (product) =>
-        !deskType || supportProductDeskType(product) === deskType,
+        (!deskType || supportProductDeskType(product) === deskType) &&
+        (!budget || Number(product.price) <= budget),
     )
     .map((product) => {
       let score = Number(product.featured ? 3 : 0);
@@ -256,7 +266,6 @@ function supportRelevantProducts(text) {
         score += 9;
       }
       if (budget && Number(product.price) <= budget) score += 4;
-      if (budget && Number(product.price) > budget * 1.15) score -= 8;
       const haystack =
         `${product.name} ${product.brand} ${product.categoryLabel}`.toLowerCase();
       if (

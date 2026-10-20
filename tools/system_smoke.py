@@ -426,6 +426,8 @@ def run_desktop(browser):
     for query, expected, forbidden in (
         ("1000键盘", "键盘", "鼠标"),
         ("1000鼠标", "鼠标", "键盘"),
+        ("100键盘", "暂时没有", "¥"),
+        ("G502", "G502 X PLUS", "键盘"),
     ):
         bot_count = page.locator(
             "[data-support-messages] .support-message.is-bot:not(.support-typing)"
