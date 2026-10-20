@@ -1,5 +1,559 @@
 [
   {
+    "id": "desk-logitech-gpw",
+    "name": "罗技 G PRO X SUPERLIGHT（GPW）",
+    "displayName": "罗技 G PRO X SUPERLIGHT（GPW）",
+    "series": "桌面办公 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "罗技",
+    "price": 659,
+    "priceLabel": "¥659",
+    "compareAt": 1099,
+    "stock": 36,
+    "sales": 51800,
+    "rating": 4.9,
+    "reviewCount": 4821,
+    "featured": true,
+    "description": "GPW 系列经典轻量无线电竞鼠标，低延迟、长续航，适合 FPS 与日常桌面使用。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-logitech-gpw.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-logitech-gpw.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/mice/index1348608.shtml",
+      "listUrl": "https://detail.zol.com.cn/mice/index1348608.shtml",
+      "matchedTitle": "罗技 G PRO X SUPERLIGHT（GPW）",
+      "priceText": "ZOL 参考价 ¥1099；京东在售价 ¥659",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-logitech-gpw5",
+    "name": "罗技 GPW 5 雪豹（PRO X2 SUPERSTRIKE）",
+    "displayName": "罗技 GPW 5 雪豹（PRO X2 SUPERSTRIKE）",
+    "series": "桌面办公 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "罗技",
+    "price": 1349,
+    "priceLabel": "¥1349",
+    "compareAt": 1979,
+    "stock": 18,
+    "sales": 28600,
+    "rating": 4.9,
+    "reviewCount": 1268,
+    "featured": true,
+    "description": "GPW 第五代雪豹电竞鼠标，升级传感器与无线性能，面向高刷新率电竞桌面。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-logitech-gpw5.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-logitech-gpw5.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/mice/index2158610.shtml",
+      "listUrl": "https://detail.zol.com.cn/mice/index2158610.shtml",
+      "matchedTitle": "罗技 GPW 5 雪豹（PRO X2 SUPERSTRIKE）",
+      "priceText": "ZOL 参考价 ¥1979；近期京东活动价 ¥1349",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-iqunix-ev63",
+    "name": "IQUNIX EV63 磁轴机械键盘",
+    "displayName": "IQUNIX EV63 磁轴机械键盘",
+    "series": "桌面办公 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "桌面办公",
+    "brand": "IQUNIX",
+    "price": 1189,
+    "priceLabel": "¥1189",
+    "compareAt": 1399,
+    "stock": 27,
+    "sales": 43200,
+    "rating": 4.9,
+    "reviewCount": 3072,
+    "featured": true,
+    "description": "63 键铝合金磁轴键盘，支持 0.01mm Rapid Trigger、8K 回报率与网页驱动，轴体在详情页内选择。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-iqunix-ev63.jpg",
+    "colors": [
+      {
+        "name": "银武士",
+        "value": "#c7c9c8",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-iqunix-ev63.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      },
+      {
+        "name": "紫罗兰",
+        "value": "#8b78aa",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-iqunix-ev63-1.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      },
+      {
+        "name": "黑武士",
+        "value": "#26272b",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-iqunix-ev63-2.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [
+      {
+        "id": "switch",
+        "label": "轴体",
+        "options": [
+          {
+            "id": "switch-magnetic-pro",
+            "label": "磁玉轴 Pro",
+            "priceDelta": -100
+          },
+          {
+            "id": "switch-x-pro",
+            "label": "神秘X轴 Pro",
+            "priceDelta": 0
+          },
+          {
+            "id": "switch-x-ultra",
+            "label": "神秘X轴 Ultra",
+            "priceDelta": 200
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "switch": "switch-x-pro"
+    },
+    "source": {
+      "name": "IQUNIX 官方与 ZOL 公开报价",
+      "url": "https://iqunix.com/products/iqunix-ev63-hall-effect-keyboard",
+      "listUrl": "https://iqunix.com/products/iqunix-ev63-hall-effect-keyboard",
+      "matchedTitle": "IQUNIX EV63 磁轴机械键盘",
+      "priceText": "ZOL 参考价 ¥1249-1549；近期京东活动价约 ¥1189",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "tablet-xiaomi-pad7-ultra",
+    "name": "小米平板7 Ultra（12GB/256GB）",
+    "displayName": "小米平板7 Ultra（12GB/256GB）",
+    "series": "平板电脑 / 热门精选",
+    "category": "tablet",
+    "categoryLabel": "平板电脑",
+    "brand": "小米",
+    "price": 5199,
+    "priceLabel": "¥5199",
+    "compareAt": 5699,
+    "stock": 24,
+    "sales": 36700,
+    "rating": 4.8,
+    "reviewCount": 2146,
+    "featured": true,
+    "description": "14 英寸 3.2K 高刷大屏，玄戒 O1 处理器与 120W 快充，兼顾影音、办公和轻创作。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-tablet-xiaomi-pad7-ultra.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-tablet-xiaomi-pad7-ultra.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [
+      {
+        "id": "storage",
+        "label": "存储容量",
+        "options": [
+          {
+            "id": "storage-256gb",
+            "label": "256GB",
+            "priceDelta": 0
+          },
+          {
+            "id": "storage-512gb",
+            "label": "512GB",
+            "priceDelta": 300
+          },
+          {
+            "id": "storage-1tb",
+            "label": "1TB",
+            "priceDelta": 1700
+          }
+        ]
+      }
+    ],
+    "defaultVariant": {
+      "storage": "storage-256gb"
+    },
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/tablepc/index2128636.shtml",
+      "listUrl": "https://detail.zol.com.cn/tablepc/index2128636.shtml",
+      "matchedTitle": "小米平板7 Ultra（12GB/256GB）",
+      "priceText": "ZOL 参考价 ¥5699；京东在售价 ¥5199",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "computer-legion-y9000p-2025",
+    "name": "联想拯救者Y9000P 2025 AI元启（Ultra 9/32GB/1TB/RTX5060）",
+    "displayName": "联想拯救者Y9000P 2025 AI元启（Ultra 9/32GB/1TB/RTX5060）",
+    "series": "电脑办公 / 热门精选",
+    "category": "computer",
+    "categoryLabel": "电脑办公",
+    "brand": "联想",
+    "price": 11999,
+    "priceLabel": "¥11999",
+    "compareAt": null,
+    "stock": 12,
+    "sales": 23900,
+    "rating": 4.8,
+    "reviewCount": 1687,
+    "featured": true,
+    "description": "2025 款高性能游戏本，Ultra 9 处理器、32GB 内存、1TB 固态与 RTX 5060 独立显卡。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-computer-legion-y9000p-2025.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-computer-legion-y9000p-2025.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/notebook/index2128701.shtml",
+      "listUrl": "https://detail.zol.com.cn/notebook/index2128701.shtml",
+      "matchedTitle": "联想拯救者Y9000P 2025 AI元启（Ultra 9/32GB/1TB/RTX5060）",
+      "priceText": "ZOL 公开参考价 ¥11999",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "camera-dji-action5-pro",
+    "name": "大疆 Osmo Action 5 Pro 标准套装",
+    "displayName": "大疆 Osmo Action 5 Pro 标准套装",
+    "series": "摄影器材 / 热门精选",
+    "category": "camera",
+    "categoryLabel": "摄影器材",
+    "brand": "大疆",
+    "price": 2598,
+    "priceLabel": "¥2598",
+    "compareAt": null,
+    "stock": 21,
+    "sales": 31100,
+    "rating": 4.8,
+    "reviewCount": 1934,
+    "featured": true,
+    "description": "旗舰运动相机标准套装，支持高动态范围视频、超强防抖与裸机防水，适合旅行和户外记录。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-camera-dji-action5-pro.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-camera-dji-action5-pro.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/Action_camera/index2106423.shtml",
+      "listUrl": "https://detail.zol.com.cn/Action_camera/index2106423.shtml",
+      "matchedTitle": "大疆 Osmo Action 5 Pro 标准套装",
+      "priceText": "ZOL 公开参考价 ¥2598",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-airpods-pro-3",
+    "name": "苹果 AirPods Pro 3",
+    "displayName": "苹果 AirPods Pro 3",
+    "series": "耳机影音 / 热门精选",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "苹果",
+    "price": 1839,
+    "priceLabel": "¥1839",
+    "compareAt": null,
+    "stock": 42,
+    "sales": 62400,
+    "rating": 4.8,
+    "reviewCount": 5218,
+    "featured": true,
+    "description": "苹果主动降噪真无线耳机，空间音频、通透模式与多设备切换体验完整。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-audio-airpods-pro-3.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-audio-airpods-pro-3.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/microphone/index1794828.shtml",
+      "listUrl": "https://detail.zol.com.cn/microphone/index1794828.shtml",
+      "matchedTitle": "苹果 AirPods Pro 3",
+      "priceText": "ZOL 公开参考价 ¥1839",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-huawei-freebuds-pro5",
+    "name": "华为 FreeBuds Pro 5 悦彰耳机",
+    "displayName": "华为 FreeBuds Pro 5 悦彰耳机",
+    "series": "耳机影音 / 热门精选",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "华为",
+    "price": 1349,
+    "priceLabel": "¥1349",
+    "compareAt": null,
+    "stock": 33,
+    "sales": 45300,
+    "rating": 4.8,
+    "reviewCount": 2864,
+    "featured": true,
+    "description": "华为旗舰降噪真无线耳机，兼顾通勤降噪、清晰通话与高解析音频。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-audio-huawei-freebuds-pro5.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-audio-huawei-freebuds-pro5.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/microphone/index2148490.shtml",
+      "listUrl": "https://detail.zol.com.cn/microphone/index2148490.shtml",
+      "matchedTitle": "华为 FreeBuds Pro 5 悦彰耳机",
+      "priceText": "ZOL 公开参考价 ¥1349",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-sony-wh1000xm5",
+    "name": "索尼 WH-1000XM5 头戴式降噪耳机",
+    "displayName": "索尼 WH-1000XM5 头戴式降噪耳机",
+    "series": "耳机影音 / 热门精选",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "索尼",
+    "price": 2999,
+    "priceLabel": "¥2999",
+    "compareAt": null,
+    "stock": 16,
+    "sales": 39700,
+    "rating": 4.8,
+    "reviewCount": 3561,
+    "featured": true,
+    "description": "索尼旗舰头戴式降噪耳机，适合长途通勤、飞行与专注办公。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-audio-sony-wh1000xm5.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-audio-sony-wh1000xm5.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/microphone/index1408101.shtml",
+      "listUrl": "https://detail.zol.com.cn/microphone/index1408101.shtml",
+      "matchedTitle": "索尼 WH-1000XM5 头戴式降噪耳机",
+      "priceText": "ZOL 公开参考价 ¥2999",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "audio-huawei-freeclip2",
+    "name": "华为 FreeClip 2 耳夹耳机",
+    "displayName": "华为 FreeClip 2 耳夹耳机",
+    "series": "耳机影音 / 热门精选",
+    "category": "audio",
+    "categoryLabel": "耳机影音",
+    "brand": "华为",
+    "price": 1299,
+    "priceLabel": "¥1299",
+    "compareAt": null,
+    "stock": 29,
+    "sales": 41900,
+    "rating": 4.8,
+    "reviewCount": 2473,
+    "featured": true,
+    "description": "开放式耳夹设计，佩戴轻巧透气，适合长时间办公、运动与日常通勤。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-audio-huawei-freeclip2.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-audio-huawei-freeclip2.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "ZOL 中关村在线",
+      "url": "https://detail.zol.com.cn/microphone/index2143087.shtml",
+      "listUrl": "https://detail.zol.com.cn/microphone/index2143087.shtml",
+      "matchedTitle": "华为 FreeClip 2 耳夹耳机",
+      "priceText": "ZOL 公开参考价 ¥1299",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
     "id": "phone-anchor-2177308",
     "name": "苹果iPhone 18 Pro（256GB）",
     "series": "手机数码 / 046",
@@ -8278,11 +8832,11 @@
   },
   {
     "id": "desk-market-2181205",
-    "name": "狼蛛F87Pro V2宗师版 海穹轴",
+    "name": "狼蛛F87Pro V2宗师版",
     "series": "桌面办公 / 001",
     "category": "desk",
     "categoryLabel": "桌面办公",
-    "brand": "精选品牌",
+    "brand": "狼蛛",
     "price": 296,
     "priceLabel": "¥296",
     "compareAt": 330,
@@ -8291,7 +8845,7 @@
     "rating": 4.6,
     "reviewCount": 520,
     "featured": true,
-    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
+    "description": "87 键热插拔机械键盘，海穹轴与焦糖拿铁轴在同一商品内选择，不再拆成重复商品卡。",
     "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
     "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
     "image": "./assets/market/desk-2181205.jpg",
@@ -8314,46 +8868,28 @@
       "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
       "updatedAt": "2026-10-19",
       "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "desk-market-2181204",
-    "name": "狼蛛F87Pro V2宗师版 焦糖拿铁轴",
-    "series": "桌面办公 / 002",
-    "category": "desk",
-    "categoryLabel": "桌面办公",
-    "brand": "精选品牌",
-    "price": 284,
-    "priceLabel": "¥284",
-    "compareAt": 320,
-    "stock": 24,
-    "sales": 6175,
-    "rating": 4.7,
-    "reviewCount": 707,
-    "featured": true,
-    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/desk-2181204.jpg",
-    "colors": [
+    },
+    "displayName": "狼蛛F87Pro V2宗师版",
+    "variantGroups": [
       {
-        "name": "石墨黑",
-        "value": "#23262b"
-      },
-      {
-        "name": "雾白",
-        "value": "#e7e5df"
+        "id": "switch",
+        "label": "轴体",
+        "options": [
+          {
+            "id": "switch-haiqiong",
+            "label": "海穹轴",
+            "priceDelta": 0
+          },
+          {
+            "id": "switch-caramel-latte",
+            "label": "焦糖拿铁轴",
+            "priceDelta": -12
+          }
+        ]
       }
     ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/keyboard/index2181204.shtml",
-      "listUrl": "https://detail.zol.com.cn/keyboard/",
-      "matchedTitle": "狼蛛F87Pro V2宗师版 焦糖拿铁轴",
-      "priceText": "参考价 ¥284",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
+    "defaultVariant": {
+      "switch": "switch-haiqiong"
     }
   },
   {

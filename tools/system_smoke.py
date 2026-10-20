@@ -35,7 +35,7 @@ def run_desktop(browser):
     page.goto(f"{BASE_URL}/index.html", wait_until="networkidle")
     page.wait_for_selector(".product-card")
     assert page.locator(".product-card").count() == 16
-    assert "84" in page.locator("[data-catalog-meta]").inner_text()
+    assert "93" in page.locator("[data-catalog-meta]").inner_text()
     page.wait_for_selector('.product-card [data-product-open="phone-anchor-2177308"]')
 
     page.locator('.filter-row [data-category="phone"]').click()
@@ -49,14 +49,52 @@ def run_desktop(browser):
     page.locator("[data-search-input]").fill("相机")
     page.locator("[data-search-input]").press("Enter")
     page.wait_for_timeout(150)
-    assert page.locator(".product-card").count() == 16
-    assert "共 16 件商品" in page.locator("[data-catalog-meta]").inner_text()
-    assert "当前显示 16 件" in page.locator("[data-catalog-meta]").inner_text()
+    assert page.locator(".product-card").count() == 17
+    assert "共 17 件商品" in page.locator("[data-catalog-meta]").inner_text()
+    assert "当前显示 17 件" in page.locator("[data-catalog-meta]").inner_text()
     search_product_ids = page.locator(".product-card [data-product-open]").evaluate_all(
         "nodes => nodes.map(node => node.dataset.productOpen)"
     )
     assert search_product_ids
     assert all(product_id.startswith("camera-") for product_id in search_product_ids)
+
+    page.goto(f"{BASE_URL}/index.html", wait_until="networkidle")
+    page.locator('.site-header [data-action="open-search"]').click()
+    page.locator("[data-search-input]").fill("GPW")
+    page.locator("[data-search-input]").press("Enter")
+    page.wait_for_timeout(150)
+    gpw_cards = page.locator(".product-card")
+    assert gpw_cards.count() == 2
+    gpw_image_widths = page.locator(".product-card img").evaluate_all(
+        "images => images.map(image => image.naturalWidth)"
+    )
+    assert gpw_image_widths and min(gpw_image_widths) >= 640
+
+    page.locator('.site-header [data-action="open-search"]').click()
+    page.locator("[data-search-input]").fill("EV63")
+    page.locator("[data-search-input]").press("Enter")
+    page.wait_for_timeout(150)
+    assert page.locator(".product-card").count() == 1
+    page.locator('.product-card [data-product-open="desk-iqunix-ev63"]').click()
+    page.wait_for_selector('[data-action="add-product"]')
+    assert "IQUNIX EV63" in page.locator(".product-info h1").inner_text()
+    assert page.locator('[data-variant-group="switch"]').count() == 3
+    assert page.locator("[data-color-option]").count() == 3
+    page.locator('[data-variant-option="switch-magnetic-pro"]').click()
+    assert "磁玉轴 Pro" in page.locator(".selected-variant-summary").inner_text()
+
+    page.goto(f"{BASE_URL}/index.html", wait_until="networkidle")
+    page.locator('.site-header [data-action="open-search"]').click()
+    page.locator("[data-search-input]").fill("F87Pro")
+    page.locator("[data-search-input]").press("Enter")
+    page.wait_for_timeout(150)
+    assert page.locator(".product-card").count() == 1
+    page.locator('.product-card [data-product-open="desk-market-2181205"]').click()
+    page.wait_for_selector('[data-action="add-product"]')
+    assert page.locator('[data-variant-group="switch"]').count() == 2
+    page.locator('[data-variant-option="switch-caramel-latte"]').click()
+    assert "焦糖拿铁轴" in page.locator(".selected-variant-summary").inner_text()
+    page.goto(f"{BASE_URL}/index.html", wait_until="networkidle")
 
     page.locator(".category-dock [data-category=\"appliance\"]").click()
     page.wait_for_timeout(100)
@@ -142,7 +180,7 @@ def run_desktop(browser):
     page.locator('input[name="code"]').fill("2026")
     page.locator("[data-admin-login] button[type='submit']").click()
     page.wait_for_selector("#admin-console:not([hidden])")
-    assert "84" in page.locator("#admin-kpis").inner_text()
+    assert "93" in page.locator("#admin-kpis").inner_text()
     assert page.locator("#admin-order-rows tr").count() == 1
 
     page.locator("[data-admin-tab='orders']").click()
