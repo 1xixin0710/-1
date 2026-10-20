@@ -3,6 +3,7 @@
 const SUPPORT_ORDERS_KEY = "morrow.orders.v1";
 const SUPPORT_AI_ENDPOINT = "https://text.pollinations.ai/openai";
 const SUPPORT_MAX_TURNS = 6;
+const SUPPORT_AI_TIMEOUT = 8000;
 
 function supportEscape(value) {
   return String(value ?? "")
@@ -43,6 +44,23 @@ function supportLocalReply(message) {
   const text = String(message || "").trim();
   const orders = supportOrders();
   const orderCode = text.match(/MR[-\w]+/i)?.[0];
+
+  if (/^(你好|您好|在吗|有人吗|嗨|hello|hi)[！!。,.，\s]*$/i.test(text)) {
+    return "你好，我是 MORROW AI 导购。告诉我预算、用途或想比较的商品，我会直接从当前商城筛选。";
+  }
+
+  if (/(优惠|活动|好价|便宜|划算)/.test(text)) {
+    const picks = supportRelevantProducts("热门 优惠")
+      .slice(0, 3)
+      .map(
+        (product) =>
+          `${product.displayName || product.name} ${supportCurrency(product.price)}`,
+      )
+      .join("、");
+    return picks
+      ? `当前精选商品里可以优先看：${picks}。页面价格会按实时行情小幅变化，最终以商品详情为准。`
+      : "当前可以按品类查看实时好价。告诉我预算和用途，我会直接筛出更合适的商品。";
+  }
 
   if (orderCode) {
     const matched = orders.find(
@@ -88,6 +106,54 @@ function supportLocalReply(message) {
   return "";
 }
 
+function supportRecommendationReply(message) {
+  const text = String(message || "").trim();
+  const category = supportCategoryIntent(text);
+  const budget = Number(
+    text.match(/(?:预算|以内|不超过|低于|左右)?\s*(\d{3,6})\s*(?:元|块)?/)?.[1] || 0,
+  );
+  const hasBrand = supportProducts().some(
+    (product) =>
+      product.brand && text.toLowerCase().includes(String(product.brand).toLowerCase()),
+  );
+  const hasShoppingIntent =
+    category ||
+    budget ||
+    hasBrand ||
+    /(推荐|怎么选|哪款|哪个好|比较|适合|值得买|性价比|热门|想要|想买|选一)/.test(
+      text,
+    );
+  if (!hasShoppingIntent) return "";
+
+  const picks = supportRelevantProducts(text).slice(0, 3);
+  if (!picks.length) {
+    return "暂时没有完全匹配的商品。你可以补充预算、用途和偏好的品牌，我会继续缩小范围。";
+  }
+
+  const labels = {
+    phone: "手机",
+    computer: "电脑",
+    camera: "相机",
+    audio: "耳机影音",
+    tablet: "平板",
+    desk: "外设",
+    appliance: "家电",
+  };
+  const scope = [
+    budget ? `${supportCurrency(budget)}以内` : "",
+    category ? labels[category] : "热门商品",
+  ]
+    .filter(Boolean)
+    .join("的");
+  const options = picks
+    .map(
+      (product) =>
+        `${product.displayName || product.name} ${supportCurrency(product.price)}`,
+    )
+    .join("；");
+  return `按${scope}筛选，优先看：${options}。价格是当前商城行情参考，我可以继续按品牌、尺寸或使用场景帮你缩小到一款。`;
+}
+
 function supportProducts() {
   const liveProducts = window.MORROW_STORE?.products?.();
   const products = Array.isArray(liveProducts)
@@ -102,7 +168,7 @@ function supportCategoryIntent(text) {
   if (/(相机|微单|单反|摄影|镜头)/.test(text)) return "camera";
   if (/(耳机|音箱|音响|降噪|听歌)/.test(text)) return "audio";
   if (/(平板|上网课|手写)/.test(text)) return "tablet";
-  if (/(键盘|鼠标|外设|桌面)/.test(text)) return "desk";
+  if (/(键盘|鼠标|外设|桌面|GPW|毒蝰|EV63|F87|Wooting)/i.test(text)) return "desk";
   if (/(家电|空调|洗衣机|净化器|扫地|清洁)/.test(text)) return "appliance";
   return null;
 }
@@ -162,6 +228,8 @@ function supportProductContext(message) {
 async function supportAiReply(message, history) {
   const localReply = supportLocalReply(message);
   if (localReply) return localReply;
+  const recommendationReply = supportRecommendationReply(message);
+  if (recommendationReply) return recommendationReply;
 
   const productContext = supportProductContext(message);
   const systemPrompt = [
@@ -183,7 +251,7 @@ async function supportAiReply(message, history) {
   ];
 
   const controller = new AbortController();
-  const timeout = window.setTimeout(() => controller.abort(), 30000);
+  const timeout = window.setTimeout(() => controller.abort(), SUPPORT_AI_TIMEOUT);
   try {
     const response = await fetch(SUPPORT_AI_ENDPOINT, {
       method: "POST",
@@ -222,20 +290,29 @@ async function supportAiReply(message, history) {
 function installSupportWidget() {
   if (document.querySelector("[data-support-widget]")) return;
 
+  const serviceUrl = /\/(admin|orders|service)(\/|$)/.test(window.location.pathname)
+    ? "../service/"
+    : "./service/";
   const widget = document.createElement("section");
   widget.className = "support-widget";
   widget.dataset.supportWidget = "";
   widget.innerHTML = `
-    <button
-      class="support-trigger"
-      type="button"
-      data-support-trigger
-      aria-label="打开 AI 导购"
-      aria-expanded="false"
-    >
-      <i data-lucide="sparkles" aria-hidden="true"></i>
-      <span>AI 导购</span>
-    </button>
+    <div class="support-launcher">
+      <a class="support-service-link" href="${serviceUrl}">
+        <i data-lucide="headset" aria-hidden="true"></i>
+        <span>售后服务</span>
+      </a>
+      <button
+        class="support-trigger"
+        type="button"
+        data-support-trigger
+        aria-label="打开 AI 导购"
+        aria-expanded="false"
+      >
+        <i data-lucide="sparkles" aria-hidden="true"></i>
+        <span>AI 导购</span>
+      </button>
+    </div>
     <div class="support-panel" data-support-panel hidden>
       <div class="support-head">
         <div>

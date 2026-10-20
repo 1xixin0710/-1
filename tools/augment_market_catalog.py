@@ -54,7 +54,7 @@ CATEGORY_META = {
         ],
     },
     "desk": {
-        "label": "桌面办公",
+        "label": "外设",
         "series": "DESK",
         "colors": [
             {"name": "石墨黑", "value": "#23262b"},

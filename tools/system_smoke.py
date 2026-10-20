@@ -124,7 +124,9 @@ def run_desktop(browser):
     page.goto(f"{BASE_URL}/index.html", wait_until="networkidle")
     page.wait_for_selector(".product-card")
     assert page.locator(".product-card").count() == 16
-    assert "93" in page.locator("[data-catalog-meta]").inner_text()
+    assert "71" in page.locator("[data-catalog-meta]").inner_text()
+    assert "外设好物" in page.locator(".market-hotwords").inner_text()
+    assert "桌面好物" not in page.locator(".market-hotwords").inner_text()
     page.wait_for_selector('.product-card [data-product-open="phone-anchor-2177308"]')
 
     page.locator('.filter-row [data-category="phone"]').click()
@@ -154,6 +156,8 @@ def run_desktop(browser):
     page.wait_for_timeout(150)
     gpw_cards = page.locator(".product-card")
     assert gpw_cards.count() == 2
+    assert "GPW4（小狗" in gpw_cards.first.inner_text()
+    assert "GPW5（Ultra" in gpw_cards.nth(1).inner_text()
     gpw_image_widths = page.locator(".product-card img").evaluate_all(
         "images => images.map(image => image.naturalWidth)"
     )
@@ -166,11 +170,16 @@ def run_desktop(browser):
     assert page.locator(".product-card").count() == 1
     page.locator('.product-card [data-product-open="desk-iqunix-ev63"]').click()
     page.wait_for_selector('[data-action="add-product"]')
-    assert "IQUNIX EV63" in page.locator(".product-info h1").inner_text()
+    assert "IQUNIX EV63 磁轴键盘" in page.locator(".product-info h1").inner_text()
+    assert "机械键盘" not in page.locator(".product-info h1").inner_text()
     assert page.locator('[data-variant-group="switch"]').count() == 3
     assert page.locator("[data-color-option]").count() == 3
     page.locator('[data-variant-option="switch-magnetic-pro"]').click()
     assert "磁玉轴 Pro" in page.locator(".selected-variant-summary").inner_text()
+    magnetic_price = int(
+        re.sub(r"[^\d]", "", page.locator("[data-product-live-price]").inner_text())
+    )
+    assert 1300 <= magnetic_price <= 1400
 
     page.goto(f"{BASE_URL}/index.html", wait_until="networkidle")
     page.locator('.site-header [data-action="open-search"]').click()
@@ -195,6 +204,17 @@ def run_desktop(browser):
     page.locator("[data-search-input]").press("Enter")
     page.wait_for_timeout(100)
 
+    page.locator('.category-dock [data-category="desk"]').click()
+    page.wait_for_timeout(100)
+    assert page.locator(".product-card").count() == 6
+    assert "6" in page.locator("[data-catalog-meta]").inner_text()
+    assert "桌面办公" not in page.locator("#catalog").inner_text()
+
+    page.locator('.category-dock [data-category="audio"]').click()
+    page.wait_for_timeout(100)
+    assert page.locator(".product-card").count() == 6
+
+    page.locator('.filter-row [data-category="all"]').click()
     page.locator('.filter-row [data-category="phone"]').click()
     page.locator("[data-brand-filter]").select_option(label="苹果")
     page.wait_for_timeout(100)
@@ -269,7 +289,7 @@ def run_desktop(browser):
     page.locator('input[name="code"]').fill("2026")
     page.locator("[data-admin-login] button[type='submit']").click()
     page.wait_for_selector("#admin-console:not([hidden])")
-    assert "93" in page.locator("#admin-kpis").inner_text()
+    assert "71" in page.locator("#admin-kpis").inner_text()
     assert page.locator("#admin-order-rows tr").count() == 1
 
     page.locator("[data-admin-tab='orders']").click()
@@ -292,11 +312,40 @@ def run_desktop(browser):
     page.wait_for_timeout(250)
     assert api("/api/orders?email=linmo@example.com")["orders"] == []
 
+    support_ai_requests = []
+    page.on(
+        "request",
+        lambda request: (
+            support_ai_requests.append(request.url)
+            if "text.pollinations.ai" in request.url
+            else None
+        ),
+    )
     page.goto(f"{BASE_URL}/service/", wait_until="networkidle")
+    assert page.locator(".support-service-link").is_visible()
     page.locator("[data-support-trigger]").click()
     page.locator("[data-support-form] input[name='message']").fill("多久发货")
     page.locator("[data-support-form]").press("Enter")
     assert "48 小时" in page.locator("[data-support-messages]").inner_text()
+    bot_count = page.locator(
+        ".support-message.is-bot:not(.support-typing)"
+    ).count()
+    page.locator("[data-support-form] input[name='message']").fill(
+        "5000 元内拍照手机怎么选"
+    )
+    page.locator("[data-support-form]").press("Enter")
+    page.wait_for_function(
+        """
+        (count) =>
+          document.querySelectorAll(
+            ".support-message.is-bot:not(.support-typing)"
+          ).length > count
+        """,
+        arg=bot_count,
+        timeout=1800,
+    )
+    assert "筛选" in page.locator("[data-support-messages]").inner_text()
+    assert support_ai_requests == []
 
     page.goto(f"{BASE_URL}/index.html", wait_until="networkidle")
     page.screenshot(path=str(SHOTS / "desktop-store.png"), full_page=True)

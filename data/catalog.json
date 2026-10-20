@@ -1,11 +1,11 @@
 [
   {
     "id": "desk-logitech-gpw",
-    "name": "罗技 G PRO X SUPERLIGHT（GPW）",
-    "displayName": "罗技 G PRO X SUPERLIGHT（GPW）",
-    "series": "桌面办公 / 热门精选",
+    "name": "罗技 GPW4（小狗 / PRO 2 LIGHTSPEED）",
+    "displayName": "罗技 GPW4（小狗 / PRO 2 LIGHTSPEED）",
+    "series": "外设 / 热门精选",
     "category": "desk",
-    "categoryLabel": "桌面办公",
+    "categoryLabel": "外设",
     "brand": "罗技",
     "price": 659,
     "priceLabel": "¥659",
@@ -15,7 +15,7 @@
     "rating": 4.9,
     "reviewCount": 4821,
     "featured": true,
-    "description": "GPW 系列经典轻量无线电竞鼠标，低延迟、长续航，适合 FPS 与日常桌面使用。",
+    "description": "GPW 四代轻量无线电竞鼠标，国内常称“小狗”，低延迟、长续航，适合 FPS 与高强度桌面使用。",
     "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
     "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
     "image": "./assets/market/hot-desk-logitech-gpw.jpg",
@@ -40,7 +40,7 @@
       "name": "ZOL 中关村在线",
       "url": "https://detail.zol.com.cn/mice/index1348608.shtml",
       "listUrl": "https://detail.zol.com.cn/mice/index1348608.shtml",
-      "matchedTitle": "罗技 G PRO X SUPERLIGHT（GPW）",
+      "matchedTitle": "罗技 GPW4（小狗 / PRO 2 LIGHTSPEED）",
       "priceText": "ZOL 参考价 ¥1099；京东在售价 ¥659",
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
@@ -49,11 +49,11 @@
   },
   {
     "id": "desk-logitech-gpw5",
-    "name": "罗技 GPW 5 雪豹（PRO X2 SUPERSTRIKE）",
-    "displayName": "罗技 GPW 5 雪豹（PRO X2 SUPERSTRIKE）",
-    "series": "桌面办公 / 热门精选",
+    "name": "罗技 GPW5（Ultra / PRO X2 SUPERSTRIKE）",
+    "displayName": "罗技 GPW5（Ultra / PRO X2 SUPERSTRIKE）",
+    "series": "外设 / 热门精选",
     "category": "desk",
-    "categoryLabel": "桌面办公",
+    "categoryLabel": "外设",
     "brand": "罗技",
     "price": 1349,
     "priceLabel": "¥1349",
@@ -63,7 +63,7 @@
     "rating": 4.9,
     "reviewCount": 1268,
     "featured": true,
-    "description": "GPW 第五代雪豹电竞鼠标，升级传感器与无线性能，面向高刷新率电竞桌面。",
+    "description": "GPW 五代 Ultra 电竞鼠标，升级传感器与无线性能，面向高刷新率电竞配置。",
     "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
     "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
     "image": "./assets/market/hot-desk-logitech-gpw5.jpg",
@@ -88,7 +88,7 @@
       "name": "ZOL 中关村在线",
       "url": "https://detail.zol.com.cn/mice/index2158610.shtml",
       "listUrl": "https://detail.zol.com.cn/mice/index2158610.shtml",
-      "matchedTitle": "罗技 GPW 5 雪豹（PRO X2 SUPERSTRIKE）",
+      "matchedTitle": "罗技 GPW5（Ultra / PRO X2 SUPERSTRIKE）",
       "priceText": "ZOL 参考价 ¥1979；近期京东活动价 ¥1349",
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
@@ -96,16 +96,112 @@
     }
   },
   {
-    "id": "desk-iqunix-ev63",
-    "name": "IQUNIX EV63 磁轴机械键盘",
-    "displayName": "IQUNIX EV63 磁轴机械键盘",
-    "series": "桌面办公 / 热门精选",
+    "id": "desk-razer-viper-v3-pro",
+    "name": "雷蛇 毒蝰 V3 Pro",
+    "displayName": "雷蛇 毒蝰 V3 Pro",
+    "series": "外设 / 热门精选",
     "category": "desk",
-    "categoryLabel": "桌面办公",
+    "categoryLabel": "外设",
+    "brand": "雷蛇",
+    "price": 1299,
+    "priceLabel": "¥1299",
+    "compareAt": 1599,
+    "stock": 31,
+    "sales": 47200,
+    "rating": 4.8,
+    "reviewCount": 2865,
+    "featured": true,
+    "description": "轻量化无线电竞鼠标，Focus Pro 35K 传感器与 8K 回报率，适合 FPS 和高速跟枪。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-razer-viper-v3-pro.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-razer-viper-v3-pro.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "Razer 官方与国内公开报价",
+      "url": "https://www.razer.com/gaming-mice/razer-viper-v3-pro",
+      "listUrl": "https://www.razer.com/gaming-mice/razer-viper-v3-pro",
+      "matchedTitle": "雷蛇 毒蝰 V3 Pro",
+      "priceText": "Razer 官方参考价 US$159.99；国内公开价约 ¥1299",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-wooting-60he",
+    "name": "Wooting 60HE V2 磁轴键盘",
+    "displayName": "Wooting 60HE V2 磁轴键盘",
+    "series": "外设 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "外设",
+    "brand": "Wooting",
+    "price": 1599,
+    "priceLabel": "¥1599",
+    "compareAt": 1899,
+    "stock": 15,
+    "sales": 32600,
+    "rating": 4.9,
+    "reviewCount": 1842,
+    "featured": true,
+    "description": "60% 配列模拟磁轴键盘，支持 Rapid Trigger、可调触发与网页驱动，面向竞技 FPS 玩家。",
+    "materials": "官方公开配置，具体版本、包装和参数以商品页及订单确认页为准。",
+    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
+    "image": "./assets/market/hot-desk-wooting-60he.jpg",
+    "colors": [
+      {
+        "name": "标准配色",
+        "value": "#696d70",
+        "gallery": [
+          {
+            "src": "./assets/market/hot-desk-wooting-60he.jpg",
+            "position": "50% 50%",
+            "scale": 1,
+            "fit": "contain",
+            "filter": "none"
+          }
+        ]
+      }
+    ],
+    "variantGroups": [],
+    "defaultVariant": {},
+    "source": {
+      "name": "Wooting 官方与公开评测",
+      "url": "https://wooting.io/wooting-60he-v2",
+      "listUrl": "https://wooting.io/wooting-60he-v2",
+      "matchedTitle": "Wooting 60HE V2 磁轴键盘",
+      "priceText": "Wooting 官方参考价 US$175；国内公开价约 ¥1599",
+      "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
+      "updatedAt": "2026-10-20",
+      "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
+    }
+  },
+  {
+    "id": "desk-iqunix-ev63",
+    "name": "IQUNIX EV63 磁轴键盘",
+    "displayName": "IQUNIX EV63 磁轴键盘",
+    "series": "外设 / 热门精选",
+    "category": "desk",
+    "categoryLabel": "外设",
     "brand": "IQUNIX",
-    "price": 1189,
-    "priceLabel": "¥1189",
-    "compareAt": 1399,
+    "price": 1349,
+    "priceLabel": "¥1349",
+    "compareAt": null,
     "stock": 27,
     "sales": 43200,
     "rating": 4.9,
@@ -164,12 +260,12 @@
           {
             "id": "switch-magnetic-pro",
             "label": "磁玉轴 Pro",
-            "priceDelta": -100
+            "priceDelta": 0
           },
           {
             "id": "switch-x-pro",
             "label": "神秘X轴 Pro",
-            "priceDelta": 0
+            "priceDelta": 100
           },
           {
             "id": "switch-x-ultra",
@@ -183,11 +279,11 @@
       "switch": "switch-x-pro"
     },
     "source": {
-      "name": "IQUNIX 官方与 ZOL 公开报价",
+      "name": "IQUNIX 官方与 ZOL 国内报价",
       "url": "https://iqunix.com/products/iqunix-ev63-hall-effect-keyboard",
       "listUrl": "https://iqunix.com/products/iqunix-ev63-hall-effect-keyboard",
-      "matchedTitle": "IQUNIX EV63 磁轴机械键盘",
-      "priceText": "ZOL 参考价 ¥1249-1549；近期京东活动价约 ¥1189",
+      "matchedTitle": "IQUNIX EV63 磁轴键盘",
+      "priceText": "IQUNIX 官方价 US$169-209；国内公开价 ¥1349-1549",
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
@@ -8311,246 +8407,6 @@
     "displayName": "联想 ThinkPad E14 2.8K AI 商务本"
   },
   {
-    "id": "audio-market-2169631",
-    "name": "爱国者CA88 AI版",
-    "series": "耳机影音 / 001",
-    "category": "audio",
-    "categoryLabel": "耳机影音",
-    "brand": "精选品牌",
-    "price": 198,
-    "priceLabel": "¥198",
-    "compareAt": 220,
-    "stock": 38,
-    "sales": 4800,
-    "rating": 4.6,
-    "reviewCount": 520,
-    "featured": true,
-    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/audio-2169631.jpg",
-    "colors": [
-      {
-        "name": "曜石黑",
-        "value": "#20242b"
-      },
-      {
-        "name": "云母白",
-        "value": "#e9e8e2"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/microphone/index2169631.shtml",
-      "listUrl": "https://headphone.zol.com.cn/",
-      "matchedTitle": "爱国者CA88 AI版",
-      "priceText": "参考价 ¥198",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "audio-market-2109554",
-    "name": "爱国者G03",
-    "series": "耳机影音 / 002",
-    "category": "audio",
-    "categoryLabel": "耳机影音",
-    "brand": "精选品牌",
-    "price": 119,
-    "priceLabel": "¥119",
-    "compareAt": 130,
-    "stock": 32,
-    "sales": 6175,
-    "rating": 4.7,
-    "reviewCount": 707,
-    "featured": true,
-    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/audio-2109554.jpg",
-    "colors": [
-      {
-        "name": "曜石黑",
-        "value": "#20242b"
-      },
-      {
-        "name": "云母白",
-        "value": "#e9e8e2"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/microphone/index2109554.shtml",
-      "listUrl": "https://headphone.zol.com.cn/",
-      "matchedTitle": "爱国者G03",
-      "priceText": "参考价 ¥119",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "audio-market-69156",
-    "name": "森海塞尔HD600",
-    "series": "耳机影音 / 003",
-    "category": "audio",
-    "categoryLabel": "耳机影音",
-    "brand": "精选品牌",
-    "price": 1999,
-    "priceLabel": "¥1999",
-    "compareAt": 2280,
-    "stock": 47,
-    "sales": 7550,
-    "rating": 4.8,
-    "reviewCount": 894,
-    "featured": true,
-    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/audio-69156.jpg",
-    "colors": [
-      {
-        "name": "曜石黑",
-        "value": "#20242b"
-      },
-      {
-        "name": "云母白",
-        "value": "#e9e8e2"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/microphone/index69156.shtml",
-      "listUrl": "https://headphone.zol.com.cn/",
-      "matchedTitle": "森海塞尔HD600",
-      "priceText": "参考价 ¥1999",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "audio-market-69159",
-    "name": "森海塞尔HD650",
-    "series": "耳机影音 / 004",
-    "category": "audio",
-    "categoryLabel": "耳机影音",
-    "brand": "精选品牌",
-    "price": 3699,
-    "priceLabel": "¥3699",
-    "compareAt": 4290,
-    "stock": 21,
-    "sales": 8925,
-    "rating": 4.9,
-    "reviewCount": 1081,
-    "featured": true,
-    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/audio-69159.jpg",
-    "colors": [
-      {
-        "name": "曜石黑",
-        "value": "#20242b"
-      },
-      {
-        "name": "云母白",
-        "value": "#e9e8e2"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/microphone/index69159.shtml",
-      "listUrl": "https://headphone.zol.com.cn/",
-      "matchedTitle": "森海塞尔HD650",
-      "priceText": "参考价 ¥3699",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "audio-market-1166385",
-    "name": "铁三角ATH-M20x",
-    "series": "耳机影音 / 005",
-    "category": "audio",
-    "categoryLabel": "耳机影音",
-    "brand": "精选品牌",
-    "price": 379,
-    "priceLabel": "¥379",
-    "compareAt": 420,
-    "stock": 18,
-    "sales": 10300,
-    "rating": 4.6,
-    "reviewCount": 1268,
-    "featured": false,
-    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/audio-1166385.jpg",
-    "colors": [
-      {
-        "name": "曜石黑",
-        "value": "#20242b"
-      },
-      {
-        "name": "云母白",
-        "value": "#e9e8e2"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/microphone/index1166385.shtml",
-      "listUrl": "https://headphone.zol.com.cn/",
-      "matchedTitle": "铁三角ATH-M20x",
-      "priceText": "参考价 ¥379",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "audio-market-2180006",
-    "name": "JBL SOUNDGEAR ",
-    "series": "耳机影音 / 006",
-    "category": "audio",
-    "categoryLabel": "耳机影音",
-    "brand": "精选品牌",
-    "price": 1105,
-    "priceLabel": "¥1105",
-    "compareAt": 1240,
-    "stock": 36,
-    "sales": 11675,
-    "rating": 4.7,
-    "reviewCount": 1455,
-    "featured": false,
-    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/audio-2180006.jpg",
-    "colors": [
-      {
-        "name": "曜石黑",
-        "value": "#20242b"
-      },
-      {
-        "name": "云母白",
-        "value": "#e9e8e2"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/microphone/index2180006.shtml",
-      "listUrl": "https://headphone.zol.com.cn/",
-      "matchedTitle": "JBL SOUNDGEAR ",
-      "priceText": "参考价 ¥1105",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
     "id": "audio-market-2180525",
     "name": "苹果HomePod mini 2",
     "series": "耳机影音 / 001",
@@ -8585,86 +8441,6 @@
       "listUrl": "https://detail.zol.com.cn/speaker/",
       "matchedTitle": "苹果HomePod mini 2",
       "priceText": "参考价 ¥1099",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "audio-market-2180011",
-    "name": "哈曼卡顿AURA STUDIO 5 黑金典藏版",
-    "series": "耳机影音 / 002",
-    "category": "audio",
-    "categoryLabel": "耳机影音",
-    "brand": "精选品牌",
-    "price": 2554,
-    "priceLabel": "¥2554",
-    "compareAt": 2860,
-    "stock": 31,
-    "sales": 6175,
-    "rating": 4.7,
-    "reviewCount": 707,
-    "featured": true,
-    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/audio-2180011.jpg",
-    "colors": [
-      {
-        "name": "曜石黑",
-        "value": "#20242b"
-      },
-      {
-        "name": "云母白",
-        "value": "#e9e8e2"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/speaker/index2180011.shtml",
-      "listUrl": "https://detail.zol.com.cn/speaker/",
-      "matchedTitle": "哈曼卡顿AURA STUDIO 5 黑金典藏版",
-      "priceText": "参考价 ¥2554",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "audio-market-2158948",
-    "name": "JBL PARTYBOX CLUB 120",
-    "series": "耳机影音 / 003",
-    "category": "audio",
-    "categoryLabel": "耳机影音",
-    "brand": "精选品牌",
-    "price": 2289,
-    "priceLabel": "¥2289",
-    "compareAt": 2610,
-    "stock": 39,
-    "sales": 7550,
-    "rating": 4.8,
-    "reviewCount": 894,
-    "featured": true,
-    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/audio-2158948.jpg",
-    "colors": [
-      {
-        "name": "曜石黑",
-        "value": "#20242b"
-      },
-      {
-        "name": "云母白",
-        "value": "#e9e8e2"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/speaker/index2158948.shtml",
-      "listUrl": "https://detail.zol.com.cn/speaker/",
-      "matchedTitle": "JBL PARTYBOX CLUB 120",
-      "priceText": "参考价 ¥2289",
       "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
       "updatedAt": "2026-10-19",
       "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
@@ -8711,131 +8487,11 @@
     }
   },
   {
-    "id": "audio-market-2131584",
-    "name": "harman/kardon 音乐水晶5代 流光版",
-    "series": "耳机影音 / 005",
-    "category": "audio",
-    "categoryLabel": "耳机影音",
-    "brand": "精选品牌",
-    "price": 2939,
-    "priceLabel": "¥2939",
-    "compareAt": 3230,
-    "stock": 17,
-    "sales": 10300,
-    "rating": 4.6,
-    "reviewCount": 1268,
-    "featured": false,
-    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/audio-2131584.jpg",
-    "colors": [
-      {
-        "name": "曜石黑",
-        "value": "#20242b"
-      },
-      {
-        "name": "云母白",
-        "value": "#e9e8e2"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/speaker/index2131584.shtml",
-      "listUrl": "https://detail.zol.com.cn/speaker/",
-      "matchedTitle": "harman/kardon 音乐水晶5代 流光版",
-      "priceText": "参考价 ¥2939",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "audio-market-2123273",
-    "name": "得胜E17（新版）",
-    "series": "耳机影音 / 006",
-    "category": "audio",
-    "categoryLabel": "耳机影音",
-    "brand": "精选品牌",
-    "price": 1299,
-    "priceLabel": "¥1299",
-    "compareAt": 1450,
-    "stock": 19,
-    "sales": 11675,
-    "rating": 4.7,
-    "reviewCount": 1455,
-    "featured": false,
-    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/audio-2123273.jpg",
-    "colors": [
-      {
-        "name": "曜石黑",
-        "value": "#20242b"
-      },
-      {
-        "name": "云母白",
-        "value": "#e9e8e2"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/loudspeaker/index2123273.shtml",
-      "listUrl": "https://detail.zol.com.cn/speaker/",
-      "matchedTitle": "得胜E17（新版）",
-      "priceText": "参考价 ¥1299",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "audio-market-2123270",
-    "name": "得胜E188M升级版",
-    "series": "耳机影音 / 007",
-    "category": "audio",
-    "categoryLabel": "耳机影音",
-    "brand": "精选品牌",
-    "price": 169,
-    "priceLabel": "¥169",
-    "compareAt": 190,
-    "stock": 29,
-    "sales": 13050,
-    "rating": 4.8,
-    "reviewCount": 1642,
-    "featured": false,
-    "description": "耳机影音热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/audio-2123270.jpg",
-    "colors": [
-      {
-        "name": "曜石黑",
-        "value": "#20242b"
-      },
-      {
-        "name": "云母白",
-        "value": "#e9e8e2"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/loudspeaker/index2123270.shtml",
-      "listUrl": "https://detail.zol.com.cn/speaker/",
-      "matchedTitle": "得胜E188M升级版",
-      "priceText": "参考价 ¥169",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
     "id": "desk-market-2181205",
     "name": "狼蛛F87Pro V2宗师版",
-    "series": "桌面办公 / 001",
+    "series": "外设 / 001",
     "category": "desk",
-    "categoryLabel": "桌面办公",
+    "categoryLabel": "外设",
     "brand": "狼蛛",
     "price": 296,
     "priceLabel": "¥296",
@@ -8890,526 +8546,6 @@
     ],
     "defaultVariant": {
       "switch": "switch-haiqiong"
-    }
-  },
-  {
-    "id": "desk-market-2180780",
-    "name": "微星X68K",
-    "series": "桌面办公 / 003",
-    "category": "desk",
-    "categoryLabel": "桌面办公",
-    "brand": "精选品牌",
-    "price": 779,
-    "priceLabel": "¥779",
-    "compareAt": 890,
-    "stock": 29,
-    "sales": 7550,
-    "rating": 4.8,
-    "reviewCount": 894,
-    "featured": true,
-    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/desk-2180780.jpg",
-    "colors": [
-      {
-        "name": "石墨黑",
-        "value": "#23262b"
-      },
-      {
-        "name": "雾白",
-        "value": "#e7e5df"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/keyboard/index2180780.shtml",
-      "listUrl": "https://detail.zol.com.cn/keyboard/",
-      "matchedTitle": "微星X68K",
-      "priceText": "参考价 ¥779",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "desk-market-2180756",
-    "name": "AULA（狼蛛）WIN68 粉雾透 灰木磁轴",
-    "series": "桌面办公 / 004",
-    "category": "desk",
-    "categoryLabel": "桌面办公",
-    "brand": "精选品牌",
-    "price": 219,
-    "priceLabel": "¥219",
-    "compareAt": 250,
-    "stock": 18,
-    "sales": 8925,
-    "rating": 4.9,
-    "reviewCount": 1081,
-    "featured": true,
-    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/desk-2180756.jpg",
-    "colors": [
-      {
-        "name": "石墨黑",
-        "value": "#23262b"
-      },
-      {
-        "name": "雾白",
-        "value": "#e7e5df"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/keyboard/index2180756.shtml",
-      "listUrl": "https://detail.zol.com.cn/keyboard/",
-      "matchedTitle": "AULA（狼蛛）WIN68 粉雾透 灰木磁轴",
-      "priceText": "参考价 ¥219",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "desk-market-2180753",
-    "name": "AULA（狼蛛）WIN68 陨石黑蝶恋 灰木磁轴",
-    "series": "桌面办公 / 005",
-    "category": "desk",
-    "categoryLabel": "桌面办公",
-    "brand": "精选品牌",
-    "price": 199,
-    "priceLabel": "¥199",
-    "compareAt": 220,
-    "stock": 28,
-    "sales": 10300,
-    "rating": 4.6,
-    "reviewCount": 1268,
-    "featured": false,
-    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/desk-2180753.jpg",
-    "colors": [
-      {
-        "name": "石墨黑",
-        "value": "#23262b"
-      },
-      {
-        "name": "雾白",
-        "value": "#e7e5df"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/keyboard/index2180753.shtml",
-      "listUrl": "https://detail.zol.com.cn/keyboard/",
-      "matchedTitle": "AULA（狼蛛）WIN68 陨石黑蝶恋 灰木磁轴",
-      "priceText": "参考价 ¥199",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "desk-market-2180752",
-    "name": "狼蛛WIN68 标准粉 灰木磁轴",
-    "series": "桌面办公 / 006",
-    "category": "desk",
-    "categoryLabel": "桌面办公",
-    "brand": "精选品牌",
-    "price": 129,
-    "priceLabel": "¥129",
-    "compareAt": 140,
-    "stock": 40,
-    "sales": 11675,
-    "rating": 4.7,
-    "reviewCount": 1455,
-    "featured": false,
-    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/desk-2180752.jpg",
-    "colors": [
-      {
-        "name": "石墨黑",
-        "value": "#23262b"
-      },
-      {
-        "name": "雾白",
-        "value": "#e7e5df"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/keyboard/index2180752.shtml",
-      "listUrl": "https://detail.zol.com.cn/keyboard/",
-      "matchedTitle": "狼蛛WIN68 标准粉 灰木磁轴",
-      "priceText": "参考价 ¥129",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "desk-market-2180750",
-    "name": "狼蛛WIN68 标准白 灰木磁轴",
-    "series": "桌面办公 / 007",
-    "category": "desk",
-    "categoryLabel": "桌面办公",
-    "brand": "精选品牌",
-    "price": 179,
-    "priceLabel": "¥179",
-    "compareAt": 200,
-    "stock": 9,
-    "sales": 13050,
-    "rating": 4.8,
-    "reviewCount": 1642,
-    "featured": false,
-    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/desk-2180750.jpg",
-    "colors": [
-      {
-        "name": "石墨黑",
-        "value": "#23262b"
-      },
-      {
-        "name": "雾白",
-        "value": "#e7e5df"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/keyboard/index2180750.shtml",
-      "listUrl": "https://detail.zol.com.cn/keyboard/",
-      "matchedTitle": "狼蛛WIN68 标准白 灰木磁轴",
-      "priceText": "参考价 ¥179",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "desk-market-2180749",
-    "name": "狼蛛WIN68 微尘灰 灰木磁轴",
-    "series": "桌面办公 / 008",
-    "category": "desk",
-    "categoryLabel": "桌面办公",
-    "brand": "精选品牌",
-    "price": 179,
-    "priceLabel": "¥179",
-    "compareAt": 210,
-    "stock": 21,
-    "sales": 14425,
-    "rating": 4.9,
-    "reviewCount": 1829,
-    "featured": false,
-    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/desk-2180749.jpg",
-    "colors": [
-      {
-        "name": "石墨黑",
-        "value": "#23262b"
-      },
-      {
-        "name": "雾白",
-        "value": "#e7e5df"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/keyboard/index2180749.shtml",
-      "listUrl": "https://detail.zol.com.cn/keyboard/",
-      "matchedTitle": "狼蛛WIN68 微尘灰 灰木磁轴",
-      "priceText": "参考价 ¥179",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "desk-market-2180816",
-    "name": "惠普清新国风无线鼠标 蓝牙双模",
-    "series": "桌面办公 / 001",
-    "category": "desk",
-    "categoryLabel": "桌面办公",
-    "brand": "惠普",
-    "price": 65,
-    "priceLabel": "¥65",
-    "compareAt": 70,
-    "stock": 23,
-    "sales": 4800,
-    "rating": 4.6,
-    "reviewCount": 520,
-    "featured": true,
-    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/desk-2180816.jpg",
-    "colors": [
-      {
-        "name": "石墨黑",
-        "value": "#23262b"
-      },
-      {
-        "name": "雾白",
-        "value": "#e7e5df"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/mice/index2180816.shtml",
-      "listUrl": "https://detail.zol.com.cn/mice/",
-      "matchedTitle": "惠普清新国风无线鼠标 蓝牙双模",
-      "priceText": "参考价 ¥65",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "desk-market-2180815",
-    "name": "惠普清新国风无线鼠标 标准",
-    "series": "桌面办公 / 002",
-    "category": "desk",
-    "categoryLabel": "桌面办公",
-    "brand": "惠普",
-    "price": 45,
-    "priceLabel": "¥45",
-    "compareAt": 50,
-    "stock": 35,
-    "sales": 6175,
-    "rating": 4.7,
-    "reviewCount": 707,
-    "featured": true,
-    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/desk-2180815.jpg",
-    "colors": [
-      {
-        "name": "石墨黑",
-        "value": "#23262b"
-      },
-      {
-        "name": "雾白",
-        "value": "#e7e5df"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/mice/index2180815.shtml",
-      "listUrl": "https://detail.zol.com.cn/mice/",
-      "matchedTitle": "惠普清新国风无线鼠标 标准",
-      "priceText": "参考价 ¥45",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "desk-market-2180810",
-    "name": "惠普渐变鼠标 蓝牙双模",
-    "series": "桌面办公 / 003",
-    "category": "desk",
-    "categoryLabel": "桌面办公",
-    "brand": "惠普",
-    "price": 65,
-    "priceLabel": "¥65",
-    "compareAt": 70,
-    "stock": 43,
-    "sales": 7550,
-    "rating": 4.8,
-    "reviewCount": 894,
-    "featured": true,
-    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/desk-2180810.jpg",
-    "colors": [
-      {
-        "name": "石墨黑",
-        "value": "#23262b"
-      },
-      {
-        "name": "雾白",
-        "value": "#e7e5df"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/mice/index2180810.shtml",
-      "listUrl": "https://detail.zol.com.cn/mice/",
-      "matchedTitle": "惠普渐变鼠标 蓝牙双模",
-      "priceText": "参考价 ¥65",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "desk-market-2178341",
-    "name": "AKKO 疾风TAN7 Master",
-    "series": "桌面办公 / 004",
-    "category": "desk",
-    "categoryLabel": "桌面办公",
-    "brand": "精选品牌",
-    "price": 299,
-    "priceLabel": "¥299",
-    "compareAt": 350,
-    "stock": 45,
-    "sales": 8925,
-    "rating": 4.9,
-    "reviewCount": 1081,
-    "featured": true,
-    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/desk-2178341.jpg",
-    "colors": [
-      {
-        "name": "石墨黑",
-        "value": "#23262b"
-      },
-      {
-        "name": "雾白",
-        "value": "#e7e5df"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/mice/index2178341.shtml",
-      "listUrl": "https://detail.zol.com.cn/mice/",
-      "matchedTitle": "AKKO 疾风TAN7 Master",
-      "priceText": "参考价 ¥299",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "desk-market-2178340",
-    "name": "AKKO 疾风TAN7 Ultra",
-    "series": "桌面办公 / 005",
-    "category": "desk",
-    "categoryLabel": "桌面办公",
-    "brand": "精选品牌",
-    "price": 139,
-    "priceLabel": "¥139",
-    "compareAt": 150,
-    "stock": 15,
-    "sales": 10300,
-    "rating": 4.6,
-    "reviewCount": 1268,
-    "featured": false,
-    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/desk-2178340.jpg",
-    "colors": [
-      {
-        "name": "石墨黑",
-        "value": "#23262b"
-      },
-      {
-        "name": "雾白",
-        "value": "#e7e5df"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/mice/index2178340.shtml",
-      "listUrl": "https://detail.zol.com.cn/mice/",
-      "matchedTitle": "AKKO 疾风TAN7 Ultra",
-      "priceText": "参考价 ¥139",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "desk-market-2178338",
-    "name": "B.O.W S1",
-    "series": "桌面办公 / 006",
-    "category": "desk",
-    "categoryLabel": "桌面办公",
-    "brand": "精选品牌",
-    "price": 119,
-    "priceLabel": "¥119",
-    "compareAt": 130,
-    "stock": 26,
-    "sales": 11675,
-    "rating": 4.7,
-    "reviewCount": 1455,
-    "featured": false,
-    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/desk-2178338.jpg",
-    "colors": [
-      {
-        "name": "石墨黑",
-        "value": "#23262b"
-      },
-      {
-        "name": "雾白",
-        "value": "#e7e5df"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/mice/index2178338.shtml",
-      "listUrl": "https://detail.zol.com.cn/mice/",
-      "matchedTitle": "B.O.W S1",
-      "priceText": "参考价 ¥119",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
-    }
-  },
-  {
-    "id": "desk-market-2178337",
-    "name": "B.O.W M19",
-    "series": "桌面办公 / 007",
-    "category": "desk",
-    "categoryLabel": "桌面办公",
-    "brand": "精选品牌",
-    "price": 59,
-    "priceLabel": "¥59",
-    "compareAt": 70,
-    "stock": 38,
-    "sales": 13050,
-    "rating": 4.8,
-    "reviewCount": 1642,
-    "featured": false,
-    "description": "桌面办公热卖选品，公开报价与页面参数已核对。适合作为同价位商品的重点比较对象。",
-    "materials": "官方标准配置，具体版本与参数以商品页和订单确认页为准。",
-    "delivery": "现货商品预计 1 至 3 日送达，大件商品按地区预约配送。",
-    "image": "./assets/market/desk-2178337.jpg",
-    "colors": [
-      {
-        "name": "石墨黑",
-        "value": "#23262b"
-      },
-      {
-        "name": "雾白",
-        "value": "#e7e5df"
-      }
-    ],
-    "source": {
-      "name": "ZOL 中关村在线",
-      "url": "https://detail.zol.com.cn/mice/index2178337.shtml",
-      "listUrl": "https://detail.zol.com.cn/mice/",
-      "matchedTitle": "B.O.W M19",
-      "priceText": "参考价 ¥59",
-      "priceBasis": "ZOL 公开产品报价，实时价在此基础上作行情波动演示",
-      "updatedAt": "2026-10-19",
-      "note": "价格会随地区、版本和促销活动变化，支付入口仅作演示。"
     }
   },
   {

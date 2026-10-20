@@ -15,9 +15,9 @@ UPDATED_AT = "2026-10-20"
 HOT_PRODUCTS = [
     {
         "id": "desk-logitech-gpw",
-        "name": "罗技 G PRO X SUPERLIGHT（GPW）",
+        "name": "罗技 GPW4（小狗 / PRO 2 LIGHTSPEED）",
         "category": "desk",
-        "category_label": "桌面办公",
+        "category_label": "外设",
         "brand": "罗技",
         "price": 659,
         "compare_at": 1099,
@@ -25,7 +25,7 @@ HOT_PRODUCTS = [
         "sales": 51800,
         "rating": 4.9,
         "review_count": 4821,
-        "description": "GPW 系列经典轻量无线电竞鼠标，低延迟、长续航，适合 FPS 与日常桌面使用。",
+        "description": "GPW 四代轻量无线电竞鼠标，国内常称“小狗”，低延迟、长续航，适合 FPS 与高强度桌面使用。",
         "image_url": "https://2b.zol-img.com.cn/product/221_320x240/239/ceo7X21uBpig.jpg",
         "source_name": "ZOL 中关村在线",
         "source_url": "https://detail.zol.com.cn/mice/index1348608.shtml",
@@ -33,9 +33,9 @@ HOT_PRODUCTS = [
     },
     {
         "id": "desk-logitech-gpw5",
-        "name": "罗技 GPW 5 雪豹（PRO X2 SUPERSTRIKE）",
+        "name": "罗技 GPW5（Ultra / PRO X2 SUPERSTRIKE）",
         "category": "desk",
-        "category_label": "桌面办公",
+        "category_label": "外设",
         "brand": "罗技",
         "price": 1349,
         "compare_at": 1979,
@@ -43,34 +43,70 @@ HOT_PRODUCTS = [
         "sales": 28600,
         "rating": 4.9,
         "review_count": 1268,
-        "description": "GPW 第五代雪豹电竞鼠标，升级传感器与无线性能，面向高刷新率电竞桌面。",
+        "description": "GPW 五代 Ultra 电竞鼠标，升级传感器与无线性能，面向高刷新率电竞配置。",
         "image_url": "https://2b.zol-img.com.cn/product/274_320x240/301/ceHJgzcCaKk.jpg",
         "source_name": "ZOL 中关村在线",
         "source_url": "https://detail.zol.com.cn/mice/index2158610.shtml",
         "price_text": "ZOL 参考价 ¥1979；近期京东活动价 ¥1349",
     },
     {
-        "id": "desk-iqunix-ev63",
-        "name": "IQUNIX EV63 磁轴机械键盘",
+        "id": "desk-razer-viper-v3-pro",
+        "name": "雷蛇 毒蝰 V3 Pro",
         "category": "desk",
-        "category_label": "桌面办公",
+        "category_label": "外设",
+        "brand": "雷蛇",
+        "price": 1299,
+        "compare_at": 1599,
+        "stock": 31,
+        "sales": 47200,
+        "rating": 4.8,
+        "review_count": 2865,
+        "description": "轻量化无线电竞鼠标，Focus Pro 35K 传感器与 8K 回报率，适合 FPS 和高速跟枪。",
+        "image_url": "https://assets2.razerzone.com/images/pnx.assets/24970f67be4ba9644e28720377d91cfb/razer-viper-v3-pro-1200x630.webp",
+        "source_name": "Razer 官方与国内公开报价",
+        "source_url": "https://www.razer.com/gaming-mice/razer-viper-v3-pro",
+        "price_text": "Razer 官方参考价 US$159.99；国内公开价约 ¥1299",
+    },
+    {
+        "id": "desk-wooting-60he",
+        "name": "Wooting 60HE V2 磁轴键盘",
+        "category": "desk",
+        "category_label": "外设",
+        "brand": "Wooting",
+        "price": 1599,
+        "compare_at": 1899,
+        "stock": 15,
+        "sales": 32600,
+        "rating": 4.9,
+        "review_count": 1842,
+        "description": "60% 配列模拟磁轴键盘，支持 Rapid Trigger、可调触发与网页驱动，面向竞技 FPS 玩家。",
+        "image_url": "https://q9.itc.cn/q_70/images03/20250521/a18859c131214f308dd118b7f6bbf684.jpeg",
+        "source_name": "Wooting 官方与公开评测",
+        "source_url": "https://wooting.io/wooting-60he-v2",
+        "price_text": "Wooting 官方参考价 US$175；国内公开价约 ¥1599",
+    },
+    {
+        "id": "desk-iqunix-ev63",
+        "name": "IQUNIX EV63 磁轴键盘",
+        "category": "desk",
+        "category_label": "外设",
         "brand": "IQUNIX",
-        "price": 1189,
-        "compare_at": 1399,
+        "price": 1349,
+        "compare_at": None,
         "stock": 27,
         "sales": 43200,
         "rating": 4.9,
         "review_count": 3072,
         "description": "63 键铝合金磁轴键盘，支持 0.01mm Rapid Trigger、8K 回报率与网页驱动，轴体在详情页内选择。",
-        "image_url": "https://cdn.shopify.com/s/files/1/0676/7853/5986/files/EV63_Silver_Knight_with_Magnetic_X_Ultra_Switch.png?v=1781340006",
-        "source_name": "IQUNIX 官方与 ZOL 公开报价",
+        "image_url": "https://cdn.shopify.com/s/files/1/0676/7853/5986/files/ev63-section2.jpg?v=12896019388382163290",
+        "source_name": "IQUNIX 官方与 ZOL 国内报价",
         "source_url": "https://iqunix.com/products/iqunix-ev63-hall-effect-keyboard",
-        "price_text": "ZOL 参考价 ¥1249-1549；近期京东活动价约 ¥1189",
+        "price_text": "IQUNIX 官方价 US$169-209；国内公开价 ¥1349-1549",
         "colors": [
             {
                 "name": "银武士",
                 "value": "#c7c9c8",
-                "image_url": "https://cdn.shopify.com/s/files/1/0676/7853/5986/files/EV63_Silver_Knight_with_Magnetic_X_Ultra_Switch.png?v=1781340006",
+                "image_url": "https://cdn.shopify.com/s/files/1/0676/7853/5986/files/ev63-section2.jpg?v=12896019388382163290",
             },
             {
                 "name": "紫罗兰",
@@ -88,8 +124,8 @@ HOT_PRODUCTS = [
                 "id": "switch",
                 "label": "轴体",
                 "options": [
-                    {"id": "switch-magnetic-pro", "label": "磁玉轴 Pro", "priceDelta": -100},
-                    {"id": "switch-x-pro", "label": "神秘X轴 Pro", "priceDelta": 0},
+                    {"id": "switch-magnetic-pro", "label": "磁玉轴 Pro", "priceDelta": 0},
+                    {"id": "switch-x-pro", "label": "神秘X轴 Pro", "priceDelta": 100},
                     {"id": "switch-x-ultra", "label": "神秘X轴 Ultra", "priceDelta": 200},
                 ],
             }
@@ -237,6 +273,34 @@ HOT_PRODUCTS = [
     },
 ]
 
+REMOVED_MARKET_IDS = {
+    "desk-market-2181204",
+    "desk-market-2180780",
+    "desk-market-2180756",
+    "desk-market-2180753",
+    "desk-market-2180752",
+    "desk-market-2180750",
+    "desk-market-2180749",
+    "desk-market-2180816",
+    "desk-market-2180815",
+    "desk-market-2180810",
+    "desk-market-2178341",
+    "desk-market-2178340",
+    "desk-market-2178338",
+    "desk-market-2178337",
+    "audio-market-2169631",
+    "audio-market-2109554",
+    "audio-market-69156",
+    "audio-market-69159",
+    "audio-market-1166385",
+    "audio-market-2180006",
+    "audio-market-2180011",
+    "audio-market-2158948",
+    "audio-market-2131584",
+    "audio-market-2123273",
+    "audio-market-2123270",
+}
+
 
 def gallery(source: str) -> list[dict]:
     return [
@@ -344,16 +408,29 @@ def merge_f87_switch_variants(catalog: list[dict]) -> list[dict]:
     return [product for product in catalog if product["id"] != second_id]
 
 
+def normalize_category_labels(catalog: list[dict]) -> list[dict]:
+    for product in catalog:
+        if product["category"] == "desk":
+            product["categoryLabel"] = "外设"
+            product["series"] = str(product.get("series") or "").replace(
+                "桌面办公", "外设"
+            )
+    return catalog
+
+
 def main() -> None:
     catalog_path = DATA_DIR / "catalog.json"
     catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
     catalog = enrich_catalog(catalog)
+    catalog = [
+        product for product in catalog if product["id"] not in REMOVED_MARKET_IDS
+    ]
     catalog = merge_f87_switch_variants(catalog)
 
     hot_ids = {spec["id"] for spec in HOT_PRODUCTS}
     catalog = [product for product in catalog if product["id"] not in hot_ids]
     additions = [build_product(spec) for spec in HOT_PRODUCTS]
-    catalog = additions + catalog
+    catalog = normalize_category_labels(additions + catalog)
 
     catalog_path.write_text(
         json.dumps(catalog, ensure_ascii=False, indent=2),

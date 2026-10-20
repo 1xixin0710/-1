@@ -3369,6 +3369,39 @@ textarea:focus-visible {
   bottom: 18px;
 }
 
+.support-launcher {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.support-service-link {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  gap: 7px;
+  padding: 0 15px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 10px 28px rgba(23, 23, 23, 0.1);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+  backdrop-filter: blur(12px);
+}
+
+.support-service-link:hover {
+  border-color: var(--market-teal);
+  color: var(--market-teal);
+}
+
+.support-service-link svg {
+  width: 17px;
+  height: 17px;
+}
+
 .support-trigger {
   display: inline-flex;
   min-height: 48px;
