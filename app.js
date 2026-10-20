@@ -376,30 +376,55 @@ function searchCategoryIntent(query) {
   );
 }
 
+function normalizeSearchText(value) {
+  return String(value ?? "")
+    .toLocaleLowerCase("zh-CN")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim();
+}
+
 function productSearchText(product) {
   const variantLabels = variantGroups(product)
     .flatMap((group) => [group.label, ...group.options.map((option) => option.label)])
     .join(" ");
-  return [
-    product.name,
-    product.displayName,
-    product.brand,
-    product.series,
-    product.categoryLabel,
-    SEARCH_CATEGORY_ALIASES[product.category]?.join(" "),
-    variantLabels,
-  ]
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
+  return normalizeSearchText(
+    [
+      product.name,
+      product.displayName,
+      product.brand,
+      product.series,
+      product.categoryLabel,
+      product.description,
+      ...(product.searchAliases || []),
+      SEARCH_CATEGORY_ALIASES[product.category]?.join(" "),
+      variantLabels,
+    ]
+      .filter(Boolean)
+      .join(" "),
+  );
 }
 
 function matchesProductQuery(product, query) {
-  const normalized = query.toLocaleLowerCase("zh-CN");
+  const normalized = normalizeSearchText(query);
+  if (!normalized) return true;
+  const compactQuery = normalized.replace(/\s+/g, "");
   const category = searchCategoryIntent(normalized);
   const haystack = productSearchText(product);
+  const compactHaystack = haystack.replace(/\s+/g, "");
 
-  if (!category) return haystack.includes(normalized);
+  if (!category) {
+    if (haystack.includes(normalized) || compactHaystack.includes(compactQuery)) {
+      return true;
+    }
+    const tokens = normalized.split(" ").filter(Boolean);
+    return (
+      tokens.length > 1 &&
+      tokens.every(
+        (token) =>
+          haystack.includes(token) || compactHaystack.includes(token),
+      )
+    );
+  }
   if (product.category !== category) return false;
 
   const remaining = SEARCH_CATEGORY_ALIASES[category]
@@ -407,7 +432,15 @@ function matchesProductQuery(product, query) {
     .replace(/\s+/g, " ")
     .trim();
 
-  return !remaining || remaining.split(" ").every((token) => haystack.includes(token));
+  return (
+    !remaining ||
+    remaining
+      .split(" ")
+      .every(
+        (token) =>
+          haystack.includes(token) || compactHaystack.includes(token),
+      )
+  );
 }
 
 function formatCurrency(value) {

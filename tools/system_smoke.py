@@ -167,6 +167,25 @@ def run_desktop(browser):
     assert gpw_image_widths and min(gpw_image_widths) >= 640
 
     page.locator('.site-header [data-action="open-search"]').click()
+    page.locator("[data-search-input]").fill("GPW4 小狗")
+    page.locator("[data-search-input]").press("Enter")
+    page.wait_for_timeout(150)
+    assert page.locator(".product-card").count() == 1
+    assert "GPW4（小狗" in page.locator(".product-card").inner_text()
+
+    page.locator('.site-header [data-action="open-search"]').click()
+    page.locator("[data-search-input]").fill("GPW4小狗")
+    page.locator("[data-search-input]").press("Enter")
+    page.wait_for_timeout(150)
+    assert page.locator(".product-card").count() == 1
+
+    page.locator('.site-header [data-action="open-search"]').click()
+    page.locator("[data-search-input]").fill("狗屁王")
+    page.locator("[data-search-input]").press("Enter")
+    page.wait_for_timeout(150)
+    assert page.locator(".product-card").count() == 1
+
+    page.locator('.site-header [data-action="open-search"]').click()
     page.locator("[data-search-input]").fill("EV63")
     page.locator("[data-search-input]").press("Enter")
     page.wait_for_timeout(150)

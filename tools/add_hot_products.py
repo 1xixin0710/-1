@@ -30,6 +30,7 @@ HOT_PRODUCTS = [
         "source_name": "ZOL 中关村在线",
         "source_url": "https://detail.zol.com.cn/mice/index1348608.shtml",
         "price_text": "ZOL 参考价 ¥1099；京东在售价 ¥659",
+        "search_aliases": ["狗屁王", "GPW4小狗", "小狗"],
     },
     {
         "id": "desk-logitech-gpw5",
@@ -48,6 +49,7 @@ HOT_PRODUCTS = [
         "source_name": "ZOL 中关村在线",
         "source_url": "https://detail.zol.com.cn/mice/index2158610.shtml",
         "price_text": "ZOL 参考价 ¥1979；近期京东活动价 ¥1349",
+        "search_aliases": ["GPW5 Ultra", "GPW5雪豹", "雪豹"],
     },
     {
         "id": "desk-razer-viper-v3-pro",
@@ -102,6 +104,7 @@ HOT_PRODUCTS = [
         "source_name": "IQUNIX 官方与 ZOL 国内报价",
         "source_url": "https://iqunix.com/products/iqunix-ev63-hall-effect-keyboard",
         "price_text": "IQUNIX 官方价 US$169-209；国内公开价 ¥1349-1549",
+        "search_aliases": ["EV63磁轴", "IQUNIX EV63"],
         "colors": [
             {
                 "name": "银武士",
@@ -149,6 +152,7 @@ HOT_PRODUCTS = [
         "source_name": "ROG 中国官网",
         "source_url": "https://rog.asus.com.cn/keyboards/keyboards/compact/rog-azoth-extreme/",
         "price_text": "ROG 中国官网价 ¥3599",
+        "search_aliases": ["夜魔Extreme", "ROG夜魔", "夜魔"],
         "variants": [
             {
                 "id": "switch",
@@ -178,6 +182,7 @@ HOT_PRODUCTS = [
         "source_name": "ZOL 中关村在线",
         "source_url": "https://detail.zol.com.cn/mice/index1426842.shtml",
         "price_text": "ZOL 参考价 ¥1049；京东在售价 ¥799",
+        "search_aliases": ["G502X Plus", "G502"],
     },
     {
         "id": "desk-mchose-g98-v3",
@@ -196,6 +201,7 @@ HOT_PRODUCTS = [
         "source_name": "ZOL 中关村在线",
         "source_url": "https://detail.zol.com.cn/keyboard/index2180689.shtml",
         "price_text": "ZOL 公开在售价 ¥410",
+        "search_aliases": ["G98 V3", "迈从G98"],
     },
     {
         "id": "desk-aula-f75max",
@@ -214,6 +220,7 @@ HOT_PRODUCTS = [
         "source_name": "ZOL 中关村在线",
         "source_url": "https://detail.zol.com.cn/keyboard/index2180491.shtml",
         "price_text": "ZOL 公开在售价 ¥349 起",
+        "search_aliases": ["F75 MAX", "狼蛛F75"],
         "variants": [
             {
                 "id": "switch",
@@ -243,6 +250,7 @@ HOT_PRODUCTS = [
         "source_name": "ZOL 中关村在线",
         "source_url": "https://detail.zol.com.cn/keyboard/index2180478.shtml",
         "price_text": "ZOL 公开在售价 ¥289",
+        "search_aliases": ["MAD75", "美加狮MAD75"],
     },
     {
         "id": "desk-logitech-g304x",
@@ -261,6 +269,7 @@ HOT_PRODUCTS = [
         "source_name": "ZOL 中关村在线",
         "source_url": "https://detail.zol.com.cn/mice/index2162390.shtml",
         "price_text": "ZOL 参考价 ¥209；京东在售价 ¥199",
+        "search_aliases": ["G304", "罗技G304X"],
     },
     {
         "id": "desk-rapoo-vt9-max",
@@ -279,6 +288,7 @@ HOT_PRODUCTS = [
         "source_name": "ZOL 中关村在线",
         "source_url": "https://detail.zol.com.cn/mice/index2149947.shtml",
         "price_text": "ZOL 公开参考价 ¥329",
+        "search_aliases": ["VT9 MAX", "VT9MAX", "雷柏VT9"],
     },
     {
         "id": "desk-rapoo-vt3s-max",
@@ -297,6 +307,7 @@ HOT_PRODUCTS = [
         "source_name": "ZOL 中关村在线",
         "source_url": "https://detail.zol.com.cn/mice/index2169495.shtml",
         "price_text": "ZOL 公开参考价 ¥299",
+        "search_aliases": ["VT3s MAX", "雷柏VT3s"],
     },
     {
         "id": "desk-logitech-mx-master-4",
@@ -315,6 +326,7 @@ HOT_PRODUCTS = [
         "source_name": "ZOL 中关村在线",
         "source_url": "https://detail.zol.com.cn/mice/index2153839.shtml",
         "price_text": "ZOL 公开参考价 ¥899",
+        "search_aliases": ["MX Master4", "MX Master 4"],
     },
     {
         "id": "desk-flydigi-icewolf",
@@ -333,6 +345,7 @@ HOT_PRODUCTS = [
         "source_name": "ZOL 中关村在线",
         "source_url": "https://detail.zol.com.cn/gamepad/index1439959.shtml",
         "price_text": "ZOL 公开参考价 ¥199",
+        "search_aliases": ["冰原狼", "飞智手柄"],
     },
     {
         "id": "desk-beitong-kunpeng-50",
@@ -351,6 +364,7 @@ HOT_PRODUCTS = [
         "source_name": "ZOL 中关村在线",
         "source_url": "https://detail.zol.com.cn/gamepad/index2113841.shtml",
         "price_text": "ZOL 公开参考价 ¥369",
+        "search_aliases": ["鲲鹏50", "北通手柄"],
     },
     {
         "id": "desk-8bitdo-orion-wireless",
@@ -369,6 +383,7 @@ HOT_PRODUCTS = [
         "source_name": "ZOL 中关村在线",
         "source_url": "https://detail.zol.com.cn/gamepad/index1827284.shtml",
         "price_text": "ZOL 公开参考价 ¥458",
+        "search_aliases": ["八位堂猎户座", "猎户座手柄"],
     },
     {
         "id": "tablet-xiaomi-pad7-ultra",
@@ -612,6 +627,7 @@ def build_product(spec: dict) -> dict:
             "updatedAt": UPDATED_AT,
             "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。",
         },
+        "searchAliases": spec.get("search_aliases") or [],
     }
 
 

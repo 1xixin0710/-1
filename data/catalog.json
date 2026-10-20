@@ -45,7 +45,12 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": [
+      "狗屁王",
+      "GPW4小狗",
+      "小狗"
+    ]
   },
   {
     "id": "desk-logitech-gpw5",
@@ -93,7 +98,12 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": [
+      "GPW5 Ultra",
+      "GPW5雪豹",
+      "雪豹"
+    ]
   },
   {
     "id": "desk-razer-viper-v3-pro",
@@ -141,7 +151,8 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": []
   },
   {
     "id": "desk-wooting-60he",
@@ -189,7 +200,8 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": []
   },
   {
     "id": "desk-iqunix-ev63",
@@ -287,7 +299,11 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": [
+      "EV63磁轴",
+      "IQUNIX EV63"
+    ]
   },
   {
     "id": "desk-rog-azoth-extreme",
@@ -354,7 +370,12 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": [
+      "夜魔Extreme",
+      "ROG夜魔",
+      "夜魔"
+    ]
   },
   {
     "id": "desk-logitech-g502x-plus",
@@ -402,7 +423,11 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": [
+      "G502X Plus",
+      "G502"
+    ]
   },
   {
     "id": "desk-mchose-g98-v3",
@@ -450,7 +475,11 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": [
+      "G98 V3",
+      "迈从G98"
+    ]
   },
   {
     "id": "desk-aula-f75max",
@@ -517,7 +546,11 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": [
+      "F75 MAX",
+      "狼蛛F75"
+    ]
   },
   {
     "id": "desk-madcatz-mad75",
@@ -565,7 +598,11 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": [
+      "MAD75",
+      "美加狮MAD75"
+    ]
   },
   {
     "id": "desk-logitech-g304x",
@@ -613,7 +650,11 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": [
+      "G304",
+      "罗技G304X"
+    ]
   },
   {
     "id": "desk-rapoo-vt9-max",
@@ -661,7 +702,12 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": [
+      "VT9 MAX",
+      "VT9MAX",
+      "雷柏VT9"
+    ]
   },
   {
     "id": "desk-rapoo-vt3s-max",
@@ -709,7 +755,11 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": [
+      "VT3s MAX",
+      "雷柏VT3s"
+    ]
   },
   {
     "id": "desk-logitech-mx-master-4",
@@ -757,7 +807,11 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": [
+      "MX Master4",
+      "MX Master 4"
+    ]
   },
   {
     "id": "desk-flydigi-icewolf",
@@ -805,7 +859,11 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": [
+      "冰原狼",
+      "飞智手柄"
+    ]
   },
   {
     "id": "desk-beitong-kunpeng-50",
@@ -853,7 +911,11 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": [
+      "鲲鹏50",
+      "北通手柄"
+    ]
   },
   {
     "id": "desk-8bitdo-orion-wireless",
@@ -901,7 +963,11 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": [
+      "八位堂猎户座",
+      "猎户座手柄"
+    ]
   },
   {
     "id": "tablet-xiaomi-pad7-ultra",
@@ -973,7 +1039,8 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": []
   },
   {
     "id": "computer-legion-y9000p-2025",
@@ -1021,7 +1088,8 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": []
   },
   {
     "id": "camera-dji-action5-pro",
@@ -1069,7 +1137,8 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": []
   },
   {
     "id": "audio-airpods-pro-3",
@@ -1117,7 +1186,8 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": []
   },
   {
     "id": "audio-huawei-freebuds-pro5",
@@ -1165,7 +1235,8 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": []
   },
   {
     "id": "audio-sony-wh1000xm5",
@@ -1213,7 +1284,8 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": []
   },
   {
     "id": "audio-huawei-freeclip2",
@@ -1261,7 +1333,8 @@
       "priceBasis": "公开在售价与参考价作为基准，页面在此基础上展示小幅行情波动",
       "updatedAt": "2026-10-20",
       "note": "价格随地区、版本和促销活动变化；支付入口仅作演示。"
-    }
+    },
+    "searchAliases": []
   },
   {
     "id": "phone-anchor-2177308",
