@@ -423,6 +423,32 @@ def run_desktop(browser):
     assert "筛选" in page.locator("[data-support-messages]").inner_text()
     assert support_ai_requests == []
 
+    for query, expected, forbidden in (
+        ("1000键盘", "键盘", "鼠标"),
+        ("1000鼠标", "鼠标", "键盘"),
+    ):
+        bot_count = page.locator(
+            "[data-support-messages] .support-message.is-bot:not(.support-typing)"
+        ).count()
+        page.locator("[data-support-form] input[name='message']").fill(query)
+        page.locator("[data-support-form]").press("Enter")
+        page.wait_for_function(
+            """
+            (count) =>
+              document.querySelectorAll(
+                "[data-support-messages] .support-message.is-bot:not(.support-typing)"
+              ).length > count
+            """,
+            arg=bot_count,
+            timeout=1800,
+        )
+        reply = page.locator(
+            "[data-support-messages] .support-message.is-bot:not(.support-typing)"
+        ).last.inner_text()
+        assert expected in reply
+        assert forbidden not in reply
+    assert support_ai_requests == []
+
     page.goto(f"{BASE_URL}/index.html", wait_until="networkidle")
     page.screenshot(path=str(SHOTS / "desktop-store.png"), full_page=True)
     assert errors == [], f"Browser errors: {errors}"

@@ -128,6 +128,7 @@ function supportRecommendationReply(message) {
   }
 
   const category = supportCategoryIntent(text);
+  const deskType = supportDeskTypeIntent(text);
   const budget = Number(
     text.match(/(?:预算|以内|不超过|低于|左右)?\s*(\d{3,6})\s*(?:元|块)?/)?.[1] || 0,
   );
@@ -160,7 +161,11 @@ function supportRecommendationReply(message) {
   };
   const scope = [
     budget ? `${supportCurrency(budget)}以内` : "",
-    category ? labels[category] : "热门商品",
+    deskType
+      ? { keyboard: "键盘", mouse: "鼠标" }[deskType]
+      : category
+        ? labels[category]
+        : "热门商品",
   ]
     .filter(Boolean)
     .join("的");
@@ -192,9 +197,42 @@ function supportCategoryIntent(text) {
   return null;
 }
 
+function supportDeskTypeIntent(text) {
+  if (
+    /(键盘|机械轴|磁轴|轴体|键帽|客制化|配列|Wooting|EV63|F87|G98|F75|MAD\s?75|夜魔)/i.test(
+      text,
+    )
+  ) {
+    return "keyboard";
+  }
+  if (
+    /(鼠标|鼠标垫|GPW|毒蝰|G502|G304|VT9|VT3s|MX\s?Master)/i.test(text)
+  ) {
+    return "mouse";
+  }
+  return null;
+}
+
+function supportProductDeskType(product) {
+  // ponytail: catalog has no subcategory field; classify from product copy until one exists.
+  const text = [
+    product.name,
+    product.displayName,
+    product.description,
+    product.series,
+    ...(product.searchAliases || []),
+  ]
+    .filter(Boolean)
+    .join(" ");
+  if (/(键盘|机械轴|磁轴|轴体|键帽)/.test(text)) return "keyboard";
+  if (/(鼠标|鼠标垫)/.test(text)) return "mouse";
+  return null;
+}
+
 function supportRelevantProducts(text) {
   const products = supportProducts();
   const category = supportCategoryIntent(text);
+  const deskType = supportDeskTypeIntent(text);
   const budget = Number(
     text.match(/(?:预算|以内|不超过|低于|左右)?\s*(\d{3,6})\s*(?:元|块)?/)?.[1] || 0,
   );
@@ -203,6 +241,10 @@ function supportRelevantProducts(text) {
     .filter((brand) => brand && lowered.includes(brand.toLowerCase()));
 
   const ranked = products
+    .filter(
+      (product) =>
+        !deskType || supportProductDeskType(product) === deskType,
+    )
     .map((product) => {
       let score = Number(product.featured ? 3 : 0);
       if (category && product.category === category) score += 12;
